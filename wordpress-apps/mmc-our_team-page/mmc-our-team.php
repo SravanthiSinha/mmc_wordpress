@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: MMC - CHINESE SERVICES PAGE
- * Description: Integration of  MMC - CHINESE SERVICES PAGE with WordPress
+ * Plugin Name: MMC - OUR TEAM PAGE
+ * Description: Integration of MMC - OUR TEAM PAGE app with WordPress
  * Version: 1.0.0
  * Author: Sravanthi Sinha
- * Text Domain: mmc-chinese_services
+ * Text Domain: mmc-our_team
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
@@ -17,13 +17,13 @@ if (!defined('ABSPATH')) {
 /**
  * Main plugin class
  * 
- * Handles integration of  MMC - CHINESE SERVICES PAGE with WordPress
+ * Handles integration of  MMC - OUR TEAM PAGE with WordPress
  */
-class MMC_CHINESE_SERVICES_App {
+class MMC_OUR_TEAM_App {
     /**
      * Plugin instance
      *
-     * @var MMC_CHINESE_SERVICES_App
+     * @var MMC_OUR_TEAM_App
      */
     private static $instance = null;
     
@@ -44,7 +44,7 @@ class MMC_CHINESE_SERVICES_App {
     /**
      * Get plugin instance
      *
-     * @return MMC_CHINESE_SERVICES_App
+     * @return MMC_OUR_TEAM_App
      */
     public static function get_instance() {
         if (null === self::$instance) {
@@ -61,7 +61,7 @@ class MMC_CHINESE_SERVICES_App {
         $this->plugin_url = plugin_dir_url(__FILE__);
         
         // Register shortcode
-        add_shortcode('mmc_chinese_services', array($this, 'render_react_app'));
+        add_shortcode('mmc_our_team', array($this, 'render_react_app'));
         
         // Enqueue scripts and styles with high priority to ensure they load after other scripts
         add_action('wp_enqueue_scripts', array($this, 'register_assets'), 99);
@@ -85,15 +85,15 @@ class MMC_CHINESE_SERVICES_App {
         if (version_compare(PHP_VERSION, '7.0', '<')) {
             deactivate_plugins(plugin_basename(__FILE__));
             wp_die(
-                esc_html__('MMC CHINESE_SERVICES requires PHP 7.0 or higher.', 'mmc-chinese_services'),
-                esc_html__('Plugin Activation Error', 'mmc-chinese_services'),
+                esc_html__('MMC OUR_TEAM requires PHP 7.0 or higher.', 'mmc-our_team'),
+                esc_html__('Plugin Activation Error', 'mmc-our_team'),
                 array('back_link' => true)
             );
         }
         
         // Check if dist directory exists
         if (!file_exists($this->plugin_dir . 'dist') || !is_dir($this->plugin_dir . 'dist')) {
-            error_log('MMC CHINESE_SERVICES Plugin: dist directory not found during activation.');
+            error_log('MMC OUR_TEAM Plugin: dist directory not found during activation.');
         }
         
         // Flush rewrite rules
@@ -123,7 +123,7 @@ class MMC_CHINESE_SERVICES_App {
         
         // Check if dist directory exists
         if (!file_exists($plugin_dir . 'dist') || !is_dir($plugin_dir . 'dist')) {
-            error_log('MMC CHINESE_SERVICES Plugin: dist directory not found.');
+            error_log('MMC OUR_TEAM Plugin: dist directory not found.');
             return;
         }
         
@@ -145,7 +145,7 @@ class MMC_CHINESE_SERVICES_App {
         $manifest = json_decode(file_get_contents($manifest_file), true);
         
         if (!$manifest || !is_array($manifest)) {
-            error_log('MMC CHINESE_SERVICES Plugin: Invalid manifest file');
+            error_log('MMC OUR_TEAM Plugin: Invalid manifest file');
             return;
         }
         
@@ -157,7 +157,7 @@ class MMC_CHINESE_SERVICES_App {
             
             $file_path = $this->plugin_dir . 'dist/' . $details['file'];
             $file_url = $this->plugin_url . 'dist/' . $details['file'];
-            $handle = 'mmc-chinese_services-' . sanitize_title(basename($details['file']));
+            $handle = 'mmc-our_team-' . sanitize_title(basename($details['file']));
             
             wp_register_style(
                 $handle,
@@ -178,7 +178,7 @@ class MMC_CHINESE_SERVICES_App {
             
             $file_path = $this->plugin_dir . 'dist/' . $details['file'];
             $file_url = $this->plugin_url . 'dist/' . $details['file'];
-            $handle = 'mmc-chinese_services-' . sanitize_title(basename($details['file']));
+            $handle = 'mmc-our_team-' . sanitize_title(basename($details['file']));
             
             // Check if this is the main entry file
             $is_main = isset($details['isEntry']) && $details['isEntry'] === true;
@@ -237,7 +237,7 @@ class MMC_CHINESE_SERVICES_App {
             }
             
             $file_name = basename($css_file);
-            $handle = 'mmc-chinese_services-css-' . $index;
+            $handle = 'mmc-our_team-css-' . $index;
             
             wp_register_style(
                 $handle,
@@ -255,7 +255,7 @@ class MMC_CHINESE_SERVICES_App {
             }
             
             $file_name = basename($js_file);
-            $handle = 'mmc-chinese_services-js-' . $index;
+            $handle = 'mmc-our_team-js-' . $index;
             
             // The main file should depend on any other files
             if (strpos($file_name, 'main') !== false || strpos($file_name, 'index') !== false) {
@@ -304,11 +304,11 @@ class MMC_CHINESE_SERVICES_App {
         global $post;
         
         // Only load assets when the shortcode is used
-        if (is_a($post, 'WP_Post') && has_shortcode($post->post_content, 'mmc_chinese_services')) {
+        if (is_a($post, 'WP_Post') && has_shortcode($post->post_content, 'mmc_our_team')) {
             // Enqueue all registered styles
             $styles = wp_styles();
             foreach ($styles->registered as $handle => $style) {
-                if (strpos($handle, 'mmc-chinese_services') === 0) {
+                if (strpos($handle, 'mmc-our_team') === 0) {
                     wp_enqueue_style($handle);
                 }
             }
@@ -316,7 +316,7 @@ class MMC_CHINESE_SERVICES_App {
             // Enqueue all registered scripts
             $scripts = wp_scripts();
             foreach ($scripts->registered as $handle => $script) {
-                if (strpos($handle, 'mmc-chinese_services') === 0) {
+                if (strpos($handle, 'mmc-our_team') === 0) {
                     wp_enqueue_script($handle);
                 }
             }
@@ -329,9 +329,9 @@ class MMC_CHINESE_SERVICES_App {
      * @return array
      */
     private function get_localized_data() {
-        return apply_filters('mmc_chinese_services_localized_data', array(
+        return apply_filters('mmc_our_team_localized_data', array(
             'ajaxUrl' => admin_url('admin-ajax.php'),
-            'nonce' => wp_create_nonce('mmc_chinese_services_nonce'),
+            'nonce' => wp_create_nonce('mmc_our_team_nonce'),
             'homeUrl' => home_url(),
             'siteUrl' => site_url(),
             'pluginUrl' => $this->plugin_url,
@@ -349,10 +349,10 @@ class MMC_CHINESE_SERVICES_App {
     public function render_react_app($atts) {
         // Extract shortcode attributes
         $atts = shortcode_atts(array(
-            'id' => 'mmc-chinese_services-' . uniqid(), // Generate a unique ID
+            'id' => 'mmc-our_team-' . uniqid(), // Generate a unique ID
             'class' => '',
             'category' => '', // Optional category filter
-        ), $atts, 'mmc_chinese_services');
+        ), $atts, 'mmc_our_team');
         
         // Build data attributes
         $data_attrs = '';
@@ -365,13 +365,13 @@ class MMC_CHINESE_SERVICES_App {
         // Return the container for the React app with both ID and class
         return sprintf(
             '<div id="%s" class="wp-react-app-container %s"%s>' . 
-            '<noscript>' . esc_html__('JavaScript is required to view the CHINESE_SERVICES content.', 'mmc-chinese_services') . '</noscript>' .
+            '<noscript>' . esc_html__('JavaScript is required to view the OUR_TEAM content.', 'mmc-our_team') . '</noscript>' .
             '<p class="react-loading-placeholder">%s</p>' .
             '</div>',
             esc_attr($atts['id']),
             esc_attr($atts['class']),
             $data_attrs,
-            esc_html__('Loading CHINESE_SERVICES content...', 'mmc-chinese_services')
+            esc_html__('Loading OUR_TEAM content...', 'mmc-our_team')
         );
     }
     
@@ -383,7 +383,7 @@ class MMC_CHINESE_SERVICES_App {
         ?>
         <script>
         (function() {
-            console.group('MMC CHINESE_SERVICES Debug Information');
+            console.group('MMC OUR_TEAM Debug Information');
             
             document.addEventListener('DOMContentLoaded', function() {
                 console.log('DOMContentLoaded triggered');
@@ -401,7 +401,7 @@ class MMC_CHINESE_SERVICES_App {
                         // Check which scripts were loaded
                         const scripts = document.querySelectorAll('script');
                         const reactScripts = Array.from(scripts).filter(script => 
-                            script.src && (script.src.includes('mmc-chinese_services') || script.src.includes('dist/assets'))
+                            script.src && (script.src.includes('mmc-our_team') || script.src.includes('dist/assets'))
                         );
                         
                         if (reactScripts.length === 0) {
@@ -425,11 +425,11 @@ class MMC_CHINESE_SERVICES_App {
 /**
  * Return the plugin instance
  * 
- * @return MMC_CHINESE_SERVICES_App
+ * @return MMC_OUR_TEAM_App
  */
-function mmc_chinese_services_plugin() {
-    return MMC_CHINESE_SERVICES_App::get_instance();
+function mmc_our_team_plugin() {
+    return MMC_OUR_TEAM_App::get_instance();
 }
 
 // Initialize the plugin
-mmc_chinese_services_plugin();
+mmc_our_team_plugin();
