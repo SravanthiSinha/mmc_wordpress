@@ -1,0 +1,125 @@
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|30"},"color":{"background":"#ffffff"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-background" style="background-color:#ffffff;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontSize":"48px","lineHeight":"1.2"},"color":{"text":"#3e4552"}},"fontFamily":"serif"} -->
+    <h1 class="wp-block-heading has-text-align-center has-text-color has-serif-font-family" style="color:#3e4552;font-size:48px;line-height:1.2">Frequently Asked Questions</h1>
+    <!-- /wp:heading -->
+    
+    <!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"20px"},"color":{"text":"#3e4552"},"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}}} -->
+    <p class="has-text-align-center has-text-color" style="color:#3e4552;margin-bottom:var(--wp--preset--spacing--50);font-size:20px">Find answers to common questions about our therapy services</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:aab/group-accordion {"uniqueId":"a37f146b_1","paddings":{"top":"20px","left":"20px","right":"20px","bottom":"20px"},"margins":{"top":"10px","bottom":"10px"},"headingColor":"#7fa693","headerBg":"","iconColor":"#7fa693","bodyBg":"","headingBorder":{"style":"none","width":"0px"},"labelsGlobalTextColor":"","labelsGlobalBgColor":""} -->
+    <style>
+            .aagb_accordion_a37f146b_1 .aagb__accordion_active .aagb__accordion_body {
+              border-top: 1px solid #ebebeb;
+            }
+          
+              .aagb_accordion_a37f146b_1 .aagb__accordion_container {
+                transition-duration: 0ms !important;
+                outline: 2px solid #00000000;
+              }
+              .aagb_accordion_a37f146b_1 .aagb__accordion_container:focus-visible {
+                outline: 2px solid #C2DBFE;
+              }
+            </style><div class="wp-block-aab-group-accordion searchable aagb_accordion_a37f146b_1 click false" id="group-accordion-a37f146b_1"><!-- wp:aab/accordion-item {"headingBorder":{"style":"none","width":"0px"},"paddings":{"top":"20px","left":"20px","right":"20px","bottom":"20px"},"margins":{"top":"10px","bottom":"10px"},"heading":"Is everything truly confidential?","headingColor":"#7fa693","headerBg":"","iconColor":"#7fa693","bodyBg":"","anchorLinkShow":false,"readMoreText":"Read More","faqSchema":false,"step":false,"stepText":"Continue","checkList":false,"button_show":false,"labelsGlobalTextColor":"","labelsGlobalBgColor":""} -->
+    <div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border:1px solid #bcb6b638;margin-top:10px;margin-bottom:10px"><div class="aagb__accordion_head aab_right_icon  " data-active="false" style="padding:20px 20px 20px 20px;border-top:none;border-right:none;border-bottom:none;border-left:none"><div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper"><div class="title_wrapper"><h5 class="aagb__accordion_title" style="margin:0;color:#7fa693">Is everything truly confidential?</h5></div><p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p></div></div><div class="aagb__accordion_icon" style="color:#7fa693"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-plus-alt2"></span></div></div></div><div class="aagb__accordion_body   " role="region" style="border-top:1px solid #bcb6b638;border-right:none;border-bottom:none;border-left:none;padding:20px 20px 20px 20px"><div class="aagb__accordion_component "><!-- wp:paragraph {"fontSize":"medium"} -->
+    <p class="has-medium-font-size">Yes, your privacy is our priority. All sessions are conducted securely, and we strictly adhere to HIPAA guidelines.</p>
+    <!-- /wp:paragraph --></div></div></div>
+    <!-- /wp:aab/accordion-item -->
+    
+    <!-- wp:aab/accordion-item {"headingBorder":{"style":"none","width":"0px"},"paddings":{"top":"20px","left":"20px","right":"20px","bottom":"20px"},"margins":{"top":"10px","bottom":"10px"},"heading":"Do you offer initial consultation?","headingColor":"#7fa693","headerBg":"","iconColor":"#7fa693","bodyBg":"","anchorLinkShow":false,"readMoreText":"Read More","faqSchema":false,"step":false,"stepText":"Continue","checkList":false,"button_show":false,"labelsGlobalTextColor":"","labelsGlobalBgColor":"","className":"wp-block-aab-accordion-item aagb__accordion_container panel"} -->
+    <div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border:1px solid #bcb6b638;margin-top:10px;margin-bottom:10px"><div class="aagb__accordion_head aab_right_icon  " data-active="false" style="padding:20px 20px 20px 20px;border-top:none;border-right:none;border-bottom:none;border-left:none"><div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper"><div class="title_wrapper"><h5 class="aagb__accordion_title" style="margin:0;color:#7fa693">Do you offer initial consultation?</h5></div><p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p></div></div><div class="aagb__accordion_icon" style="color:#7fa693"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-plus-alt2"></span></div></div></div><div class="aagb__accordion_body   " role="region" style="border-top:1px solid #bcb6b638;border-right:none;border-bottom:none;border-left:none;padding:20px 20px 20px 20px"><div class="aagb__accordion_component "><!-- wp:paragraph {"fontSize":"medium"} -->
+    <p class="has-medium-font-size">We offer a free 20-minute consultation where we can briefly discuss what you're looking for and make sure that I'm a good fit for your needs and goals.</p>
+    <!-- /wp:paragraph --></div></div></div>
+    <!-- /wp:aab/accordion-item -->
+    
+    <!-- wp:aab/accordion-item {"headingBorder":{"style":"none","width":"0px"},"paddings":{"top":"20px","left":"20px","right":"20px","bottom":"20px"},"margins":{"top":"10px","bottom":"10px"},"heading":"Individual Session Fees","headingColor":"#7fa693","headerBg":"","iconColor":"#7fa693","bodyBg":"","anchorLinkShow":false,"readMoreText":"Read More","faqSchema":false,"step":false,"stepText":"Continue","checkList":false,"button_show":false,"labelsGlobalTextColor":"","labelsGlobalBgColor":"","className":"wp-block-aab-accordion-item aagb__accordion_container panel"} -->
+    <div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border:1px solid #bcb6b638;margin-top:10px;margin-bottom:10px"><div class="aagb__accordion_head aab_right_icon  " data-active="false" style="padding:20px 20px 20px 20px;border-top:none;border-right:none;border-bottom:none;border-left:none"><div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper"><div class="title_wrapper"><h5 class="aagb__accordion_title" style="margin:0;color:#7fa693">Individual Session Fees</h5></div><p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p></div></div><div class="aagb__accordion_icon" style="color:#7fa693"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-plus-alt2"></span></div></div></div><div class="aagb__accordion_body   " role="region" style="border-top:1px solid #bcb6b638;border-right:none;border-bottom:none;border-left:none;padding:20px 20px 20px 20px"><div class="aagb__accordion_component "><!-- wp:paragraph {"fontSize":"medium"} -->
+    <p class="has-medium-font-size">Session fees vary based on the clinician. Please visit each clinician's booking page for specific pricing.</p>
+    <!-- /wp:paragraph --></div></div></div>
+    <!-- /wp:aab/accordion-item -->
+    
+    <!-- wp:aab/accordion-item {"headingBorder":{"style":"none","width":"0px"},"paddings":{"top":"20px","left":"20px","right":"20px","bottom":"20px"},"margins":{"top":"10px","bottom":"10px"},"heading":"Can I use my insurance?","headingColor":"#7fa693","headerBg":"","iconColor":"#7fa693","bodyBg":"","anchorLinkShow":false,"readMoreText":"Read More","faqSchema":false,"step":false,"stepText":"Continue","checkList":false,"button_show":false,"labelsGlobalTextColor":"","labelsGlobalBgColor":"","className":"wp-block-aab-accordion-item aagb__accordion_container panel"} -->
+    <div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border:1px solid #bcb6b638;margin-top:10px;margin-bottom:10px"><div class="aagb__accordion_head aab_right_icon  " data-active="false" style="padding:20px 20px 20px 20px;border-top:none;border-right:none;border-bottom:none;border-left:none"><div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper"><div class="title_wrapper"><h5 class="aagb__accordion_title" style="margin:0;color:#7fa693">Can I use my insurance?</h5></div><p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p></div></div><div class="aagb__accordion_icon" style="color:#7fa693"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-plus-alt2"></span></div></div></div><div class="aagb__accordion_body   " role="region" style="border-top:1px solid #bcb6b638;border-right:none;border-bottom:none;border-left:none;padding:20px 20px 20px 20px"><div class="aagb__accordion_component "><!-- wp:paragraph {"fontSize":"medium"} -->
+    <p class="has-medium-font-size">Yes. We accept several insurance plans, including Lyra, Aetna, and more. Please contact us to check if we’re in-network with your plan.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"fontSize":"medium"} -->
+    <p class="has-medium-font-size">If we are not in-network with your insurance, we can still help. We’ll provide you with a “superbill” (a detailed receipt) that you can send to your insurance company to ask for reimbursement. Please check with your insurance to see if they offer out-of-network coverage. We’re happy to walk you through it.</p>
+    <!-- /wp:paragraph --></div></div></div>
+    <!-- /wp:aab/accordion-item -->
+    
+    <!-- wp:aab/accordion-item {"headingBorder":{"style":"none","width":"0px"},"paddings":{"top":"20px","left":"20px","right":"20px","bottom":"20px"},"margins":{"top":"10px","bottom":"10px"},"heading":"Can I use my HSA or FSA card?","headingColor":"#7fa693","headerBg":"","iconColor":"#7fa693","bodyBg":"","anchorLinkShow":false,"readMoreText":"Read More","faqSchema":false,"step":false,"stepText":"Continue","checkList":false,"button_show":false,"labelsGlobalTextColor":"","labelsGlobalBgColor":"","className":"wp-block-aab-accordion-item aagb__accordion_container panel"} -->
+    <div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border:1px solid #bcb6b638;margin-top:10px;margin-bottom:10px"><div class="aagb__accordion_head aab_right_icon  " data-active="false" style="padding:20px 20px 20px 20px;border-top:none;border-right:none;border-bottom:none;border-left:none"><div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper"><div class="title_wrapper"><h5 class="aagb__accordion_title" style="margin:0;color:#7fa693">Can I use my HSA or FSA card?</h5></div><p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p></div></div><div class="aagb__accordion_icon" style="color:#7fa693"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-plus-alt2"></span></div></div></div><div class="aagb__accordion_body   " role="region" style="border-top:1px solid #bcb6b638;border-right:none;border-bottom:none;border-left:none;padding:20px 20px 20px 20px"><div class="aagb__accordion_component "><!-- wp:paragraph {"fontSize":"medium"} -->
+    <p class="has-medium-font-size">Yes, we accept HSA and FSA cards for payment.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"fontSize":"medium"} -->
+    <p class="has-medium-font-size">If your insurance does not cover or fully reimburse out-of-network mental health services, you may be able to use funds from a Flexible Spending Account (FSA), Health Savings Account (HSA), or Health Reimbursement Account (HRA). Please consult your account provider to confirm eligibility for mental health services as a covered expense.</p>
+    <!-- /wp:paragraph --></div></div></div>
+    <!-- /wp:aab/accordion-item -->
+    
+    <!-- wp:aab/accordion-item {"headingBorder":{"style":"none","width":"0px"},"paddings":{"top":"20px","left":"20px","right":"20px","bottom":"20px"},"margins":{"top":"10px","bottom":"10px"},"heading":"How long are the sessions?","headingColor":"#7fa693","headerBg":"","iconColor":"#7fa693","bodyBg":"","anchorLinkShow":false,"readMoreText":"Read More","faqSchema":false,"step":false,"stepText":"Continue","checkList":false,"button_show":false,"labelsGlobalTextColor":"","labelsGlobalBgColor":"","className":"wp-block-aab-accordion-item aagb__accordion_container panel"} -->
+    <div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border:1px solid #bcb6b638;margin-top:10px;margin-bottom:10px"><div class="aagb__accordion_head aab_right_icon  " data-active="false" style="padding:20px 20px 20px 20px;border-top:none;border-right:none;border-bottom:none;border-left:none"><div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper"><div class="title_wrapper"><h5 class="aagb__accordion_title" style="margin:0;color:#7fa693">How long are the sessions?</h5></div><p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p></div></div><div class="aagb__accordion_icon" style="color:#7fa693"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-plus-alt2"></span></div></div></div><div class="aagb__accordion_body   " role="region" style="border-top:1px solid #bcb6b638;border-right:none;border-bottom:none;border-left:none;padding:20px 20px 20px 20px"><div class="aagb__accordion_component "><!-- wp:paragraph {"fontSize":"medium"} -->
+    <p class="has-medium-font-size">Each session typically lasts 50 minutes, with flexibility based on your individual needs.</p>
+    <!-- /wp:paragraph --></div></div></div>
+    <!-- /wp:aab/accordion-item -->
+    
+    <!-- wp:aab/accordion-item {"headingBorder":{"style":"none","width":"0px"},"paddings":{"top":"20px","left":"20px","right":"20px","bottom":"20px"},"margins":{"top":"10px","bottom":"10px"},"heading":"What is the cancellation policy?","headingColor":"#7fa693","headerBg":"","iconColor":"#7fa693","bodyBg":"","anchorLinkShow":false,"readMoreText":"Read More","faqSchema":false,"step":false,"stepText":"Continue","checkList":false,"button_show":false,"labelsGlobalTextColor":"","labelsGlobalBgColor":"","className":"wp-block-aab-accordion-item aagb__accordion_container panel"} -->
+    <div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border:1px solid #bcb6b638;margin-top:10px;margin-bottom:10px"><div class="aagb__accordion_head aab_right_icon  " data-active="false" style="padding:20px 20px 20px 20px;border-top:none;border-right:none;border-bottom:none;border-left:none"><div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper"><div class="title_wrapper"><h5 class="aagb__accordion_title" style="margin:0;color:#7fa693">What is the cancellation policy?</h5></div><p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p></div></div><div class="aagb__accordion_icon" style="color:#7fa693"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-plus-alt2"></span></div></div></div><div class="aagb__accordion_body   " role="region" style="border-top:1px solid #bcb6b638;border-right:none;border-bottom:none;border-left:none;padding:20px 20px 20px 20px"><div class="aagb__accordion_component "><!-- wp:paragraph {"fontSize":"medium"} -->
+    <p class="has-medium-font-size">Cancellations require a 48-hour notice to avoid charges.</p>
+    <!-- /wp:paragraph --></div></div></div>
+    <!-- /wp:aab/accordion-item -->
+    
+    <!-- wp:aab/accordion-item {"headingBorder":{"style":"none","width":"0px"},"paddings":{"top":"20px","left":"20px","right":"20px","bottom":"20px"},"margins":{"top":"10px","bottom":"10px"},"heading":"Do you provide sessions through text messages or phone calls?","headingColor":"#7fa693","headerBg":"","iconColor":"#7fa693","bodyBg":"","anchorLinkShow":false,"readMoreText":"Read More","faqSchema":false,"step":false,"stepText":"Continue","checkList":false,"button_show":false,"labelsGlobalTextColor":"","labelsGlobalBgColor":"","className":"wp-block-aab-accordion-item aagb__accordion_container panel"} -->
+    <div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border:1px solid #bcb6b638;margin-top:10px;margin-bottom:10px"><div class="aagb__accordion_head aab_right_icon  " data-active="false" style="padding:20px 20px 20px 20px;border-top:none;border-right:none;border-bottom:none;border-left:none"><div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper"><div class="title_wrapper"><h5 class="aagb__accordion_title" style="margin:0;color:#7fa693">Do you provide sessions through text messages or phone calls?</h5></div><p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p></div></div><div class="aagb__accordion_icon" style="color:#7fa693"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-plus-alt2"></span></div></div></div><div class="aagb__accordion_body   " role="region" style="border-top:1px solid #bcb6b638;border-right:none;border-bottom:none;border-left:none;padding:20px 20px 20px 20px"><div class="aagb__accordion_component "><!-- wp:paragraph {"fontSize":"medium"} -->
+    <p class="has-medium-font-size">We currently offer therapy via secure video sessions. Phone sessions may be available upon request.</p>
+    <!-- /wp:paragraph --></div></div></div>
+    <!-- /wp:aab/accordion-item -->
+    
+    <!-- wp:aab/accordion-item {"headingBorder":{"style":"none","width":"0px"},"paddings":{"top":"20px","left":"20px","right":"20px","bottom":"20px"},"margins":{"top":"10px","bottom":"10px"},"heading":"Do you offer couples therapy online?","headingColor":"#7fa693","headerBg":"","iconColor":"#7fa693","bodyBg":"","anchorLinkShow":false,"readMoreText":"Read More","faqSchema":false,"step":false,"stepText":"Continue","checkList":false,"button_show":false,"labelsGlobalTextColor":"","labelsGlobalBgColor":"","className":"wp-block-aab-accordion-item aagb__accordion_container panel"} -->
+    <div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border:1px solid #bcb6b638;margin-top:10px;margin-bottom:10px"><div class="aagb__accordion_head aab_right_icon  " data-active="false" style="padding:20px 20px 20px 20px;border-top:none;border-right:none;border-bottom:none;border-left:none"><div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper"><div class="title_wrapper"><h5 class="aagb__accordion_title" style="margin:0;color:#7fa693">Do you offer couples therapy online?</h5></div><p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p></div></div><div class="aagb__accordion_icon" style="color:#7fa693"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-plus-alt2"></span></div></div></div><div class="aagb__accordion_body   " role="region" style="border-top:1px solid #bcb6b638;border-right:none;border-bottom:none;border-left:none;padding:20px 20px 20px 20px"><div class="aagb__accordion_component "><!-- wp:paragraph {"fontSize":"medium"} -->
+    <p class="has-medium-font-size">Yes, couples therapy is available virtually and tailored to meet your relationship goals.</p>
+    <!-- /wp:paragraph --></div></div></div>
+    <!-- /wp:aab/accordion-item --></div>
+    <!-- /wp:aab/group-accordion --></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:group {"className":"responsive-gfe-section","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|30"},"color":{"background":"#ffffff"}},"layout":{"type":"constrained","contentSize":"1200px"}} -->
+    <div class="wp-block-group responsive-gfe-section has-background" style="background-color:#ffffff;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"clamp(28px, 5vw, 36px)","lineHeight":"1.2"},"color":{"text":"#3e4552"}},"fontFamily":"serif"} -->
+    <h2 class="wp-block-heading has-text-align-center has-text-color has-serif-font-family" style="color:#3e4552;font-size:clamp(28px, 5vw, 36px);line-height:1.2">Good Faith Estimate (GFE) - Your Rights</h2>
+    <!-- /wp:heading -->
+    
+    <!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"clamp(16px, 3vw, 20px)"},"color":{"text":"#3e4552"}}} -->
+    <p class="has-text-align-center has-text-color" style="color:#3e4552;font-size:clamp(16px, 3vw, 20px)">You have the right to receive a GFE explaining how much your medical care will cost. Under the law, health care providers need to give patients who don't have insurance or who are not using insurance an estimate of the bill for medical items and services.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"clamp(16px, 3vw, 24px)","bottom":"clamp(16px, 3vw, 24px)","left":"clamp(16px, 3vw, 24px)","right":"clamp(16px, 3vw, 24px)"},"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"constrained","contentSize":"80vw"}} -->
+    <div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30);padding-top:clamp(16px, 3vw, 24px);padding-right:clamp(16px, 3vw, 24px);padding-bottom:clamp(16px, 3vw, 24px);padding-left:clamp(16px, 3vw, 24px)"><!-- wp:list {"style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}},"typography":{"fontSize":"clamp(16px, 2.5vw, 18px)"},"color":{"text":"#3e4552"}}} -->
+    <ul style="color:#3e4552;margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30);font-size:clamp(16px, 2.5vw, 18px)" class="wp-block-list has-text-color"><!-- wp:list-item -->
+    <li>You have the right to receive a GFE for the total expected cost of any non-emergency items or services.</li>
+    <!-- /wp:list-item -->
+    
+    <!-- wp:list-item -->
+    <li>Make sure your health care provider gives you a GFE in writing at least one business day before your medical service or item.</li>
+    <!-- /wp:list-item -->
+    
+    <!-- wp:list-item -->
+    <li>You can also ask your health care provider, and any other provider you choose for a GFE before you schedule an item or service.</li>
+    <!-- /wp:list-item -->
+    
+    <!-- wp:list-item -->
+    <li>If you receive a bill that is at least $400 more than your GFE, you can dispute the bill.</li>
+    <!-- /wp:list-item -->
+    
+    <!-- wp:list-item -->
+    <li>Make sure to save a copy or picture of your GFE.</li>
+    <!-- /wp:list-item --></ul>
+    <!-- /wp:list -->
+    
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"clamp(12px, 2vw, 16px)","right":"clamp(12px, 2vw, 16px)","bottom":"clamp(12px, 2vw, 16px)","left":"clamp(12px, 2vw, 16px)"},"margin":{"top":"clamp(12px, 2vw, 20px)"}},"border":{"radius":"6px"},"color":{"background":"#f0f0f0"}},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-group has-background" style="border-radius:6px;background-color:#f0f0f0;margin-top:clamp(12px, 2vw, 20px);padding-top:clamp(12px, 2vw, 16px);padding-right:clamp(12px, 2vw, 16px);padding-bottom:clamp(12px, 2vw, 16px);padding-left:clamp(12px, 2vw, 16px)"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"clamp(14px, 2vw, 16px)"},"color":{"text":"#3e4552"}}} -->
+    <p class="has-text-align-center has-text-color" style="color:#3e4552;font-size:clamp(14px, 2vw, 16px)">For questions or more information about your right to a GFE, visit <a href="https://www.cms.gov/nosurprises" target="_blank" rel="noopener noreferrer" style="color:#7fa693">www.cms.gov/nosurprises</a></p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group -->
