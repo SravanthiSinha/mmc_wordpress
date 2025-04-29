@@ -1,9 +1,9 @@
 import React from 'react';
 import { FadeInSection } from '../components/shared/Animations';
-import CouplesTherapyImg from '../assets/images/couples-therapy.svg';
+import WellnessCoachingImg from '../assets/images/wellness-coaching.svg';
 import { BOOKING_URL } from '../constants';
 
-const CouplesTherapy = () => {
+const WellnessCoaching = () => {
     return (
         <div className="min-h-screen pt-2 bg-brand-background-secondary">
             {/* Hero Section */}
@@ -11,7 +11,7 @@ const CouplesTherapy = () => {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center">
                         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-brand-text-primary">
-                            Couples therapy
+                            Wellness coaching
                         </h1>
                     </div>
                 </div>
@@ -24,15 +24,15 @@ const CouplesTherapy = () => {
                         <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center m-6">
                             <div className="md:w-1/2 flex justify-center">
                                 <div className="w-60 h-60 md:w-72 md:h-72">
-                                    <img src={CouplesTherapyImg} alt="Couples therapy illustration" className="w-full h-full" />
+                                    <img src={WellnessCoachingImg} alt="Wellness coaching illustration" className="w-full h-full" />
                                 </div>
                             </div>
                             <div className="md:w-1/2">
                                 <h2 className="text-xl sm:text-2xl md:text-3xl font-serif text-brand-text-primary mb-10">
-                                    Strengthen your connection and build a healthier relationship
+                                    Achieve balance and thrive in every aspect of life
                                 </h2>
                                 <p className="text-lg text-brand-text-primary mb-6">
-                                    At Mind Matters Center, we offer <strong>couples therapy</strong> to help partners improve communication, rebuild trust, and navigate challenges together. Using evidence-based approaches like <strong>Gottman Method and Emotionally Focused Therapy (EFT)</strong>, we support couples in deepening their understanding of each other and fostering a healthier relationship.
+                                    Your mental well-being goes beyond therapy. Our <strong>wellness coaching</strong> services help you build resilience, set meaningful goals, and create a balanced life. Whether you're looking to improve stress management, enhance self-care, or develop healthier habits, we offer personalized coaching to support your journey.
                                 </p>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ const CouplesTherapy = () => {
                                 Our approach
                             </h3>
                             <p className="text-base md:text-lg text-brand-text-primary">
-                                We specialize in working with <strong>couples</strong> and those seeking therapy that respects cultural values, family expectations, and identity. Whether you're dating, engaged, married, or facing major life transitions, we provide a safe space to explore your concerns and build a stronger, more fulfilling partnership.
+                                Unlike therapy, <strong>wellness coaching</strong> is future-focused and designed to help you take actionable steps toward a more fulfilling life. We work with <strong>Asian American individuals, BIPOC communities, and professionals</strong> who want culturally attuned guidance in areas like career growth, work-life balance, and personal development.
                             </p>
                         </div>
                     </div>
@@ -61,10 +61,10 @@ const CouplesTherapy = () => {
                 <FadeInSection delay={400}>
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                         <p className="text-xl md:text-2xl lg:text-3xl text-brand-text-primary mb-8">
-                            <span className="font-semibold">Reconnect with your partner</span>
+                            <span className="font-semibold">Invest in yourself</span>
                         </p>
                         <p className="text-lg md:text-xl text-brand-text-primary mb-8">
-                            Take the first step toward a stronger, more fulfilling relationship. Our compassionate therapists are here to support your journey together.
+                            Ready to create positive change and build a more balanced, fulfilling life? Our wellness coaches are here to support your journey with culturally responsive guidance.
                         </p>
 
                         <div className="flex flex-col items-center gap-2">
@@ -87,4 +87,4 @@ const CouplesTherapy = () => {
     );
 };
 
-export default CouplesTherapy;
+export default WellnessCoaching;
