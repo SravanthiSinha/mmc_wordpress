@@ -141,3 +141,16 @@ ul li.current-menu-item a {
     right: 10px;
   }
 }
+
+/* Change mobile menu breakpoint to 1024px (typical iPad width) */
+@media (max-width: 1024px) {
+    /* Show mobile menu elements */
+    .wp-block-navigation__responsive-container-open:not(.always-shown) {
+        display: flex !important;
+    }
+    
+    /* Hide desktop menu elements */
+    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+        display: none !important;
+    }
+}
