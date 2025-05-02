@@ -9,7 +9,7 @@
     <!-- /wp:heading --></div>
     <!-- /wp:group -->
     
-    <!-- wp:navigation {"ref":331,"textColor":"custom-text-primary","icon":"menu","className":"wp-block-navigation has-white-color has-text-color","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","orientation":"horizontal","justifyContent":"center"}} /--></div>
+    <!-- wp:navigation {"ref":331,"textColor":"custom-text-primary","icon":"menu","className":"wp-block-navigation has-white-color has-text-color","style":{"spacing":{"blockGap":"1.5rem"}},"layout":{"type":"flex","orientation":"horizontal","justifyContent":"center"}} /--></div>
     <!-- /wp:group -->
     
     <!-- wp:post-content {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} /-->

@@ -10,7 +10,7 @@
     <!-- /wp:heading --></div>
     <!-- /wp:group -->
     
-    <!-- wp:navigation {"ref":287,"textColor":"custom-text-secondary","icon":"menu","className":"wp-block-navigation has-white-color has-text-color","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"flex","orientation":"horizontal","justifyContent":"center"}} /--></div>
+    <!-- wp:navigation {"ref":287,"textColor":"custom-text-secondary","icon":"menu","className":"wp-block-navigation has-white-color has-text-color","style":{"spacing":{"blockGap":"1.5rem"}},"layout":{"type":"flex","orientation":"horizontal","justifyContent":"center"}} /--></div>
     <!-- /wp:group -->
     
     <!-- wp:group {"style":{"spacing":{"padding":{"top":"0","right":"20px","bottom":"0","left":"20px"},"margin":{"top":"15rem","bottom":"0"}}},"layout":{"type":"constrained","contentSize":"1200px"}} -->
@@ -49,8 +49,7 @@
     <!-- /wp:group -->
     
     <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"},"display":{"desktop":"flex"}},"layout":{"type":"flex","flexWrap":"nowrap","alignItems":"center"}} -->
-    <div class="wp-block-group">
-    <!-- wp:paragraph {"fontSize":"medium"} -->
+    <div class="wp-block-group"><!-- wp:paragraph {"fontSize":"medium"} -->
     <p class="has-medium-font-size"><a href="/privacy-policy">Privacy policy</a></p>
     <!-- /wp:paragraph -->
     
