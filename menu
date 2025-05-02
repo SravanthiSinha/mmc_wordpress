@@ -32,7 +32,7 @@
 
 <!-- wp:navigation-link {"label":"Resources","type":"page","id":406,"url":"https://mindmatterscenter.com/resources/","kind":"post-type"} /-->
 
-<!-- wp:navigation-link {"label":"Client Portal","type":"link","opensInNewTab":true,"url":"https://mindmatterscenter.janeapp.com/","kind":"custom"} /-->
+<!-- wp:navigation-link {"label":"Client Portal","opensInNewTab":true,"url":"https://mindmatterscenter.janeapp.com/","kind":"custom"} /-->
 
 <!-- wp:buttons {"style":{"spacing":{"padding":{"right":"0px","left":"0px"}},"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"}} -->
 <div class="wp-block-buttons" style="padding-right:0px;padding-left:0px">

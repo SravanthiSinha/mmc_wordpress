@@ -2,13 +2,15 @@
   .hide-on-mobile {
     display: none !important;
   }
-  
+
   .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item,
   .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation-item__content,
   .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container,
   .wp-block-navigation__responsive-container-close {
     color: var(--wp--preset--color--custom-text-primary) !important;
   }
+
+
 }
 
 .wp-block-navigation {
@@ -44,6 +46,98 @@
 }
 
 
-ul li.current-menu-item a{
-font-weight:bold;
+ul li.current-menu-item a {
+  font-weight: bold;
+}
+
+/* Mobile-only styles for WordPress Block Navigation 
+ Apply these styles only on mobile devices */
+
+@media (max-width: 767px) {
+
+  /* Main navigation container when open on mobile */
+  .wp-block-navigation__responsive-container.is-menu-open {
+    padding-top: 20px;
+  }
+
+  /* Container for navigation items */
+  .wp-block-navigation__responsive-container-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  /* All navigation items styling */
+  .wp-block-navigation-item {
+    width: 100%;
+    margin: 0 !important;
+    padding: 2px 0 !important;
+  }
+
+  /* Link styling for all items */
+  .wp-block-navigation-item__content {
+    font-size: 16px !important;
+    padding: 2px 0 !important;
+    justify-content: flex-start !important;
+    width: 100%;
+    font-weight: normal;
+  }
+
+  /* Force submenu to always display on mobile */
+  .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__submenu-container {
+    display: flex !important;
+    flex-direction: column !important;
+    position: static !important;
+    width: 100% !important;
+    padding: 0 0 0 20px !important;
+    /* Add left padding for indentation */
+    margin: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Remove any submenu toggle buttons */
+  .wp-block-navigation__responsive-container-content .wp-block-navigation-submenu__toggle {
+    display: none !important;
+  }
+
+  /* Remove any hover effects and outlines */
+  .wp-block-navigation-item__content:hover,
+  .wp-block-navigation-item__content:focus,
+  .wp-block-navigation-item__content:active {
+    background-color: transparent !important;
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  /* Remove outline from all navigation items and links when selected */
+  .wp-block-navigation-item,
+  .wp-block-navigation-item__content,
+  .wp-block-navigation a,
+  .wp-block-navigation__submenu-container a,
+  .wp-block-navigation__responsive-container-content a {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+
+  /* Remove the dropdown arrows */
+  .wp-block-navigation-submenu__toggle {
+    display: none !important;
+  }
+
+  /* Hide the Book Now button in mobile menu if needed */
+  .wp-block-navigation__responsive-container-content .wp-block-buttons,
+  .wp-block-navigation__responsive-container-content .hide-on-mobile {
+    display: none !important;
+  }
+
+  /* Close button styling */
+  .wp-block-navigation__responsive-container-close {
+    top: 10px;
+    right: 10px;
+  }
 }
