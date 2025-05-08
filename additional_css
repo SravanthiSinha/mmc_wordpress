@@ -10,6 +10,9 @@
     color: var(--wp--preset--color--custom-text-primary) !important;
   }
 
+  nav .wp-block-navigation {
+    gap: 0rem !important;
+  }
 
 }
 
