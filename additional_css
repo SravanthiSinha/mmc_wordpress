@@ -50,6 +50,10 @@ ul li.current-menu-item a {
   font-weight: bold;
 }
 
+.wp-block-navigation__submenu-container li.current-menu-item a {
+  background-color: #d1d5db33;
+}
+
 /* Mobile-only styles for WordPress Block Navigation 
  Apply these styles only on mobile devices */
 
@@ -144,13 +148,14 @@ ul li.current-menu-item a {
 
 /* Change mobile menu breakpoint to 1024px (typical iPad width) */
 @media (max-width: 1024px) {
-    /* Show mobile menu elements */
-    .wp-block-navigation__responsive-container-open:not(.always-shown) {
-        display: flex !important;
-    }
-    
-    /* Hide desktop menu elements */
-    .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
-        display: none !important;
-    }
+
+  /* Show mobile menu elements */
+  .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: flex !important;
+  }
+
+  /* Hide desktop menu elements */
+  .wp-block-navigation__responsive-container:not(.hidden-by-default):not(.is-menu-open) {
+    display: none !important;
+  }
 }
