@@ -216,7 +216,7 @@ class MMC_RELATIONSHIP_COUNSELLING_App {
             // Add localized data for the main script
             wp_localize_script(
                 $main_handle,
-                'mmcChinesRelationship CounsellingData',
+                'mmcRelationship_CounsellingData',
                 $this->get_localized_data()
             );
         }
@@ -291,7 +291,7 @@ class MMC_RELATIONSHIP_COUNSELLING_App {
             // Add localized data for the main script
             wp_localize_script(
                 $main_handle,
-                'mmcChinesRelationship CounsellingData',
+                'mmcRelationship_CounsellingData',
                 $this->get_localized_data()
             );
         }

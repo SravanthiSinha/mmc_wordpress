@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 export const FadeInSection = ({ children, className = '', delay = 0, direction = 'up' }) => {
   const elementRef = useRef(null);
@@ -115,8 +114,8 @@ export const AnimatedFAQItem = ({ question, answer, isOpen, onClick, index, useF
         style={{ maxHeight: isOpen ? `${height}px` : '0px' }}
         className="transition-all duration-300 ease-in-out overflow-hidden"
       >
-        <div 
-          ref={contentRef} 
+        <div
+          ref={contentRef}
           className="px-4 sm:px-6 py-4 prose text-brand-text-primary text-base sm:text-lg"
         >
           {formatAnswer(answer)}
@@ -190,10 +189,9 @@ export const CrisisCard = ({ name, number, description, callText, index }) => (
 
 export const SpecialtyCard = ({ title, description, path, img_path }) => (
   <FadeInSection>
-    <Link
-      to={path}
-      className="group flex flex-col sm:flex-row h-full bg-white rounded-2xl overflow-hidden shadow-sm 
-        hover:shadow-lg transition-all duration-300 border border-brand-gray-warm/10"
+    <a href={path}
+      className="group flex flex-col sm:flex-row h-full bg-white rounded-2xl overflow-hidden shadow-sm
+   hover:shadow-lg transition-all duration-300 border border-brand-gray-warm/10"
     >
       {/* Image Section */}
       <div className="relative w-full sm:w-2/5 h-48 sm:h-auto overflow-hidden">
@@ -240,8 +238,8 @@ export const SpecialtyCard = ({ title, description, path, img_path }) => (
           </svg>
         </div>
       </div>
-    </Link>
-  </FadeInSection>
+    </a>
+  </FadeInSection >
 );
 
 export const AnimatedIcon = ({ children, className = '' }) => (

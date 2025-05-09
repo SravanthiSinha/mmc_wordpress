@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { BOOKING_URL, THERAPIST_URLS } from '../../constants';
 
 // Reusable BookNow CTA component for consistency

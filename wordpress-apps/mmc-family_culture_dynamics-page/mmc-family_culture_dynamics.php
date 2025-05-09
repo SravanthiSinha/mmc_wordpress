@@ -216,7 +216,7 @@ class MMC_Family_Cultural_Dynamics_App {
             // Add localized data for the main script
             wp_localize_script(
                 $main_handle,
-                'mmcChinesFamilyCulturalDynamicsData',
+                'mmcFamilyCulturalDynamicsData',
                 $this->get_localized_data()
             );
         }
@@ -291,7 +291,7 @@ class MMC_Family_Cultural_Dynamics_App {
             // Add localized data for the main script
             wp_localize_script(
                 $main_handle,
-                'mmcChinesFamilyCulturalDynamicsData',
+                'mmcFamilyCulturalDynamicsData',
                 $this->get_localized_data()
             );
         }

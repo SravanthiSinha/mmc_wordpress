@@ -216,7 +216,7 @@ class MMC_TRAUMA_THERAPY_App {
             // Add localized data for the main script
             wp_localize_script(
                 $main_handle,
-                'mmcChinesTrauma TherapyData',
+                'mmcTrauma_TherapyData',
                 $this->get_localized_data()
             );
         }
@@ -291,7 +291,7 @@ class MMC_TRAUMA_THERAPY_App {
             // Add localized data for the main script
             wp_localize_script(
                 $main_handle,
-                'mmcChinesTrauma TherapyData',
+                'mmcTrauma_TherapyData',
                 $this->get_localized_data()
             );
         }
