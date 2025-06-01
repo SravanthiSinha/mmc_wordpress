@@ -35,7 +35,7 @@
 
 
 .wp-block-navigation a {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.6rem;
   outline: none;
 }
 
@@ -149,8 +149,8 @@ ul li.current-menu-item a {
   }
 }
 
-/* Change mobile menu breakpoint to 1024px (typical iPad width) */
-@media (max-width: 1024px) {
+/* Change mobile menu breakpoint to 1350px */
+@media (max-width: 1350px) {
 
   /* Show mobile menu elements */
   .wp-block-navigation__responsive-container-open:not(.always-shown) {
