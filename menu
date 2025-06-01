@@ -16,6 +16,12 @@
 <!-- wp:navigation-link {"label":"Family \u0026amp; cultural dynamics","type":"page","id":546,"url":"/family-cultural-dynamic/","kind":"post-type"} /-->
 
 <!-- wp:navigation-link {"label":"Therapy for burn out and stress","type":"page","id":551,"url":"https://mindmatterscenter.com/stress-burnout/","kind":"post-type"} /-->
+
+<!-- wp:navigation-link {"label":"Individual therapy","type":"page","id":567,"url":"https://mindmatterscenter.com/individual-therapy/","kind":"post-type"} /-->
+
+<!-- wp:navigation-link {"label":"Couples therapy","type":"page","id":573,"url":"https://mindmatterscenter.com/couples-therapy/","kind":"post-type"} /-->
+
+<!-- wp:navigation-link {"label":"Wellness coaching","type":"page","id":576,"url":"https://mindmatterscenter.com/wellness-coaching/","kind":"post-type"} /-->
 <!-- /wp:navigation-submenu -->
 
 <!-- wp:navigation-link {"label":"中文服务","type":"page","id":434,"url":"https://mindmatterscenter.com/chinese-services/","kind":"post-type"} /-->
@@ -23,7 +29,7 @@
 <!-- wp:navigation-submenu {"label":"Our Team","url":"/our-team","kind":"custom"} -->
 <!-- wp:navigation-link {"label":"About us","type":"page","id":461,"url":"https://mindmatterscenter.com/about-us/","kind":"post-type"} /-->
 
-<!-- wp:navigation-link {"label":"Contact","type":"page","id":473,"url":"https://mindmatterscenter.com/contact/","kind":"post-type"} /-->
+<!-- wp:navigation-link {"label":"Contact","type":"page","id":883,"url":"https://mindmatterscenter.com/contact/","kind":"post-type"} /-->
 
 <!-- wp:navigation-link {"label":"Join our team","type":"page","id":482,"url":"https://mindmatterscenter.com/join-our-team/","kind":"post-type"} /-->
 <!-- /wp:navigation-submenu -->
