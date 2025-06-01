@@ -162,3 +162,136 @@ ul li.current-menu-item a {
     display: none !important;
   }
 }
+
+.fa-call-icon{
+color:#7FA693
+}
+.fa-email-icon{
+color:#FF7300
+} 
+
+.wpforms-field-container .wpforms-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wpforms-field-container .wpforms-field label {
+  text-align: left !important;
+  width: 100%;
+  max-width: 400px;
+  align-self: center;
+}
+
+.wpforms-field-container .wpforms-field input,
+.wpforms-field-container .wpforms-field select,
+.wpforms-field-container .wpforms-field textarea {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.wpforms-submit-container {
+  text-align: center !important;
+}
+
+.wpforms-submit {
+  width: auto !important;
+  display: inline-block !important;
+  margin: 0 auto !important;
+}
+
+.wpforms-field-container .wpforms-field.wpforms-has-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wpforms-field-container .wpforms-field.wpforms-has-error .wpforms-error {
+  align-self: center;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.wpforms-confirmation-container-full {
+  background: #f9f4f2 !important;
+  color: white !important;
+  padding: 2rem !important;
+  border-radius: 12px !important;
+  text-align: center !important;
+  margin: 2rem auto !important;
+  max-width: 500px !important;
+  box-shadow: 0 10px 25px #dcdcde !important;
+  border: none !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Mobile-specific improvements for contact section */
+@media (max-width: 768px) {
+  /* Contact info section mobile styling */
+  .contact-info-card {
+    padding: 1.5rem !important;
+  }
+  
+  /* Center align contact items on mobile */
+  .contact-info-card .wp-block-group {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  
+  /* Contact item flex layout for mobile */
+  .contact-info-card .wp-block-group[style*="space-between"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    justify-content: center !important;
+  }
+  
+  /* Contact icon and text alignment */
+  .contact-info-card .wp-block-group:has(.has-custom-background-secondary-background-color) {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 0.75rem !important;
+  }
+  
+  /* Contact text styling on mobile */
+  .contact-info-card h3,
+  .contact-info-card p {
+    text-align: center !important;
+    margin: 0 !important;
+  }
+  
+  /* Icon container mobile adjustments */
+  .contact-info-card .has-custom-background-secondary-background-color {
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* Stack contact methods vertically with better spacing */
+  .contact-info-card > .wp-block-group > .wp-block-group {
+    margin-bottom: 2rem !important;
+  }
+  
+  .contact-info-card > .wp-block-group > .wp-block-group:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Ensure proper spacing between icon and text on all devices */
+.contact-info-card .wp-block-group:has(.has-custom-background-secondary-background-color) {
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Better text hierarchy */
+.contact-info-card h3 {
+  font-weight: 600 !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.contact-info-card p {
+  margin-top: 0 !important;
+}
