@@ -81,8 +81,9 @@
   }
   
   .floating-book-now-mobile a {
-    display: inline-flex;
-    width: 100%;
+    display: flex;
+    width: 80vw;
+    margin: auto;
     justify-content: center;
     align-items: center;
     background-color: var(--brand-coral);
