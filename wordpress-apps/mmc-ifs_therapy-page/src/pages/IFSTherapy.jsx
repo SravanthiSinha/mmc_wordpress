@@ -1,14 +1,10 @@
 import React from 'react';
 import { FadeInSection } from '../components/shared/Animations';
+import BookNowCTA from '../components/shared/BookNowCTA';
 import IFSTherapyImg from '../assets/images/ifs-therapy.svg';
 import { BOOKING_URL } from '../constants';
 
 const IFSTherapy = () => {
-    const sessionElements = [
-        "Help you map and get to know your \"parts.\"",
-        "Explore the deeper beliefs and feelings these parts hold.",
-        "Learn to lead with Self – the calm, curious, and compassionate center within you."
-    ];
     return (
         <div className="min-h-screen pt-2 bg-brand-background-secondary">
             {/* Hero Section */}
@@ -48,6 +44,9 @@ const IFSTherapy = () => {
                                 <p className="text-lg md:text-xl text-brand-text-primary">
                                     In IFS therapy, we create a safe space where you can begin to understand these parts and their roles. You'll learn how to listen to them with compassion, ease internal tension, and start to heal old wounds. This work helps bring more balance, clarity, and calm into your life.
                                 </p>
+                                <div className="pt-4">
+                                    <BookNowCTA />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -67,6 +66,9 @@ const IFSTherapy = () => {
                                 <p className="text-lg text-brand-text-primary mb-4">
                                     IFS is helpful for anyone feeling overwhelmed, stuck, or disconnected from themselves. It can support people dealing with anxiety, depression, trauma, relationship challenges, or simply wanting a deeper understanding of their inner world.
                                 </p>
+                                <div className="pt-4">
+                                    <BookNowCTA />
+                                </div>
                             </div>
 
                             {/* Right Column */}
@@ -88,7 +90,7 @@ const IFSTherapy = () => {
                 </FadeInSection>
             </section>
 
-           {/* What to Expect Section - Card grid inspired by Home specialties */}
+            {/* What to Expect Section - Card grid inspired by Home specialties */}
             <section className="py-12 md:py-20 bg-brand-background-primary">
                 <FadeInSection delay={100}>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -167,6 +169,9 @@ const IFSTherapy = () => {
                             <p className="text-lg md:text-xl text-brand-text-primary text-center">
                                 <strong>Together, we'll work at a pace that feels right for you.</strong>
                             </p>
+                            <div className="flex justify-center">
+                                <BookNowCTA />
+                            </div>
                         </div>
                     </div>
                 </FadeInSection>
@@ -210,9 +215,8 @@ const IFSTherapy = () => {
 
                         <div className="flex flex-col items-center gap-2">
                             <a href={BOOKING_URL}
-                                className="inline-block bg-brand-coral text-white text-base sm:text-lg md:text-xl font-bold
-               px-6 py-3 rounded-full hover:bg-brand-coralLight transition-all duration-200
-               hover:transform hover:scale-105 active:scale-95"
+                                target="_blank"
+                                className="inline-block bg-brand-coral text-white text-base sm:text-lg md:text-xl font-bold px-6 py-3 rounded-full hover:bg-brand-coralLight transition-all duration-200 hover:transform hover:scale-105 active:scale-95"
                             >
                                 Book Now
                             </a>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FadeInSection } from '../components/shared/Animations';
+import BookNowCTA from '../components/shared/BookNowCTA';
 import IndividualTherapyImg from '../assets/images/individual-therapy.svg';
 import { BOOKING_URL } from '../constants';
 
@@ -60,7 +61,7 @@ const IndividualTherapy = () => {
                 </div>
             </section>
 
-            {/* Main Content Section - Inspired by Home page layout */}
+            {/* Main Content Section */}
             <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-8 bg-brand-background-primary">
                 <FadeInSection>
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -86,6 +87,9 @@ const IndividualTherapy = () => {
                                 <p className="text-xl md:text-2xl text-brand-sage font-semibold">
                                     You don't need to have it all figured out before coming in.
                                 </p>
+                                 <div className="pt-4">
+                                    <BookNowCTA />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -114,6 +118,9 @@ const IndividualTherapy = () => {
                                             <span className="text-base md:text-lg text-brand-text-primary">{reason}</span>
                                         </div>
                                     ))}
+                                </div>
+                                <div className="pt-4">
+                                    <BookNowCTA />
                                 </div>
                             </div>
 
@@ -173,12 +180,15 @@ const IndividualTherapy = () => {
                             <p className="text-lg md:text-xl text-brand-text-primary text-center">
                                 <strong>Sessions are currently offered online</strong> to make therapy more accessible and flexible for your schedule.
                             </p>
+                            <div className="flex justify-center mt-6">
+                                <BookNowCTA />
+                            </div>
                         </div>
                     </div>
                 </FadeInSection>
             </section>
 
-            {/* Cultural Awareness Section - Feature highlight like Home */}
+            {/* Cultural Awareness Section */}
             <section className="py-12 md:py-20 bg-brand-background-secondary">
                 <FadeInSection delay={100}>
                     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -199,6 +209,9 @@ const IndividualTherapy = () => {
                             <p className="text-lg md:text-xl text-brand-text-primary">
                                 We hold space for your full story—including the parts that might be hard to name. We're here to listen without judgment and support you in building a life that feels more like your own.
                             </p>
+                            <div className="flex justify-center mt-6">
+                                <BookNowCTA />
+                            </div>
                         </div>
                     </div>
                 </FadeInSection>
@@ -213,7 +226,7 @@ const IndividualTherapy = () => {
                         <p className="text-lg md:text-xl text-brand-text-primary mb-6">
                             You don't need to be in crisis to start therapy. Sometimes the most powerful change begins with a quiet decision to do things differently.
                         </p>
-                        <p className="text-xl md:text-2xl text-brand-text-primary  mb-8">
+                       <p className="text-xl md:text-2xl text-brand-text-primary  mb-8">
                            If you’re curious about working together, click below to meet our team or book a session.
                         </p>
                         <div className="flex flex-col items-center gap-4">
