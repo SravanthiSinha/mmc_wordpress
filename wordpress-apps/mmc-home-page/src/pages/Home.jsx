@@ -1,6 +1,6 @@
 import IndividualTherapyImg from '../assets/images/individual-therapy.svg';
 import CouplesTherapyImg from '../assets/images/couples-therapy.svg';
-import WellNessCoachingImg from '../assets/images/wellness-coaching.svg';
+import IFSTherapyImg from '../assets/images/ifs-therapy.svg';
 import { FadeInSection, HoverCard } from '../components/shared/Animations';
 import BookNowCTA from '../components/shared/BookNowCTA';
 import ZengImg from '../assets/images/profile_pics/zeng.jpg';
@@ -313,11 +313,11 @@ const Home = () => {
                   path: "/couples-therapy"
                 },
                 {
-                  icon: WellNessCoachingImg,
-                  title: "Wellness coaching",
-                  description: "Holistic approach to achieving balance in mind, body, and spirit.",
-                  path: "/wellness-coaching"
-                }
+  icon: IFSTherapyImg,
+  title: "Internal Family Systems Therapy",
+  description: "Understanding different parts of yourself to create internal harmony and self-leadership.",
+  path: "/ifs-therapy"
+},
               ].map((service, index) => (
                 <FadeInSection key={index} delay={index * 100} className="w-full md:w-1/2 lg:w-1/3 p-3">
                   <a href={service.path} className="block h-full no-underline">
