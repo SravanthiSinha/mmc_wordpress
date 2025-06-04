@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <!-- Outer circle background like other logos -->
+  <circle cx="120" cy="120" r="120" fill="#F7F8FA"/>
+  
+  <!-- Central Self figure - larger, main figure -->
+  <circle cx="120" cy="120" r="18" fill="#7FA693"/>
+  <circle cx="120" cy="105" r="12" fill="#2D3748"/>
+  <rect x="105" y="125" width="30" height="40" rx="15" fill="#7FA693"/>
+  
+  <!-- Radiating gentle glow around Self -->
+  <circle cx="120" cy="120" r="35" fill="#7FA693" opacity="0.1"/>
+  
+  <!-- Part figures arranged symmetrically in a circle around Self -->
+  
+  <!-- Protector Part - top -->
+  <circle cx="120" cy="60" r="12" fill="#3498DB"/>
+  <circle cx="120" cy="52" r="7" fill="#2D3748"/>
+  <rect x="113" y="65" width="14" height="20" rx="7" fill="#3498DB"/>
+  
+  <!-- Critic Part - top right -->
+  <circle cx="162" cy="78" r="10" fill="#E74C3C"/>
+  <circle cx="162" cy="72" r="6" fill="#2D3748"/>
+  <rect x="157" y="83" width="10" height="16" rx="5" fill="#E74C3C"/>
+  
+  <!-- Achiever Part - bottom right -->
+  <circle cx="162" cy="162" r="10" fill="#F39C12"/>
+  <circle cx="162" cy="156" r="6" fill="#2D3748"/>
+  <rect x="157" y="167" width="10" height="16" rx="5" fill="#F39C12"/>
+  
+  <!-- Child Part - bottom -->
+  <circle cx="120" cy="180" r="11" fill="#9B59B6"/>
+  <circle cx="120" cy="173" r="6" fill="#2D3748"/>
+  <rect x="114" y="185" width="12" height="18" rx="6" fill="#9B59B6"/>
+  
+  <!-- Caretaker Part - bottom left -->
+  <circle cx="78" cy="162" r="10" fill="#27AE60"/>
+  <circle cx="78" cy="156" r="6" fill="#2D3748"/>
+  <rect x="73" y="167" width="10" height="16" rx="5" fill="#27AE60"/>
+  
+  <!-- Anxious Part - top left -->
+  <circle cx="78" cy="78" r="10" fill="#E67E22"/>
+  <circle cx="78" cy="72" r="6" fill="#2D3748"/>
+  <rect x="73" y="83" width="10" height="16" rx="5" fill="#E67E22"/>
+  
+  <!-- Symmetrical connection lines from Self to each part -->
+  <path d="M120 105 L120 85" stroke="#7FA693" stroke-width="1.5" opacity="0.4"/>
+  <path d="M135 108 L147 93" stroke="#7FA693" stroke-width="1.5" opacity="0.4"/>
+  <path d="M135 132 L147 147" stroke="#7FA693" stroke-width="1.5" opacity="0.4"/>
+  <path d="M120 135 L120 165" stroke="#7FA693" stroke-width="1.5" opacity="0.4"/>
+  <path d="M105 132 L93 147" stroke="#7FA693" stroke-width="1.5" opacity="0.4"/>
+  <path d="M105 108 L93 93" stroke="#7FA693" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- Decorative elements in corners -->
+  <circle cx="40" cy="40" r="3" fill="#3498DB" opacity="0.4"/>
+  <circle cx="200" cy="40" r="3" fill="#E74C3C" opacity="0.4"/>
+  <circle cx="200" cy="200" r="3" fill="#F39C12" opacity="0.4"/>
+  <circle cx="40" cy="200" r="3" fill="#9B59B6" opacity="0.4"/>
+</svg>
