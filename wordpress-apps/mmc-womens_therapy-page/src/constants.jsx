@@ -3,7 +3,7 @@ export const CONTACT_INFO = {
   phone: '(415) 379-0835',
 };
 
-export const BOOKING_URL = 'https://mindmatterscenter.janeapp.com/#/consultations';
+export const BOOKING_URL = '/booking-info';
 export const CLIENT_PORTAL_URL = 'https://mindmatterscenter.janeapp.com/';
 
 // Therapist-specific booking URLs
