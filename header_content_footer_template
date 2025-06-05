@@ -95,6 +95,6 @@ body {
 </style>
 
 <div class="floating-book-now-mobile">
-<a href="https://mindmatterscenter.janeapp.com/#/consultations" target="_blank">Book Now</a>
+<a href="/booking-info" target="_blank">Book Now</a>
 </div>
 <!-- /wp:html -->
