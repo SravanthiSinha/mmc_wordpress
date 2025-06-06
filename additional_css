@@ -13,7 +13,6 @@
   nav .wp-block-navigation {
     gap: 0rem !important;
   }
-
 }
 
 .wp-block-navigation {
@@ -32,8 +31,6 @@
   width: 16rem !important;
 }
 
-
-
 .wp-block-navigation a {
   padding: 0.5rem 0.6rem;
   outline: none;
@@ -48,7 +45,6 @@
   border-radius: 0px;
 }
 
-
 ul li.current-menu-item a {
   font-weight: bold;
 }
@@ -62,7 +58,7 @@ ul li.current-menu-item a {
 
 @media (max-width: 767px) {
 
-/* Make the mobile menu container scrollable and properly sized */
+  /* Make the mobile menu container scrollable and properly sized */
   .wp-block-navigation__responsive-container.is-menu-open {
     position: fixed !important;
     top: 0 !important;
@@ -77,7 +73,7 @@ ul li.current-menu-item a {
     height: 100vh !important;
     max-height: 100vh !important;
   }
-  
+
   /* Container for navigation items */
   .wp-block-navigation__responsive-container-content {
     display: flex !important;
@@ -141,7 +137,6 @@ ul li.current-menu-item a {
     box-shadow: none !important;
   }
 
-
   /* Remove the dropdown arrows */
   .wp-block-navigation-submenu__toggle {
     display: none !important;
@@ -174,85 +169,28 @@ ul li.current-menu-item a {
   }
 }
 
-.fa-call-icon{
-color:#7FA693
-}
-.fa-email-icon{
-color:#FF7300
-} 
-
-.wpforms-field-container .wpforms-field {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.fa-call-icon {
+  color: #7FA693
 }
 
-.wpforms-field-container .wpforms-field label {
-  text-align: left !important;
-  width: 100%;
-  max-width: 400px;
-  align-self: center;
-}
-
-.wpforms-field-container .wpforms-field input,
-.wpforms-field-container .wpforms-field select,
-.wpforms-field-container .wpforms-field textarea {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.wpforms-submit-container {
-  text-align: center !important;
-}
-
-.wpforms-submit {
-  width: auto !important;
-  display: inline-block !important;
-  margin: 0 auto !important;
-}
-
-.wpforms-field-container .wpforms-field.wpforms-has-error {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.wpforms-field-container .wpforms-field.wpforms-has-error .wpforms-error {
-  align-self: center;
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
-.wpforms-confirmation-container-full {
-  background: #f9f4f2 !important;
-  color: white !important;
-  padding: 2rem !important;
-  border-radius: 12px !important;
-  text-align: center !important;
-  margin: 2rem auto !important;
-  max-width: 500px !important;
-  box-shadow: 0 10px 25px #dcdcde !important;
-  border: none !important;
-  position: relative !important;
-  overflow: hidden !important;
+.fa-email-icon {
+  color: #FF7300
 }
 
 /* Mobile-specific improvements for contact section */
 @media (max-width: 768px) {
+
   /* Contact info section mobile styling */
   .contact-info-card {
     padding: 1.5rem !important;
   }
-  
+
   /* Center align contact items on mobile */
   .contact-info-card .wp-block-group {
     justify-content: center !important;
     text-align: center !important;
   }
-  
+
   /* Contact item flex layout for mobile */
   .contact-info-card .wp-block-group[style*="space-between"] {
     flex-direction: column !important;
@@ -260,7 +198,7 @@ color:#FF7300
     gap: 0.5rem !important;
     justify-content: center !important;
   }
-  
+
   /* Contact icon and text alignment */
   .contact-info-card .wp-block-group:has(.has-custom-background-secondary-background-color) {
     flex-direction: column !important;
@@ -268,25 +206,25 @@ color:#FF7300
     text-align: center !important;
     gap: 0.75rem !important;
   }
-  
+
   /* Contact text styling on mobile */
   .contact-info-card h3,
   .contact-info-card p {
     text-align: center !important;
     margin: 0 !important;
   }
-  
+
   /* Icon container mobile adjustments */
   .contact-info-card .has-custom-background-secondary-background-color {
     margin-bottom: 0.5rem !important;
   }
-  
+
   /* Stack contact methods vertically with better spacing */
-  .contact-info-card > .wp-block-group > .wp-block-group {
+  .contact-info-card>.wp-block-group>.wp-block-group {
     margin-bottom: 2rem !important;
   }
-  
-  .contact-info-card > .wp-block-group > .wp-block-group:last-child {
+
+  .contact-info-card>.wp-block-group>.wp-block-group:last-child {
     margin-bottom: 0 !important;
   }
 }
@@ -305,4 +243,227 @@ color:#FF7300
 
 .contact-info-card p {
   margin-top: 0 !important;
+}
+
+/* ================================== */
+/* CONTACT FORM 7 STYLING */
+/* ================================== */
+
+/* Restore the centered card container styling */
+.contact-form-card {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  background: white !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+  padding: 3rem !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+/* Ensure the form section has proper background */
+.wp-block-group.alignfull.has-custom-background-secondary-background-color {
+  background-color: var(--wp--preset--color--custom-background-secondary) !important;
+  padding: 3rem 1rem 4rem 1rem !important;
+}
+
+/* Center the form within the container */
+.wpcf7 {
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  overflow: hidden !important;
+}
+
+/* Form styling */
+.wpcf7 p {
+  margin-bottom: 1.5rem;
+}
+
+.wpcf7 p label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Input fields */
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"],
+.wpcf7 textarea,
+.wpcf7 select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: #f9fafb;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  max-width: 100% !important;
+}
+
+/* Focus states */
+.wpcf7 input[type="text"]:focus,
+.wpcf7 input[type="email"]:focus,
+.wpcf7 input[type="tel"]:focus,
+.wpcf7 textarea:focus,
+.wpcf7 select:focus {
+  outline: none;
+  border-color: #7fa693;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* Textarea specific */
+.wpcf7 textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Select dropdown */
+.wpcf7 select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+/* Submit button */
+.wpcf7 input[type="submit"] {
+  background: #7fa693;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  min-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.wpcf7 input[type="submit"]:hover {
+  background: #7fa693;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+}
+
+/* Error styling */
+.wpcf7-not-valid {
+  border-color: #ef4444 !important;
+  background-color: #fef2f2 !important;
+}
+
+.wpcf7-not-valid-tip {
+  color: #ef4444;
+  font-size: 14px;
+  margin-top: 4px;
+  display: block;
+}
+
+/* Response messages */
+.wpcf7-response-output {
+  border: none !important;
+  padding: 16px 20px !important;
+  border-radius: 12px !important;
+  margin: 20px 0 !important;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Success message */
+.wpcf7-mail-sent-ok {
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%) !important;
+  color: #065f46 !important;
+  border: 1px solid #7fa693 !important;
+}
+
+/* Error messages */
+.wpcf7-mail-sent-ng,
+.wpcf7-validation-errors {
+  background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%) !important;
+  color: #991b1b !important;
+  border: 1px solid #ef4444 !important;
+}
+
+/* Spam message */
+.wpcf7-spam-blocked {
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%) !important;
+  color: #92400e !important;
+  border: 1px solid #f59e0b !important;
+}
+
+/* Ensure parent container doesn't cause overflow */
+.wp-block-group.contact-form-card {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Responsive adjustments for the card */
+@media (max-width: 1200px) {
+  .contact-form-card {
+    padding: 2rem 1.5rem !important;
+    margin: 0 1rem !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-form-card {
+    padding: 1.5rem 1rem !important;
+    margin: 0 0.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .wpcf7 input[type="text"],
+  .wpcf7 input[type="email"],
+  .wpcf7 input[type="tel"],
+  .wpcf7 textarea,
+  .wpcf7 select {
+    font-size: 16px;
+    /* Prevents zoom on iOS */
+    padding: 10px 12px;
+  }
+
+  .wpcf7 input[type="submit"] {
+    width: 100%;
+    padding: 16px;
+  }
+
+  /* Contact form card mobile adjustments */
+  .contact-form-card {
+    padding: 1.5rem 1rem !important;
+    margin: 0 0.5rem !important;
+  }
+  
+  /* Adjust form field spacing on mobile */
+  .wpcf7 p {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form-card {
+    padding: 1rem 0.75rem !important;
+    margin: 0 0.25rem !important;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .contact-form-card {
+    padding: 1rem 0.75rem !important;
+    margin: 0 0.25rem !important;
+  }
 }
