@@ -462,3 +462,10 @@ ul li.current-menu-item a {
     margin: 0 0.25rem !important;
   }
 }
+
+@media (max-width: 1350px) {
+body:has(.wp-block-navigation__responsive-container.is-menu-open) .floating-book-now-mobile.floating-book-now-mobile {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
