@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (max-width: 1350px) {
   .hide-on-mobile {
     display: none !important;
   }
@@ -56,7 +56,7 @@ ul li.current-menu-item a {
 /* Mobile-only styles for WordPress Block Navigation 
  Apply these styles only on mobile devices */
 
-@media (max-width: 767px) {
+@media (max-width: 1350px) {
 
   /* Make the mobile menu container scrollable and properly sized */
   .wp-block-navigation__responsive-container.is-menu-open {
@@ -178,7 +178,7 @@ ul li.current-menu-item a {
 }
 
 /* Mobile-specific improvements for contact section */
-@media (max-width: 768px) {
+@media (max-width: 1350px) {
 
   /* Contact info section mobile styling */
   .contact-info-card {
@@ -261,11 +261,6 @@ ul li.current-menu-item a {
   box-sizing: border-box !important;
 }
 
-/* Ensure the form section has proper background */
-.wp-block-group.alignfull.has-custom-background-secondary-background-color {
-  background-color: var(--wp--preset--color--custom-background-secondary) !important;
-  padding: 3rem 1rem 4rem 1rem !important;
-}
 
 /* Center the form within the container */
 .wpcf7 {
@@ -425,7 +420,7 @@ ul li.current-menu-item a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1350px) {
   .wpcf7 input[type="text"],
   .wpcf7 input[type="email"],
   .wpcf7 input[type="tel"],
