@@ -119,18 +119,20 @@ const Home = () => {
               Psychological services for adults & teens in centennial and surrounding areas in California.
             </h2>
           </FadeInSection>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+          <div className="flex flex-col md:flex-row gap-16">
             {features.map((feature, index) => (
-              <FadeInSection key={index} delay={index * 100}>
-                <div className="flex flex-col items-center text-center space-y-4">
-                  <div className="bg-white/10 p-4 rounded-full mb-2 text-brand-sage">
+              <FadeInSection key={index} delay={index * 100} className="flex-1">
+                <div className="flex flex-col items-center text-center h-full">
+                  <div className="bg-white/10 p-4 rounded-full mb-4 text-brand-sage">
                     {feature.icon}
                   </div>
-                  <h3 className="text-lg tracking-wide text-brand-sage">
-                    {feature.title}
-                  </h3>
-                  <div className="h-px w-12 bg-brand-sage/20 mx-auto"></div>
-                  <p className="text-base">
+                  <div className="h-16 flex items-center justify-center mb-2">
+                    <h3 className="text-xl tracking-wide text-brand-sage text-center">
+                      {feature.title}
+                    </h3>
+                  </div>
+                  <div className="h-[2px] w-12 bg-brand-sage/20 mx-auto mb-8"></div>
+                  <p className="text-lg text-center">
                     {feature.description}
                   </p>
                 </div>
@@ -159,7 +161,7 @@ const Home = () => {
                       <svg className="w-5 h-5 mt-1 text-brand-sage flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
                       </svg>
-                      <span className="text-base md:text-lg text-brand-text-primary">{item}</span>
+                      <span className="text-base md:text-xl text-brand-text-primary">{item}</span>
                     </div>
                   ))}
                 </div>
@@ -211,7 +213,7 @@ const Home = () => {
                 Our Clinical Team
                 <span className="block h-1 w-2/3 bg-brand-sage/30 mx-auto mt-4 rounded-full"></span>
               </h2>
-              <p className="text-base md:text-xl text-brand-text-primary/90 max-w-3xl mx-auto mt-6">
+              <p className="text-xl text-brand-text-primary/90 max-w-4xl mx-auto mt-6">
                 Dedicated professionals committed to providing culturally responsive mental health care
               </p>
             </div>
@@ -283,13 +285,13 @@ const Home = () => {
       < section className="py-12 md:py-20 bg-brand-background-secondary" >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-xl md:text-3xl lg:text-5xl font-serif text-brand-text-primary mb-6 md:mb-8">
+            <h2 className="text-xl md:text-3xl lg:text-5xl font-serif text-brand-text-primary mb-6 md:mb-16">
               Our Therapy Services
             </h2>
 
             {/* What We Offer Content */}
             <div className="max-w-4xl mx-auto mb-12 md:mb-16">
-              <p className="text-base md:text-lg text-brand-text-primary mb-6">
+              <p className="text-base md:text-xl text-brand-text-primary mb-8">
                 We specialize in providing culturally sensitive therapy services, with a focus on supporting Asian American individuals and couples.
                 Whether you're navigating anxiety, trauma, relationship challenges, or other life stressors, we tailor our approach to meet your unique needs.
               </p>
@@ -313,11 +315,11 @@ const Home = () => {
                   path: "/couples-therapy"
                 },
                 {
-  icon: IFSTherapyImg,
-  title: "Internal Family Systems Therapy",
-  description: "Understanding different parts of yourself to create internal harmony and self-leadership.",
-  path: "/ifs-therapy"
-},
+                  icon: IFSTherapyImg,
+                  title: "Internal Family Systems Therapy",
+                  description: "Understanding different parts of yourself to create internal harmony and self-leadership.",
+                  path: "/ifs-therapy"
+                },
               ].map((service, index) => (
                 <FadeInSection key={index} delay={index * 100} className="w-full md:w-1/2 lg:w-1/3 p-3">
                   <a href={service.path} className="block h-full no-underline">
@@ -345,10 +347,10 @@ const Home = () => {
         <FadeInSection delay={100}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-brand-text-primary mb-4">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-brand-text-primary mb-8">
                 Areas of Focus
               </h2>
-              <p className="text-base md:text-lg text-brand-text-primary/90 max-w-3xl mx-auto">
+              <p className="text-base md:text-xl text-brand-text-primary/90 max-w-3xl mx-auto mb-4">
                 Our therapeutic approaches are tailored to your unique needs, addressing specific challenges with cultural sensitivity and evidence-based care.
               </p>
             </div>
@@ -361,15 +363,15 @@ const Home = () => {
                       <div className="mb-4 text-brand-sage flex justify-center">
                         <FlowerIcon />
                       </div>
-                      <h3 className="text-lg font-medium text-brand-text-primary mb-3 text-center group-hover:text-brand-coral transition-colors">
+                      <h3 className="text-lg font-semibold text-brand-text-primary mb-6 text-center group-hover:text-brand-coral transition-colors">
                         {specialty.title}
                       </h3>
-                      <p className="text-brand-text-primary/80 mb-6 text-center flex-grow">
+                      <p className="text-lg text-brand-text-primary/80 mb-6 text-center flex-grow">
                         {specialty.description}
                       </p>
                       <a
                         href={specialty.path}
-                        className="mt-auto mx-auto uppercase text-sm tracking-wider font-medium text-brand-sage hover:text-brand-coral transition-colors flex items-center"
+                        className="mt-auto mx-auto uppercase text-base tracking-wider font-medium text-brand-sage hover:text-brand-coral transition-colors flex items-center"
                       >
                         Learn More
                         <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -390,15 +392,15 @@ const Home = () => {
                       <div className="mb-4 text-brand-sage flex justify-center">
                         <FlowerIcon />
                       </div>
-                      <h3 className="text-lg font-medium text-brand-text-primary mb-3 text-center group-hover:text-brand-coral transition-colors">
+                      <h3 className="text-lg font-semibold text-brand-text-primary mb-6 text-center group-hover:text-brand-coral transition-colors">
                         {specialty.title}
                       </h3>
-                      <p className="text-brand-text-primary/80 mb-6 text-center flex-grow">
+                      <p className="text-lg text-brand-text-primary/80 mb-6 text-center flex-grow">
                         {specialty.description}
                       </p>
                       <a
                         href={specialty.path}
-                        className="mt-auto mx-auto uppercase text-sm tracking-wider font-medium text-brand-sage hover:text-brand-coral transition-colors flex items-center"
+                        className="mt-auto mx-auto uppercase text-base tracking-wider font-medium text-brand-sage hover:text-brand-coral transition-colors flex items-center"
                       >
                         Learn More
                         <svg className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -423,10 +425,10 @@ const Home = () => {
         <FadeInSection delay={300}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
-              <h2 className="text-xl md:text-3xl font-serif text-brand-text-primary">
+              <h2 className="text-xl md:text-3xl font-serif text-brand-text-primary mb-6">
                 Additional Resources
               </h2>
-              <p className="text-base text-brand-text-primary/80 mt-2 max-w-2xl mx-auto">
+              <p className="text-lg text-brand-text-primary/80 mt-2 max-w-2xl mx-auto">
                 Explore more ways we can support your mental health journey
               </p>
             </div>

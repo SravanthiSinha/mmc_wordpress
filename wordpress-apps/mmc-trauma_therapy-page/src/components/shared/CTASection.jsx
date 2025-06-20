@@ -7,17 +7,16 @@ const CTASection = () => {
         <FadeInSection direction="up">
             <section className="bg-brand-background-secondary py-6 sm:py-8 mt-12">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-                    <h2 className="text-2xl sm:text-3xl font-serif text-brand-text-primary mb-6">
+                    <h2 className="text-2xl sm:text-3xl font-serif text-brand-text-primary mb-8">
                         Ready to Find Support?
                     </h2>
 
-                    <p className="text-lg sm:text-xl text-brand-text-primary mb-8">
+                    <p className="text-lg sm:text-xl text-brand-text-primary mb-12">
                         You don't have to navigate these challenges alone.{' '}
                         <span>Book a free 20-minute consultation</span>{' '}
                         to see how therapy can help you move forward.
                     </p>
-
-                    <div className="flex flex-col items-center gap-3 mb-10">
+                    <div className="flex flex-col items-center gap-3 mb-12">
                         <a href={BOOKING_URL}
                             target="_blank"
                             className="inline-block bg-brand-coral text-white text-xl font-bold
@@ -33,7 +32,7 @@ const CTASection = () => {
 
                     <div className="text-brand-text-primary pt-6">
                         <p className="font-semibold mb-2">Have Questions?</p>
-                        <div className="space-y-2">
+                        <div className="space-y-1">
                             <p>
                                 Call us at{' '}
                                 <a

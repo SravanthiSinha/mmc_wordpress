@@ -59,23 +59,23 @@ const BaseTherapyPage = ({
         <FadeInSection>
           <div className="max-w-6xl mx-auto">
             <div className="p-6 sm:p-8 md:p-12">
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-brand-text-primary mb-12 text-center">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-brand-text-primary mb-16 text-center">
                 {signsTitle}
               </h2>
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
                 {signs.map((sign, index) => (
                   <div
                     key={index}
-                    className="w-40 h-40 sm:w-48 sm:h-48 rounded-full bg-brand-sage/10 flex items-center justify-center p-4 
-                                        group hover:bg-brand-sage hover:scale-105 transition-all duration-300"
+                    className="w-48 h-48 sm:w-52 sm:h-52 rounded-full bg-brand-sage/10 flex items-center justify-center p-4 
+                    group hover:bg-brand-sage hover:scale-105 transition-all duration-300"
                   >
-                    <span className="text-sm sm:text-base font-semibold text-brand-text-primary group-hover:text-white text-center transition-colors duration-300">
+                    <span className="text-base sm:text-lg font-semibold text-brand-text-primary group-hover:text-white text-center transition-colors duration-300">
                       {sign}
                     </span>
                   </div>
                 ))}
               </div>
-              <div className="flex justify-center mt-12">
+              <div className="flex justify-center mt-16">
                 <BookNowCTA />
               </div>
             </div>
@@ -114,10 +114,10 @@ const BaseTherapyPage = ({
                   <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 text-brand-sage">
                     {approach.svg}
                   </div>
-                  <h3 className="text-base sm:text-lg font-semibold text-brand-sage mb-3 sm:mb-4">
+                   <h3 className="text-lg sm:text-xl font-semibold text-brand-sage mb-4 sm:mb-6">
                     {approach.title}
                   </h3>
-                  <p className="text-sm sm:text-base text-brand-text-primary">
+                  <p className="text-base sm:text-lg text-brand-text-primary">
                     {approach.description}
                   </p>
                 </div>
@@ -133,9 +133,9 @@ const BaseTherapyPage = ({
       {/* Additional Support Section */}
       <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-8 bg-brand-background-primary">
         <FadeInSection>
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <div className="p-6 sm:p-8 md:p-12 text-center">
-              <p className="text-base sm:text-lg text-brand-text-primary mb-8">
+              <p className="text-lg sm:text-xl text-brand-text-primary mb-8">
                 {supportText}
               </p>
             </div>
