@@ -43,11 +43,11 @@
 <!-- wp:buttons {"style":{"spacing":{"padding":{"right":"0px","left":"0px"}},"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"}} -->
 <div class="wp-block-buttons" style="padding-right:0px;padding-left:0px">
     <!-- wp:button {"backgroundColor":"custom-coral","textColor":"white","className":"hide-on-mobile","style":{"border":{"radius":"50px"},"typography":{"fontWeight":"700","fontStyle":"normal"}}} -->
-    <div class="wp-block-button hide-on-mobile"><a
+        <div class="wp-block-button hide-on-mobile"><a
             class="wp-block-button__link has-white-color has-custom-coral-background-color has-text-color has-background wp-element-button"
-            href="https://mindmatterscenter.com/booking-info/"
-            style="border-radius:50px;font-style:normal;font-weight:700" target="_blank" rel="noreferrer noopener">Book
+            href="https://mindmatterscenter.com/contact/"
+            style="border-radius:50px;font-style:normal;font-weight:700">Book
             Now</a></div>
-    <!-- /wp:button -->
+<!-- /wp:button -->
 </div>
 <!-- /wp:buttons -->

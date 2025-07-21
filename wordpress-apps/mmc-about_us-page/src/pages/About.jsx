@@ -1,7 +1,6 @@
 import { FadeInSection } from '../components/shared/Animations';
 import AboutUsImg from '../assets/images/aboutus.jpg';
 import AsianClientImg from '../assets/images/asian-client.jpg';
-import { BOOKING_URL } from '../constants';
 import BookNowCTA from '../components/shared/BookNowCTA';
 
 const About = () => {

@@ -166,8 +166,6 @@ const ChineseServices = () => {
             <div className="flex flex-col items-center gap-2">
               <a
                 href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="inline-block bg-brand-coral text-white text-xl font-bold 
                 px-6 py-3 rounded-full hover:bg-brand-coralLight transition-all duration-200
                 hover:transform hover:scale-105 active:scale-95"

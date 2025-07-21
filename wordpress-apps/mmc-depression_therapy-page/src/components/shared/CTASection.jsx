@@ -18,7 +18,6 @@ const CTASection = () => {
                     </p>
                     <div className="flex flex-col items-center gap-3 mb-12">
                         <a href={BOOKING_URL}
-                            target="_blank"
                             className="inline-block bg-brand-coral text-white text-xl font-bold
    px-8 py-3 rounded-full hover:bg-brand-coralLight transition-all duration-200
    hover:transform hover:scale-105 active:scale-95"

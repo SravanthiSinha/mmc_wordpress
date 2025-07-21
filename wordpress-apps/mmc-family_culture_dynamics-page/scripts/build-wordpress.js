@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename);
 const execAsync = promisify(exec);
 
 // Configuration - UPDATE THESE PATHS
-const wordpressPluginPath = path.resolve('/Applications/XAMPP/xamppfiles/htdocs/mmc/wp-content/plugins/mmc-family_cultural_dynamics-page');
+const wordpressPluginPath = path.resolve('/Applications/XAMPP/xamppfiles/htdocs/mmc/wp-content/plugins/mmc-family_culture_dynamics-page');
 // Set to false if you want to copy files manually
 const autoCopy = true;
 

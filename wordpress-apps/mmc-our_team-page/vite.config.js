@@ -26,6 +26,6 @@ export default defineConfig({
   },
   // Base path to use in production - update this to match your WordPress plugin path
   base: process.env.NODE_ENV === 'production' 
-    ? '/mmc/wp-content/plugins/mmc-our-team-page/dist/' 
+    ? '/mmc/wp-content/plugins/mmc-our_team-page/dist/' 
     : '/',
 });

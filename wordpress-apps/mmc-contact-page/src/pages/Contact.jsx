@@ -66,7 +66,6 @@ const Contact = () => {
                 </h3>
                 <a
                   href={BOOKING_URL}
-                  target="_blank"
                   className="inline-block bg-brand-coral text-white text-lg font-bold
    px-8 py-4 rounded-full hover:bg-brand-coralLight transition-all duration-200
    hover:transform hover:scale-105 active:scale-95"
