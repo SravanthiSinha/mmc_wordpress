@@ -1,115 +1,125 @@
-<!-- wp:group {"metadata":{"name":"Contact Page Container"},"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"custom-background-secondary","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull has-custom-background-secondary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:group {"metadata":{"name":"Hero Section"},"align":"full","style":{"spacing":{"padding":{"left":"1rem","right":"1rem","top":"2rem","bottom":"2rem"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"custom-secondary","layout":{"type":"constrained","contentSize":"800px"}} -->
-<div class="wp-block-group alignfull has-custom-secondary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:2rem;padding-right:1rem;padding-bottom:2rem;padding-left:1rem"><!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontStyle":"normal","fontWeight":"700","fontSize":"clamp(2.5rem, 6vw, 4rem)","lineHeight":"1.2"},"spacing":{"margin":{"bottom":"1.5rem","top":"0"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
-<h1 class="wp-block-heading has-text-align-center has-custom-text-primary-color has-text-color has-quattrocento-font-family" style="margin-top:0;margin-bottom:1.5rem;font-size:clamp(2.5rem, 6vw, 4rem);font-style:normal;font-weight:700;line-height:1.2">Contact Us</h1>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"clamp(1.1rem, 3vw, 1.4rem)","lineHeight":"1.6","fontWeight":"300","fontStyle":"normal"},"spacing":{"margin":{"bottom":"0"}}},"textColor":"custom-text-primary"} -->
-<p class="has-text-align-center has-custom-text-primary-color has-text-color" style="margin-bottom:0;font-size:clamp(1.1rem, 3vw, 1.4rem);font-style:normal;font-weight:300;line-height:1.6">We're here to answer your questions and help you begin your journey toward healing and well-being.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"How To Get Started Section"},"align":"full","style":{"spacing":{"padding":{"top":"3rem","left":"1rem","right":"1rem","bottom":"1rem"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"custom-background-primary","layout":{"type":"constrained","contentSize":"80vw"}} -->
-<div class="wp-block-group alignfull has-custom-background-primary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:3rem;padding-right:1rem;padding-bottom:1rem;padding-left:1rem"><!-- wp:group {"className":"contact-info-card","style":{"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"2rem","right":"2rem"}},"border":{"radius":"16px"}},"backgroundColor":"white","layout":{"type":"default"}} -->
-<div class="wp-block-group contact-info-card has-white-background-color has-background" style="border-radius:16px;padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem"><!-- wp:heading {"textAlign":"center","style":{"typography":{"lineHeight":"1.7","fontWeight":"600","fontStyle":"normal","fontSize":"2rem"},"spacing":{"margin":{"bottom":"0"}}},"textColor":"custom-text-primary"} -->
-<h2 class="wp-block-heading has-text-align-center has-custom-text-primary-color has-text-color" style="margin-bottom:0;font-size:2rem;font-style:normal;font-weight:600;line-height:1.7">How To Get Started</h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.6","fontWeight":"300","fontStyle":"normal","fontSize":"1.2rem"},"spacing":{"margin":{"bottom":"0"}}},"textColor":"custom-text-primary"} -->
-<p class="has-text-align-center has-custom-text-primary-color has-text-color" style="margin-bottom:0;font-size:1.2rem;font-style:normal;font-weight:300;line-height:1.6">Begin your journey with Mind Matters Center through a complimentary 20-minute consultation.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.6","fontWeight":"300","fontStyle":"normal","fontSize":"1.2rem"},"spacing":{"margin":{"bottom":"0"}}},"textColor":"custom-text-primary"} -->
-<p class="has-text-align-center has-custom-text-primary-color has-text-color" style="margin-bottom:0;font-size:1.2rem;font-style:normal;font-weight:300;line-height:1.6"> Fill out the form below or give us a call to schedule your appointment.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:group {"style":{"spacing":{"blockGap":"2rem","padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"layout":{"type":"flex","orientation":"horizontal","flexWrap":"wrap","justifyContent":"center"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"blockGap":"1rem"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center","justifyContent":"space-between","orientation":"horizontal"}} -->
-<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"1rem","right":"1rem"}},"border":{"radius":"50%"},"dimensions":{"minHeight":"60px"}},"backgroundColor":"custom-background-secondary","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","verticalAlignment":"center"}} -->
-<div class="wp-block-group has-custom-background-secondary-background-color has-background" style="border-radius:50%;min-height:60px;padding-top:1rem;padding-right:1rem;padding-bottom:1rem;padding-left:1rem"><!-- wp:shortcode -->
-[icon name="phone-volume"  unprefixed_class="fa-call-icon" class="3x"]
-<!-- /wp:shortcode --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1","fontWeight":"300","fontStyle":"normal","fontSize":"1.2rem"},"spacing":{"margin":{"bottom":"0","top":"0.25rem"}}},"textColor":"custom-text-primary"} -->
-<h3 class="wp-block-heading has-custom-text-primary-color has-text-color" style="margin-top:0.25rem;margin-bottom:0;font-size:1.2rem;font-style:normal;font-weight:300;line-height:1">Call</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.2","fontWeight":"400","fontStyle":"normal","fontSize":"1.2rem"},"spacing":{"margin":{"bottom":"0"}}},"textColor":"custom-text-primary"} -->
-<p class="has-custom-text-primary-color has-text-color" style="margin-bottom:0;font-size:1.2rem;font-style:normal;font-weight:400;line-height:1.2"><a style="text-decoration: none; color: inherit;" href="mailto:info@mindmatterscenter.com"></a><a href="tel:4153780815">(415) 378-0815</a></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"style":{"spacing":{"blockGap":"1rem"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center","justifyContent":"space-between","orientation":"horizontal"}} -->
-<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"1rem","right":"1rem"}},"border":{"radius":"50%"},"dimensions":{"minHeight":"60px"}},"backgroundColor":"custom-background-secondary","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","verticalAlignment":"center"}} -->
-<div class="wp-block-group has-custom-background-secondary-background-color has-background" style="border-radius:50%;min-height:60px;padding-top:1rem;padding-right:1rem;padding-bottom:1rem;padding-left:1rem"><!-- wp:shortcode -->
-[icon name="envelope" unprefixed_class="fa-call-icon" class="3x"]
-<!-- /wp:shortcode --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"layout":{"type":"default"}} -->
-<div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"typography":{"lineHeight":"1","fontWeight":"300","fontStyle":"normal","fontSize":"1.2rem"},"spacing":{"margin":{"bottom":"0","top":"0.25rem"}}},"textColor":"custom-text-primary"} -->
-<h3 class="wp-block-heading has-custom-text-primary-color has-text-color" style="margin-top:0.25rem;margin-bottom:0;font-size:1.2rem;font-style:normal;font-weight:300;line-height:1">Email</h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.2","fontWeight":"400","fontStyle":"normal","fontSize":"1.2rem"},"spacing":{"margin":{"bottom":"0"}}},"textColor":"custom-text-primary"} -->
-<p class="has-custom-text-primary-color has-text-color" style="margin-bottom:0;font-size:1.2rem;font-style:normal;font-weight:400;line-height:1.2"><a href="mailto:info@mindmatterscenter.com" style="text-decoration: none; color: inherit;">info@mindmatterscenter.com</a></p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"></a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-
-<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"custom-coral","textColor":"custom-primary","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-primary"}}},"typography":{"fontStyle":"normal","fontWeight":"500"}},"fontSize":"medium"} -->
-<div class="wp-block-button"><a class="wp-block-button__link has-custom-primary-color has-custom-coral-background-color has-text-color has-background has-link-color has-medium-font-size has-custom-font-size wp-element-button" href="https://mindmatterscenter.com/booking-info/" style="font-style:normal;font-weight:500" target="_blank" rel="noreferrer noopener">Book Now</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Contact Form Section"},"align":"full","style":{"spacing":{"padding":{"top":"3rem","bottom":"4rem","left":"1rem","right":"1rem"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"custom-background-secondary","layout":{"type":"constrained","contentSize":"800px"}} -->
-<div class="wp-block-group alignfull has-custom-background-secondary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:3rem;padding-right:1rem;padding-bottom:4rem;padding-left:1rem"><!-- wp:group {"className":"contact-form-card","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem","left":"3rem","right":"3rem"},"blockGap":"var:preset|spacing|40"},"border":{"width":"0px","style":"none","radius":"12px"},"shadow":"var:preset|shadow|deep"},"backgroundColor":"white","layout":{"type":"default"}} -->
-<div class="wp-block-group contact-form-card has-white-background-color has-background" style="border-style:none;border-width:0px;border-radius:12px;padding-top:3rem;padding-right:3rem;padding-bottom:3rem;padding-left:3rem;box-shadow:var(--wp--preset--shadow--deep)"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"2rem","lineHeight":"1.6","fontWeight":"600","fontStyle":"normal"},"spacing":{"margin":{"bottom":"0"}}},"textColor":"custom-text-primary"} -->
-<h2 class="wp-block-heading has-text-align-center has-custom-text-primary-color has-text-color" style="margin-bottom:0;font-size:2rem;font-style:normal;font-weight:600;line-height:1.6">Start Your Journey</h2>
-<!-- /wp:heading -->
-
-<!-- wp:wpforms/form-selector {"clientId":"609e9ec9-c5b8-48a9-967d-466f023662fb","formId":"861","theme":"default-copy-1-copy-2","themeName":"Default (Copy 2)","labelErrorColor":"#ff0000","copyPasteJsonValue":"{\u0022displayTitle\u0022:false,\u0022displayDesc\u0022:false,\u0022theme\u0022:\u0022default-copy-1-copy-2\u0022,\u0022themeName\u0022:\u0022Default (Copy 2)\u0022,\u0022fieldSize\u0022:\u0022medium\u0022,\u0022backgroundImage\u0022:\u0022none\u0022,\u0022backgroundPosition\u0022:\u0022center center\u0022,\u0022backgroundRepeat\u0022:\u0022no-repeat\u0022,\u0022backgroundSizeMode\u0022:\u0022cover\u0022,\u0022backgroundSize\u0022:\u0022cover\u0022,\u0022backgroundWidth\u0022:\u0022100px\u0022,\u0022backgroundHeight\u0022:\u0022100px\u0022,\u0022backgroundUrl\u0022:\u0022url()\u0022,\u0022backgroundColor\u0022:\u0022rgba( 0, 0, 0, 0 )\u0022,\u0022fieldBorderRadius\u0022:\u00223px\u0022,\u0022fieldBorderStyle\u0022:\u0022solid\u0022,\u0022fieldBorderSize\u0022:\u00221px\u0022,\u0022fieldBackgroundColor\u0022:\u0022#f9fafb\u0022,\u0022fieldBorderColor\u0022:\u0022rgba( 0, 0, 0, 0.25 )\u0022,\u0022fieldTextColor\u0022:\u0022rgba( 0, 0, 0, 0.7 )\u0022,\u0022fieldMenuColor\u0022:\u0022#ffffff\u0022,\u0022labelSize\u0022:\u0022medium\u0022,\u0022labelColor\u0022:\u0022rgba( 0, 0, 0, 0.85 )\u0022,\u0022labelSublabelColor\u0022:\u0022rgba( 0, 0, 0, 0.55 )\u0022,\u0022labelErrorColor\u0022:\u0022#ff0000\u0022,\u0022buttonSize\u0022:\u0022medium\u0022,\u0022buttonBorderStyle\u0022:\u0022none\u0022,\u0022buttonBorderSize\u0022:\u00221px\u0022,\u0022buttonBorderRadius\u0022:\u00223px\u0022,\u0022buttonBackgroundColor\u0022:\u0022#7fa693\u0022,\u0022buttonTextColor\u0022:\u0022#ffffff\u0022,\u0022buttonBorderColor\u0022:\u0022#066aab\u0022,\u0022pageBreakColor\u0022:\u0022#066aab\u0022,\u0022containerPadding\u0022:\u00220px\u0022,\u0022containerBorderStyle\u0022:\u0022none\u0022,\u0022containerBorderWidth\u0022:\u00221px\u0022,\u0022containerBorderColor\u0022:\u0022#000000\u0022,\u0022containerBorderRadius\u0022:\u00223px\u0022,\u0022containerShadowSize\u0022:\u0022none\u0022,\u0022customCss\u0022:\u0022\u0022}","fieldBackgroundColor":"#f9fafb","buttonBackgroundColor":"#7fa693"} /--></div>
-<!-- /wp:group --></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"metadata":{"name":"Important Notice Section"},"align":"full","style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem","left":"1rem","right":"1rem"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"custom-secondary","layout":{"type":"constrained","contentSize":"900px"}} -->
-<div class="wp-block-group alignfull has-custom-secondary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:3rem;padding-right:1rem;padding-bottom:3rem;padding-left:1rem"><!-- wp:group {"style":{"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"2.5rem","right":"2.5rem"}},"border":{"radius":"12px"}},"backgroundColor":"white","layout":{"type":"default"}} -->
-<div class="wp-block-group has-white-background-color has-background" style="border-radius:12px;padding-top:2rem;padding-right:2.5rem;padding-bottom:2rem;padding-left:2.5rem"><!-- wp:group {"style":{"spacing":{"blockGap":"1rem","margin":{"bottom":"1.5rem"}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center","justifyContent":"center"}} -->
-<div class="wp-block-group" style="margin-bottom:1.5rem"><!-- wp:heading {"textAlign":"left","level":3,"style":{"typography":{"fontSize":"1.4rem","fontWeight":"700","fontStyle":"normal"}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
-<h3 class="wp-block-heading has-text-align-left has-custom-text-primary-color has-text-color has-quattrocento-font-family" style="font-size:1.4rem;font-style:normal;font-weight:700">Important Note</h3>
+<!-- wp:group {"className":"alignfull has-custom-background-secondary-background-color has-background"} -->
+<div class="wp-block-group alignfull has-custom-background-secondary-background-color has-background"><!-- wp:group {"metadata":{"name":"Hero Section"},"align":"full","style":{"spacing":{"padding":{"left":"clamp(1rem, 5vw, 3rem)","right":"clamp(1rem, 5vw, 3rem)","top":"clamp(2rem, 8vw, 4rem)","bottom":"clamp(2rem, 6vw, 3rem)"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"custom-secondary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-custom-secondary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:clamp(2rem, 8vw, 4rem);padding-right:clamp(1rem, 5vw, 3rem);padding-bottom:clamp(2rem, 6vw, 3rem);padding-left:clamp(1rem, 5vw, 3rem)"><!-- wp:group {"align":"full","style":{"spacing":{"padding":{"left":"clamp(1rem, 4vw, 2rem)","right":"clamp(1rem, 4vw, 2rem)","top":"clamp(1rem, 4vw, 2rem)","bottom":"clamp(1rem, 4vw, 2rem)"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"custom-secondary","layout":{"type":"constrained","contentSize":"clamp(600px, 90vw, 800px)"}} -->
+<div class="wp-block-group alignfull has-custom-secondary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:clamp(1rem, 4vw, 2rem);padding-right:clamp(1rem, 4vw, 2rem);padding-bottom:clamp(1rem, 4vw, 2rem);padding-left:clamp(1rem, 4vw, 2rem)"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700","fontSize":"clamp(2rem, 8vw, 4rem)","lineHeight":"1.2"},"spacing":{"margin":{"bottom":"clamp(1rem, 4vw, 1.5rem)","top":"0"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+<h2 class="wp-block-heading has-text-align-center has-custom-text-primary-color has-text-color has-quattrocento-font-family" style="margin-top:0;margin-bottom:clamp(1rem, 4vw, 1.5rem);font-size:clamp(2rem, 8vw, 4rem);font-style:normal;font-weight:700;line-height:1.2">Contact Us</h2>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
-<!-- wp:paragraph {"className":"has-text-align-center","style":{"typography":{"fontSize":"1.1rem","lineHeight":"1.6"}},"textColor":"custom-text-primary"} -->
-<p class="has-text-align-center has-custom-text-primary-color has-text-color" style="font-size:1.1rem;line-height:1.6">For emergency situations or immediate crisis support, please call <strong style="color: #dc2626;">988</strong> (Suicide and Crisis Lifeline) or visit your nearest emergency room. Our email and phone are not monitored 24/7 and are not appropriate for urgent mental health concerns.</p>
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"clamp(1rem, 4vw, 1.4rem)","lineHeight":"1.6","fontWeight":"300","fontStyle":"normal"},"spacing":{"margin":{"bottom":"0"}}},"textColor":"custom-text-primary"} -->
+<p class="has-text-align-center has-custom-text-primary-color has-text-color" style="margin-bottom:0;font-size:clamp(1rem, 4vw, 1.4rem);font-style:normal;font-weight:300;line-height:1.6">We're here to answer your questions and help you begin your journey toward healing and well-being.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"How To Get Started Section"},"align":"full","style":{"spacing":{"padding":{"top":"clamp(2rem, 6vw, 3rem)","left":"clamp(1rem, 5vw, 2rem)","right":"clamp(1rem, 5vw, 2rem)","bottom":"clamp(1rem, 4vw, 2rem)"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"custom-background-primary","layout":{"type":"constrained","contentSize":"clamp(300px, 95vw, 1200px)"}} -->
+<div class="wp-block-group alignfull has-custom-background-primary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:clamp(2rem, 6vw, 3rem);padding-right:clamp(1rem, 5vw, 2rem);padding-bottom:clamp(1rem, 4vw, 2rem);padding-left:clamp(1rem, 5vw, 2rem)"><!-- wp:group {"className":"contact-info-card","style":{"spacing":{"padding":{"top":"clamp(1.5rem, 5vw, 2rem)","bottom":"clamp(1.5rem, 5vw, 2rem)","left":"clamp(1rem, 4vw, 2rem)","right":"clamp(1rem, 4vw, 2rem)"}},"border":{"radius":"16px"}},"backgroundColor":"white","layout":{"type":"default"}} -->
+<div class="wp-block-group contact-info-card has-white-background-color has-background" style="border-radius:16px;padding-top:clamp(1.5rem, 5vw, 2rem);padding-right:clamp(1rem, 4vw, 2rem);padding-bottom:clamp(1.5rem, 5vw, 2rem);padding-left:clamp(1rem, 4vw, 2rem)"><!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.6","fontWeight":"300","fontStyle":"normal","fontSize":"clamp(1rem, 3vw, 1.2rem)"},"spacing":{"margin":{"bottom":"clamp(0.5rem, 2vw, 1rem)"}}},"textColor":"custom-text-primary"} -->
+<p class="has-text-align-center has-custom-text-primary-color has-text-color" style="margin-bottom:clamp(0.5rem, 2vw, 1rem);font-size:clamp(1rem, 3vw, 1.2rem);font-style:normal;font-weight:300;line-height:1.6">Begin your journey with Mind Matters Center through a complimentary 20-minute consultation.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"className":"has-text-align-center","style":{"typography":{"fontSize":"1rem","lineHeight":"1.6"},"spacing":{"margin":{"top":"1rem"}}},"textColor":"custom-text-primary"} -->
-<p class="has-text-align-center has-custom-text-primary-color has-text-color" style="margin-top:1rem;font-size:1rem;line-height:1.6">Our team typically responds to inquiries within 1-2 business days.</p>
+<!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.6","fontWeight":"300","fontStyle":"normal","fontSize":"clamp(1rem, 3vw, 1.2rem)"},"spacing":{"margin":{"bottom":"clamp(1rem, 4vw, 1.5rem)"}}},"textColor":"custom-text-primary"} -->
+<p class="has-text-align-center has-custom-text-primary-color has-text-color" style="margin-bottom:clamp(1rem, 4vw, 1.5rem);font-size:clamp(1rem, 3vw, 1.2rem);font-style:normal;font-weight:300;line-height:1.6"> Give us a call or fill out the form below to schedule your appointment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"clamp(1rem, 4vw, 2rem)","padding":{"top":"clamp(1rem, 3vw, 1.5rem)","bottom":"clamp(1rem, 3vw, 1.5rem)"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group" style="padding-top:clamp(1rem, 3vw, 1.5rem);padding-bottom:clamp(1rem, 3vw, 1.5rem)"><!-- wp:group {"style":{"spacing":{"blockGap":"clamp(1rem, 3vw, 1.5rem)"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center","justifyContent":"center","orientation":"horizontal"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"top":"clamp(0.8rem, 2vw, 1rem)","bottom":"clamp(0.8rem, 2vw, 1rem)","left":"clamp(0.8rem, 2vw, 1rem)","right":"clamp(0.8rem, 2vw, 1rem)"}},"border":{"radius":"50%"},"dimensions":{"minHeight":"clamp(50px, 12vw, 60px)"}},"backgroundColor":"custom-background-secondary","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","verticalAlignment":"center"}} -->
+<div class="wp-block-group has-custom-background-secondary-background-color has-background" style="border-radius:50%;min-height:clamp(50px, 12vw, 60px);padding-top:clamp(0.8rem, 2vw, 1rem);padding-right:clamp(0.8rem, 2vw, 1rem);padding-bottom:clamp(0.8rem, 2vw, 1rem);padding-left:clamp(0.8rem, 2vw, 1rem)"><!-- wp:shortcode -->
+[icon name="phone-volume"  unprefixed_class="fa-call-icon" class="2x"]
+<!-- /wp:shortcode --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"lineHeight":"1","fontWeight":"300","fontStyle":"normal","fontSize":"clamp(1rem, 3vw, 1.2rem)"},"spacing":{"margin":{"bottom":"clamp(0.25rem, 1vw, 0.5rem)","top":"clamp(0.25rem, 1vw, 0.5rem)"}}},"textColor":"custom-text-primary"} -->
+<h3 class="wp-block-heading has-text-align-center has-custom-text-primary-color has-text-color" style="margin-top:clamp(0.25rem, 1vw, 0.5rem);margin-bottom:clamp(0.25rem, 1vw, 0.5rem);font-size:clamp(1rem, 3vw, 1.2rem);font-style:normal;font-weight:300;line-height:1">Call</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.2","fontWeight":"400","fontStyle":"normal","fontSize":"clamp(1rem, 3vw, 1.2rem)"},"spacing":{"margin":{"bottom":"0"}}},"textColor":"custom-text-primary"} -->
+<p class="has-text-align-center has-custom-text-primary-color has-text-color" style="margin-bottom:0;font-size:clamp(1rem, 3vw, 1.2rem);font-style:normal;font-weight:400;line-height:1.2"><a style="text-decoration: none; color: inherit;" href="mailto:info@mindmatterscenter.com"></a><a href="tel:4153780815">(415) 379-0835</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"metadata":{"name":"Resources Link"},"align":"full","style":{"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"1rem","right":"1rem"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"custom-secondary","layout":{"type":"constrained","contentSize":"800px"}} -->
-<div class="wp-block-group alignfull has-custom-secondary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:2rem;padding-right:1rem;padding-bottom:2rem;padding-left:1rem"><!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"textColor":"custom-sage"} -->
-<p class="has-text-align-center has-custom-sage-color has-text-color" style="margin-top:0;margin-bottom:0"><a href="/resources" style="font-weight: 500; text-decoration: none;">View our crisis resources and mental health support options →</a></p>
+<!-- wp:group {"style":{"spacing":{"blockGap":"clamp(1rem, 3vw, 1.5rem)"}},"layout":{"type":"flex","flexWrap":"wrap","verticalAlignment":"center","justifyContent":"center","orientation":"horizontal"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"top":"clamp(0.8rem, 2vw, 1rem)","bottom":"clamp(0.8rem, 2vw, 1rem)","left":"clamp(0.8rem, 2vw, 1rem)","right":"clamp(0.8rem, 2vw, 1rem)"}},"border":{"radius":"50%"},"dimensions":{"minHeight":"clamp(50px, 12vw, 60px)"}},"backgroundColor":"custom-background-secondary","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","verticalAlignment":"center"}} -->
+<div class="wp-block-group has-custom-background-secondary-background-color has-background" style="border-radius:50%;min-height:clamp(50px, 12vw, 60px);padding-top:clamp(0.8rem, 2vw, 1rem);padding-right:clamp(0.8rem, 2vw, 1rem);padding-bottom:clamp(0.8rem, 2vw, 1rem);padding-left:clamp(0.8rem, 2vw, 1rem)"><!-- wp:shortcode -->
+[icon name="envelope" unprefixed_class="fa-call-icon" class="2x"]
+<!-- /wp:shortcode --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"lineHeight":"1","fontWeight":"300","fontStyle":"normal","fontSize":"clamp(1rem, 3vw, 1.2rem)"},"spacing":{"margin":{"bottom":"clamp(0.25rem, 1vw, 0.5rem)","top":"clamp(0.25rem, 1vw, 0.5rem)"}}},"textColor":"custom-text-primary"} -->
+<h3 class="wp-block-heading has-text-align-center has-custom-text-primary-color has-text-color" style="margin-top:clamp(0.25rem, 1vw, 0.5rem);margin-bottom:clamp(0.25rem, 1vw, 0.5rem);font-size:clamp(1rem, 3vw, 1.2rem);font-style:normal;font-weight:300;line-height:1">Email</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.2","fontWeight":"400","fontStyle":"normal","fontSize":"clamp(1rem, 3vw, 1.2rem)"},"spacing":{"margin":{"bottom":"0"}}},"textColor":"custom-text-primary"} -->
+<p class="has-text-align-center has-custom-text-primary-color has-text-color" style="margin-bottom:0;font-size:clamp(1rem, 3vw, 1.2rem);font-style:normal;font-weight:400;line-height:1.2"><a href="mailto:info@mindmatterscenter.com" style="text-decoration: none; color: inherit;">info@mindmatterscenter.com</a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Book Now Section"},"align":"full","style":{"spacing":{"padding":{"top":"clamp(2rem, 6vw, 3rem)","bottom":"clamp(1.5rem, 4vw, 2rem)","left":"clamp(1rem, 5vw, 2rem)","right":"clamp(1rem, 5vw, 2rem)"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"custom-background-primary","layout":{"type":"constrained","contentSize":"clamp(300px, 95vw, 800px)"}} -->
+<div class="wp-block-group alignfull has-custom-background-primary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:clamp(2rem, 6vw, 3rem);padding-right:clamp(1rem, 5vw, 2rem);padding-bottom:clamp(1.5rem, 4vw, 2rem);padding-left:clamp(1rem, 5vw, 2rem)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"clamp(2rem, 6vw, 3rem)","bottom":"clamp(2rem, 6vw, 3rem)","left":"clamp(1.5rem, 5vw, 3rem)","right":"clamp(1.5rem, 5vw, 3rem)"}},"border":{"radius":"16px"},"shadow":"var:preset|shadow|deep"},"backgroundColor":"white","layout":{"type":"default"}} -->
+<div class="wp-block-group has-white-background-color has-background" style="border-radius:16px;padding-top:clamp(2rem, 6vw, 3rem);padding-right:clamp(1.5rem, 5vw, 3rem);padding-bottom:clamp(2rem, 6vw, 3rem);padding-left:clamp(1.5rem, 5vw, 3rem);box-shadow:var(--wp--preset--shadow--deep)"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"clamp(1.5rem, 5vw, 2rem)","lineHeight":"1.4","fontWeight":"600","fontStyle":"normal"},"spacing":{"margin":{"bottom":"clamp(0.8rem, 3vw, 1rem)","top":"0"}}},"textColor":"custom-text-primary"} -->
+<h2 class="wp-block-heading has-text-align-center has-custom-text-primary-color has-text-color" style="margin-top:0;margin-bottom:clamp(0.8rem, 3vw, 1rem);font-size:clamp(1.5rem, 5vw, 2rem);font-style:normal;font-weight:600;line-height:1.4">Ready to Schedule?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"clamp(1rem, 3vw, 1.1rem)","lineHeight":"1.6"},"spacing":{"margin":{"bottom":"clamp(1.5rem, 4vw, 2rem)"}}},"textColor":"custom-text-primary"} -->
+<p class="has-text-align-center has-custom-text-primary-color has-text-color" style="margin-bottom:clamp(1.5rem, 4vw, 2rem);font-size:clamp(1rem, 3vw, 1.1rem);line-height:1.6">Click below to access our secure booking system and schedule your appointment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"custom-coral-light","className":"is-service-link","style":{"spacing":{"padding":{"top":"clamp(0.8rem, 2vw, 1rem)","bottom":"clamp(0.8rem, 2vw, 1rem)","left":"clamp(1.5rem, 4vw, 2rem)","right":"clamp(1.5rem, 4vw, 2rem)"}},"typography":{"fontSize":"clamp(1rem, 3vw, 1.1rem)"}}} -->
+<div class="wp-block-button is-service-link"><a class="wp-block-button__link has-custom-coral-light-background-color has-background has-custom-font-size wp-element-button" href="https://mindmatterscenter.janeapp.com/#/consultations" style="padding-top:clamp(0.8rem, 2vw, 1rem);padding-right:clamp(1.5rem, 4vw, 2rem);padding-bottom:clamp(0.8rem, 2vw, 1rem);padding-left:clamp(1.5rem, 4vw, 2rem);font-size:clamp(1rem, 3vw, 1.1rem)" target="_blank" rel="noreferrer noopener">Book Now</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.5"},"spacing":{"margin":{"top":"clamp(1rem, 3vw, 1.5rem)","bottom":"0"}}},"textColor":"custom-text-primary","fontSize":"small"} -->
+<p class="has-text-align-center has-custom-text-primary-color has-text-color has-small-font-size" style="margin-top:clamp(1rem, 3vw, 1.5rem);margin-bottom:0;line-height:1.5">You'll be redirected to our secure JaneApp booking system where you can create an account and view available appointment times.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Contact Form Section"},"align":"full","style":{"spacing":{"padding":{"top":"clamp(2rem, 6vw, 3rem)","bottom":"clamp(3rem, 8vw, 4rem)","left":"clamp(1rem, 5vw, 2rem)","right":"clamp(1rem, 5vw, 2rem)"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"custom-background-secondary","layout":{"type":"constrained","contentSize":"clamp(300px, 95vw, 800px)"}} -->
+<div class="wp-block-group alignfull has-custom-background-secondary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:clamp(2rem, 6vw, 3rem);padding-right:clamp(1rem, 5vw, 2rem);padding-bottom:clamp(3rem, 8vw, 4rem);padding-left:clamp(1rem, 5vw, 2rem)"><!-- wp:group {"className":"contact-form-card","style":{"spacing":{"padding":{"top":"clamp(2rem, 6vw, 3rem)","bottom":"clamp(2rem, 6vw, 3rem)","left":"clamp(1.5rem, 5vw, 3rem)","right":"clamp(1.5rem, 5vw, 3rem)"},"blockGap":"var:preset|spacing|40"},"border":{"width":"0px","style":"none","radius":"12px"},"shadow":"var:preset|shadow|deep"},"backgroundColor":"white","layout":{"type":"default"}} -->
+<div class="wp-block-group contact-form-card has-white-background-color has-background" style="border-style:none;border-width:0px;border-radius:12px;padding-top:clamp(2rem, 6vw, 3rem);padding-right:clamp(1.5rem, 5vw, 3rem);padding-bottom:clamp(2rem, 6vw, 3rem);padding-left:clamp(1.5rem, 5vw, 3rem);box-shadow:var(--wp--preset--shadow--deep)"><!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"clamp(1.5rem, 5vw, 2rem)","lineHeight":"1.6","fontWeight":"600","fontStyle":"normal"},"spacing":{"margin":{"bottom":"0"}}},"textColor":"custom-text-primary"} -->
+<h2 class="wp-block-heading has-text-align-center has-custom-text-primary-color has-text-color" style="margin-bottom:0;font-size:clamp(1.5rem, 5vw, 2rem);font-style:normal;font-weight:600;line-height:1.6">Have Questions First?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"clamp(1rem, 3vw, 1.1rem)","lineHeight":"1.6"},"spacing":{"margin":{"bottom":"clamp(1rem, 4vw, 1.5rem)","top":"clamp(0.5rem, 2vw, 0.8rem)"}}},"textColor":"custom-text-primary"} -->
+<p class="has-text-align-center has-custom-text-primary-color has-text-color" style="margin-top:clamp(0.5rem, 2vw, 0.8rem);margin-bottom:clamp(1rem, 4vw, 1.5rem);font-size:clamp(1rem, 3vw, 1.1rem);line-height:1.6">That's completely normal. Send us a message and we'll get back to you within 1-2 business days with answers to your questions and guidance on next steps.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[contact-form-7 id="42f9ce7" title="Contact form"]
+<!-- /wp:shortcode --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Important Notice Section"},"align":"full","style":{"spacing":{"padding":{"top":"clamp(2rem, 6vw, 3rem)","bottom":"clamp(2rem, 6vw, 3rem)","left":"clamp(1rem, 5vw, 2rem)","right":"clamp(1rem, 5vw, 2rem)"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"custom-secondary","layout":{"type":"constrained","contentSize":"clamp(300px, 95vw, 900px)"}} -->
+<div class="wp-block-group alignfull has-custom-secondary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:clamp(2rem, 6vw, 3rem);padding-right:clamp(1rem, 5vw, 2rem);padding-bottom:clamp(2rem, 6vw, 3rem);padding-left:clamp(1rem, 5vw, 2rem)"><!-- wp:group {"style":{"spacing":{"padding":{"top":"clamp(1.5rem, 4vw, 2rem)","bottom":"clamp(1.5rem, 4vw, 2rem)","left":"clamp(1.5rem, 5vw, 2.5rem)","right":"clamp(1.5rem, 5vw, 2.5rem)"}},"border":{"radius":"12px"}},"backgroundColor":"white","layout":{"type":"default"}} -->
+<div class="wp-block-group has-white-background-color has-background" style="border-radius:12px;padding-top:clamp(1.5rem, 4vw, 2rem);padding-right:clamp(1.5rem, 5vw, 2.5rem);padding-bottom:clamp(1.5rem, 4vw, 2rem);padding-left:clamp(1.5rem, 5vw, 2.5rem)"><!-- wp:group {"style":{"spacing":{"blockGap":"1rem","margin":{"bottom":"clamp(1rem, 3vw, 1.5rem)"}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center","justifyContent":"center"}} -->
+<div class="wp-block-group" style="margin-bottom:clamp(1rem, 3vw, 1.5rem)"><!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontSize":"clamp(1.2rem, 4vw, 1.4rem)","fontWeight":"700","fontStyle":"normal"}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+<h3 class="wp-block-heading has-text-align-center has-custom-text-primary-color has-text-color has-quattrocento-font-family" style="font-size:clamp(1.2rem, 4vw, 1.4rem);font-style:normal;font-weight:700">Important Note</h3>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph {"className":"has-text-align-center","style":{"typography":{"fontSize":"clamp(1rem, 3vw, 1.1rem)","lineHeight":"1.6"}},"textColor":"custom-text-primary"} -->
+<p class="has-text-align-center has-custom-text-primary-color has-text-color" style="font-size:clamp(1rem, 3vw, 1.1rem);line-height:1.6">For emergency situations or immediate crisis support, please call <strong style="color: #dc2626;">988</strong> (Suicide and Crisis Lifeline) or visit your nearest emergency room. Our email and phone are not monitored 24/7 and are not appropriate for urgent mental health concerns.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"className":"has-text-align-center","style":{"typography":{"fontSize":"clamp(0.9rem, 2.5vw, 1rem)","lineHeight":"1.6"},"spacing":{"margin":{"top":"clamp(0.8rem, 2vw, 1rem)"}}},"textColor":"custom-text-primary"} -->
+<p class="has-text-align-center has-custom-text-primary-color has-text-color" style="margin-top:clamp(0.8rem, 2vw, 1rem);font-size:clamp(0.9rem, 2.5vw, 1rem);line-height:1.6">Our team typically responds to inquiries within 1-2 business days.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"Resources Link"},"align":"full","style":{"spacing":{"padding":{"top":"clamp(1.5rem, 4vw, 2rem)","bottom":"clamp(1.5rem, 4vw, 2rem)","left":"clamp(1rem, 5vw, 2rem)","right":"clamp(1rem, 5vw, 2rem)"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"custom-secondary","layout":{"type":"constrained","contentSize":"clamp(300px, 95vw, 800px)"}} -->
+<div class="wp-block-group alignfull has-custom-secondary-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:clamp(1.5rem, 4vw, 2rem);padding-right:clamp(1rem, 5vw, 2rem);padding-bottom:clamp(1.5rem, 4vw, 2rem);padding-left:clamp(1rem, 5vw, 2rem)"><!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"0"}},"typography":{"fontSize":"clamp(0.9rem, 2.5vw, 1rem)"}},"textColor":"custom-sage"} -->
+<p class="has-text-align-center has-custom-sage-color has-text-color" style="margin-top:0;margin-bottom:0;font-size:clamp(0.9rem, 2.5vw, 1rem)"><a href="/resources" style="font-weight: 500; text-decoration: none;">Need immediate support? Find crisis hotlines and mental health resources →</a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->
