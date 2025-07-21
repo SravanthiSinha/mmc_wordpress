@@ -29,10 +29,10 @@
 <!-- wp:navigation-submenu {"label":"Our Team","url":"/our-team","kind":"custom"} -->
 <!-- wp:navigation-link {"label":"About us ","type":"page","id":461,"url":"https://mindmatterscenter.com/about-us/","kind":"post-type"} /-->
 
-<!-- wp:navigation-link {"label":"Contact","type":"page","id":883,"url":"https://mindmatterscenter.com/contact/","kind":"post-type"} /-->
-
 <!-- wp:navigation-link {"label":"Join our team","type":"page","id":482,"url":"https://mindmatterscenter.com/join-our-team/","kind":"post-type"} /-->
 <!-- /wp:navigation-submenu -->
+
+<!-- wp:navigation-link {"label":"Contact","type":"page","id":883,"url":"https://mindmatterscenter.com/contact/","kind":"post-type"} /-->
 
 <!-- wp:navigation-link {"label":"FAQ","type":"page","id":388,"url":"https://mindmatterscenter.com/faq/","kind":"post-type"} /-->
 
