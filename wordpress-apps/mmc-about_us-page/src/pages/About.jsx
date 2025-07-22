@@ -1,9 +1,54 @@
+import TeamMember from '../components/shared/TeamMember';
 import { FadeInSection } from '../components/shared/Animations';
+import ZengImg from '../assets/images/profile_pics/zeng.jpg';
+import ElaineImg from '../assets/images/profile_pics/elaine.jpg';
 import AboutUsImg from '../assets/images/aboutus.jpg';
 import AsianClientImg from '../assets/images/asian-client.jpg';
 import BookNowCTA from '../components/shared/BookNowCTA';
 
 const About = () => {
+  const teamMembers = [
+    {
+      id: 'stella',
+      name: 'Yajun (Stella) Zeng, LCSW',
+      title: 'Clinical Director | Mind Matters Center',
+      image: ZengImg,
+      introContent: [
+        'As an Asian American immigrant, my journey into mental health care was shaped by a deep commitment to breaking cultural and linguistic barriers that often prevent Asian American communities from accessing therapy. Navigating life between two cultures has given me a firsthand understanding of the unique stressors and mental health challenges that arise from bicultural identity, immigration, and intergenerational dynamics.'
+      ],
+      credentials: [
+        'Dual master\'s degrees in Social Work (MSW) and Gerontology (MSG) from University of Southern California',
+        'Currently pursuing a Doctorate in Social Work (DSW) at University of Pennsylvania',
+        'Licensed Clinical Social Worker'
+      ],
+      mainContent: [
+        'As a bilingual Licensed Clinical Social Worker fluent in both English and Chinese, I integrate evidence-based treatment approaches, including Cognitive Behavioral Therapy (CBT), attachment-based techniques, and relational-focused methods. My clinical expertise includes working with individuals across the lifespan, with a special focus on older adults, individuals with chronic illnesses, and immigrants, particularly within the Asian American community.'
+      ],
+      quote: 'At Mind Matters Center, I aim to create a safe and culturally responsive space where clients feel seen, heard, and empowered to navigate life\'s challenges. I believe in therapy that honors personal values, fosters self-awareness and strengthens resilience.',
+      personalContent: 'Outside of therapy, I enjoy exploring new places, traveling, reading, practicing yoga, hiking, backpacking, and indulging in delicious food. I also love animals—especially dogs- who hold a special place in my heart.'
+    },
+    {
+      id: 'elaine',
+      name: 'Elaine Li, ASW',
+      title: 'Associate Therapist | Mind Matters Center',
+      image: ElaineImg,
+      introContent: [
+        "My name is Elaine Li, and I’m an associate therapist dedicated to helping individuals navigate their personal growth, relationships, and mental health challenges. My therapeutic approach integrates evidence-based techniques such as Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), and Motivational Interviewing (MI) to support clients in achieving meaningful change in their lives.",
+        "As an Asian American, I deeply understand the unique struggles and challenges that come with navigating multiple cultures and identities. Many of my clients, especially those from immigrant backgrounds, experience acculturation stress, family dynamics, and the complexities of balancing traditional values with the demands of living in a new culture. These challenges can lead to feelings of isolation, anxiety, and confusion, but I believe that with the right support, everyone can find their path toward healing, self-discovery, and resilience."
+      ],
+      credentials: [
+        'Master of Social Work from California State University, Los Angeles',
+        'Associated Social Worker'
+      ],
+      mainContent: [
+        "Throughout my career, I have worked extensively with both adults and older adults, helping them overcome a variety of issues such as anxiety, depression, trauma, and relationship difficulties. I have seen firsthand how powerful the therapeutic process can be in helping individuals move through difficult transitions, whether it's adjusting to life in a new country, coping with family pressures, or addressing long-standing emotional struggles.",
+        "My work with clients is built on empathy, respect, and the belief that each person is capable of growth. I focus on creating a safe and non-judgmental space where you can feel heard, understood, and empowered to make positive changes. Together, we will work on improving your mental health, developing coping strategies, strengthening family relationships, and navigating the complexities of cultural identity.",
+        "Whether you're struggling with family dynamics, adjusting to life in a new environment, or seeking personal growth, my goal is to help you regain a sense of balance and find peace within yourself. By combining my cultural understanding with my professional training, I can offer a supportive and effective space for healing."
+      ],
+      quote: 'I believe therapy is a collaborative journey where we work together to discover your strengths, navigate challenges, and build resilience. My goal is to create a space where you feel truly understood as you embrace your authentic self.',
+      personalContent: "When I'm not working, I love hiking and reading. Both activities allow me to expand my horizons, and I enjoy balancing the adventure of the outdoors with the adventure of a great story."
+    }
+  ];
   const values = [
     {
       title: "Cultural sensitivity",
@@ -51,8 +96,22 @@ const About = () => {
         </div>
       </section>
 
+      {/* Team Member Section */}
+      <section className="py-12 md:py-16 bg-brand-background-primary">
+        <div className="text-center max-w-4xl mx-auto">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif text-brand-text-primary mb-6 sm:mb-8">
+            Meet our team
+          </h1>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {teamMembers.map((member) => (
+            <TeamMember key={member.id} member={member} />
+          ))}
+        </div>
+      </section>
+
       {/* Mission Section */}
-      <section className="py-16 bg-brand-background-primary">
+      <section className="py-16 bg-brand-background-secondary">
         <div className="max-w-7xl mx-auto px-4">
           <FadeInSection>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -88,7 +147,7 @@ const About = () => {
 
 
       {/* Specialization Section */}
-      <section className="py-8 sm:py-10 bg-brand-background-secondary">
+      <section className="py-8 sm:py-10 bg-brand-background-primary">
         <div className="max-w-7xl mx-auto px-4">
           <FadeInSection>
             <div className="grid lg:grid-cols-2 gap-8 items-center">
@@ -120,7 +179,7 @@ const About = () => {
       </section>
 
       {/* Approach Section */}
-      <section className="py-6 sm:py-8 bg-gradient-to-b from-brand-background-primary to-brand-background-secondary">
+      <section className="py-6 sm:py-8 bg-brand-background-secodary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeInSection className="text-center mb-8">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-serif text-brand-text-primary">
@@ -151,8 +210,8 @@ const About = () => {
               <div
                 key={index}
                 className="flex-1 basis-[calc(100%-1.5rem)] sm:basis-[calc(50%-1.5rem)] md:basis-[calc(33.333%-1.5rem)] 
-                  min-w-[280px] max-w-[400px] bg-white p-6 rounded-xl shadow-lg border border-brand-gray-warm
-                  text-center hover:shadow-xl transition-shadow duration-300"
+                                  min-w-[280px] max-w-[400px] bg-white p-6 rounded-xl shadow-lg border border-brand-gray-warm
+                                  text-center hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="flex justify-center mb-4">
                   {value.icon}
@@ -187,8 +246,8 @@ const About = () => {
             </div>
           </div>
         </FadeInSection>
-      </section >
-    </div >
+      </section>
+    </div>
   );
 };
 

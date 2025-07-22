@@ -469,3 +469,7 @@ body:has(.wp-block-navigation__responsive-container.is-menu-open) .floating-book
     visibility: hidden !important;
   }
 }
+
+.wp-block-navigation .wp-block-navigation-item {
+  outline: none !important;
+}

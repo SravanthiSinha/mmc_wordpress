@@ -26,8 +26,8 @@
 
 <!-- wp:navigation-link {"label":"中文服务","type":"page","id":434,"url":"https://mindmatterscenter.com/chinese-services/","kind":"post-type"} /-->
 
-<!-- wp:navigation-submenu {"label":"Our Team","url":"/our-team","kind":"custom"} -->
-<!-- wp:navigation-link {"label":"About us ","type":"page","id":461,"url":"https://mindmatterscenter.com/about-us/","kind":"post-type"} /-->
+<!-- wp:navigation-submenu {"label":"Our Team"} -->
+<!-- wp:navigation-link {"label":"About us","type":"page","id":461,"url":"https://mindmatterscenter.com/about-us/","kind":"post-type"} /-->
 
 <!-- wp:navigation-link {"label":"Join our team","type":"page","id":482,"url":"https://mindmatterscenter.com/join-our-team/","kind":"post-type"} /-->
 <!-- /wp:navigation-submenu -->
