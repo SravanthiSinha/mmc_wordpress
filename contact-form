@@ -1,0 +1,19 @@
+Name *
+[text* client-name placeholder "Name"]
+
+Email *
+[email* client-email placeholder "Email"]
+
+Phone
+[tel client-phone minlength:10 maxlength:10 placeholder "1234567890"]
+
+What is the reason for inquiry? *
+[select* inquiry-reason include_blank "Free Consultation" "Book An Appointment" "General Inquiry"]
+
+Message *
+[textarea* textarea-153 placeholder "How can we help you" ]
+
+Preferred contact method
+[select contact-method include_blank "Call" "Email" "Text"]
+
+[submit "Send"]
