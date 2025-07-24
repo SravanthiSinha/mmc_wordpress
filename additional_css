@@ -256,7 +256,7 @@ ul li.current-menu-item a {
   background: white !important;
   border-radius: 12px !important;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
-  padding: 3rem !important;
+  padding: 0.5rem 2rem !important;
   overflow: hidden !important;
   box-sizing: border-box !important;
 }
@@ -314,7 +314,8 @@ ul li.current-menu-item a {
 /* Textarea specific */
 .wpcf7 textarea {
   resize: vertical;
-  min-height: 80px;
+  min-height: 2rem;
+  max-height: 5rem;
 }
 
 /* Select dropdown */
@@ -366,15 +367,7 @@ ul li.current-menu-item a {
 
 /* Response messages */
 .wpcf7-response-output {
-  border: none !important;
-  padding: 16px 20px !important;
-  border-radius: 12px !important;
-  margin: 20px 0 !important;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: none;
 }
 
 /* Success message */
