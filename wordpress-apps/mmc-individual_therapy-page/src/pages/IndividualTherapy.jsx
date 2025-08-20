@@ -231,7 +231,7 @@ const IndividualTherapy = () => {
                         </p>
                         <div className="flex flex-col items-center gap-4">
                             <a
-                                href="/our-team"
+                                href="/about-us"
                                 className="inline-flex items-center text-lg font-medium text-brand-sage hover:text-brand-coral transition-colors px-6 py-3 rounded-full hover:bg-brand-sage/10 border border-brand-sage/30 hover:border-brand-coral/30 mb-4"
                             >
                                 Meet Our Team
