@@ -13,6 +13,7 @@ const About = () => {
       id: 'stella',
       name: 'Yajun (Stella) Zeng, LCSW',
       title: 'Clinical Director | Mind Matters Center',
+      languages: 'English and Mandarin Chinese',
       image: ZengImg,
       introContent: [
         'As an Asian American immigrant, my journey into mental health care was shaped by a deep commitment to breaking cultural and linguistic barriers that often prevent Asian American communities from accessing therapy. Navigating life between two cultures has given me a firsthand understanding of the unique stressors and mental health challenges that arise from bicultural identity, immigration, and intergenerational dynamics.'
@@ -32,6 +33,7 @@ const About = () => {
       id: 'elaine',
       name: 'Elaine Li, ASW',
       title: 'Associate Therapist | Mind Matters Center',
+      languages: 'English and Mandarin Chinese',
       image: ElaineImg,
       introContent: [
         "My name is Elaine Li, and I'm an associate therapist dedicated to helping individuals navigate their personal growth, relationships, and mental health challenges. My therapeutic approach integrates evidence-based techniques such as Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), and Motivational Interviewing (MI) to support clients in achieving meaningful change in their lives.",
@@ -53,6 +55,7 @@ const About = () => {
       id: 'christine',
       name: 'Christine Gates, AMFT',
       title: 'Associate Therapist | Mind Matters Center',
+      languages: 'English and Korean',
       image: ChristineImg,
       introContent: [
         'I\'m passionate about helping individuals and families heal from trauma and navigate complex mental health challenges. I understand that life can bring unexpected and distressing experiences—whether it\'s trauma, family struggles, or neurodivergent conditions—and I\'m here to provide a safe space where healing can begin.',
