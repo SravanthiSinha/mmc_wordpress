@@ -5,69 +5,101 @@ import Anxiety_Depression from './assets/images/anxiety.jpg';
 import './App.css';
 
 function App() {
-  // Anxiety therapy content
-  const signs = [
-    'Restlessness',
-    'Trouble sleeping',
-    'Lack of motivation',
-    'Overthinking',
-    'Persistent sadness',
-    'Insomnia'
+  // Anxiety & Depression therapy content - Updated to match new content
+  const commonSigns = [
+    'Persistent sadness or hopelessness',
+    'Constant worry or racing thoughts',
+    'Fatigue or low motivation',
+    'Sleep problems (insomnia or oversleeping)',
+    'Difficulty concentrating',
+    'Feeling overwhelmed or "stuck"'
   ];
 
-  const approaches = [
+  const challenges = [
     {
-      title: 'Cognitive behavioral therapy (CBT)',
-      svg: (
-        <svg viewBox="0 0 60 60" className="w-full h-full">
-          <circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" strokeWidth="2" />
-          <path d="M30 10v40M18 26l12-12 12 12M18 34l12 12 12-12"
-            fill="none" stroke="currentColor" strokeWidth="2"
-            strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      ),
-      description: 'A structured approach to identify and change negative thought patterns'
+      title: 'Living with constant worry or fear',
+      description: 'Anxiety can make it feel impossible to relax. Your mind may race with "what ifs," leaving you restless, tense, and exhausted.'
     },
     {
-      title: 'Mindfulness-based therapy',
-      svg: (
-        <svg viewBox="0 0 60 60" className="w-full h-full">
-          <circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" strokeWidth="2" />
-          <path d="M30 15c-8.284 0-15 6.716-15 15 0 8.284 6.716 15 15 15 8.284 0 15-6.716 15-15"
-            fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-          <circle cx="30" cy="30" r="5" fill="currentColor" />
-          <path d="M30 45v-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      ),
-      description: 'Learn to stay present and develop awareness of thoughts and feelings'
+      title: 'Carrying the weight of sadness',
+      description: 'Depression often brings a heaviness that makes daily life feel harder than it should. You may lose interest in things you once enjoyed or struggle just to get through the day.'
     },
     {
-      title: 'Trauma-informed care',
-      svg: (
-        <svg viewBox="0 0 60 60" className="w-full h-full">
-          <path d="M30 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20z"
-            fill="none" stroke="currentColor" strokeWidth="2" />
-          <path d="M30 20v20M20 30h20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-          <circle cx="30" cy="30" r="5" fill="currentColor" />
-        </svg>
-      ),
-      description: 'Specialized support that recognizes the impact of past experiences'
+      title: 'Feeling stuck and disconnected',
+      description: 'When anxiety and depression overlap, you might feel trapped in a cycle of worry, guilt, sadness, and isolation—wanting relief but unsure where to start.'
+    }
+  ];
+
+  const therapeuticSolution = [
+    'Break cycles of worry and negative thoughts',
+    'Build coping strategies for stress and overwhelm',
+    'Improve mood, motivation, and energy',
+    'Reconnect with yourself and others',
+    'Create lasting resilience and confidence'
+  ];
+
+  const howItWorks = [
+    {
+      title: 'Understand your experience',
+      description: 'We start by exploring how anxiety or depression shows up in your life and what feels hardest right now.'
+    },
+    {
+      title: 'Build practical coping tools',
+      description: 'You\'ll learn strategies to manage stress, improve sleep, and shift unhelpful thought patterns.'
+    },
+    {
+      title: 'Address underlying issues',
+      description: 'Using therapies like CBT, behavioral activation, and mindfulness, we help uncover root causes and reshape your responses.'
+    },
+    {
+      title: 'Support long-term well-being',
+      description: 'Therapy provides ongoing tools to build resilience, maintain emotional balance, and create a more fulfilling daily life.'
+    }
+  ];
+
+  const whyWorkWithUs = [
+    {
+      title: 'Specialized in anxiety & depression treatment',
+      description: 'Our therapists use evidence-based methods (CBT, mindfulness, behavioral activation, trauma-informed care) proven to help with anxiety and depression.'
+    },
+    {
+      title: 'Compassionate and culturally sensitive',
+      description: 'We understand how cultural identity, family expectations, and lived experiences affect mental health, and we honor those differences in every session.'
+    },
+    {
+      title: 'Language accessibility',
+      description: 'Our therapists speak Mandarin Chinese, English, and Korean, making therapy more accessible and culturally attuned for clients across diverse backgrounds.'
+    }
+  ];
+
+  const faqs = [
+    {
+      question: 'How long will it take to feel better?',
+      answer: 'Many clients notice improvement within the first few months as they learn new coping tools. Deeper, lasting change often takes longer, but progress builds steadily over time.'
+    },
+    {
+      question: 'What if I\'ve been struggling for years—can therapy still help?',
+      answer: 'Yes. Healing is possible at any stage. Even if anxiety or depression has been part of your life for years, therapy can bring real relief and growth.'
+    },
+    {
+      question: 'Do I need medication, or is therapy enough?',
+      answer: 'That depends on your needs. Some clients benefit from a combination of therapy and medication, while others find therapy alone effective. We can collaborate with your doctor if medication is part of your care.'
     }
   ];
 
   return (
     <div className="wp-react-app">
       <BaseTherapyPage
-        title="Anxiety Therapy"
-        heroImage={Anxiety_Depression}
-        heroText="Do you feel stuck in a cycle of worry and racing thoughts? Our therapists help you manage anxiety, reduce stress, and regain a sense of calm and confidence in your life."
-        signs={signs}
-        signsTitle="Common signs"
-        approachTitle="Our treatment approach"
-        approachText="We help you develop practical coping strategies, reframe negative thought patterns, and restore a sense of calm and confidence."
-        approaches={approaches}
-        approachesTitle="Therapeutic approaches"
-        supportText="We understand that seeking help for anxiety and depression takes courage. Our therapists provide a safe, non-judgmental space where you can work through your challenges at your own pace and develop the tools needed for long-term emotional well-being."
+        title="Anxiety & Depression"
+         heroImage={Anxiety_Depression}
+        subtitle="Do worry and sadness feel like they're taking over your life?"
+        introText="Anxiety and depression are two of the most common mental health struggles—and they often show up together. You may feel restless and unable to calm your thoughts, or weighed down by sadness and fatigue. These challenges can make even daily tasks feel overwhelming. The good news: with the right support, healing is possible."
+        commonSigns={commonSigns}
+        challenges={challenges}
+        therapeuticSolution={therapeuticSolution}
+        howItWorks={howItWorks}
+        whyWorkWithUs={whyWorkWithUs}
+        faqs={faqs}
       />
     </div>
   );

@@ -1,21 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FadeInSection } from '../components/shared/Animations';
-import CTASection from '../components/shared/CTASection';
 import BookNowCTA from '../components/shared/BookNowCTA';
+import { CONTACT_INFO } from '../constants';
 
 const BaseTherapyPage = ({
   title,
   heroImage,
-  heroText,
-  signs,
-  signsTitle,
-  approachTitle,
-  approachText,
-  approaches,
-  approachesTitle,
-  supportText
+  subtitle,
+  introText,
+  commonSigns,
+  challenges,
+  therapeuticSolution,
+  howItWorks,
+  whyWorkWithUs,
+  faqs
 }) => {
+  const [openFAQ, setOpenFAQ] = useState(null);
 
+  const toggleFAQ = (index) => {
+    setOpenFAQ(openFAQ === index ? null : index);
+  };
 
   return (
     <div className="min-h-screen pt-2 bg-brand-background-secondary">
@@ -29,121 +33,388 @@ const BaseTherapyPage = ({
           </div>
         </div>
       </section>
-
-      {/* Understanding Section with Background Image */}
-      <section className="px-4 sm:px-6 lg:px-8 py-6 sm:py-8 bg-brand-background-primary">
-        <FadeInSection>
-          <div className="max-w-6xl mx-auto">
-            <div className="relative h-[300px] sm:h-[400px] rounded-xl overflow-hidden">
-              <img
-                src={heroImage}
-                alt={`Person dealing with ${title.toLowerCase()}`}
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/40"></div>
-              <div className="relative z-10 flex flex-col items-center justify-center h-full p-4 sm:p-8">
-                <p className="text-center sm:text-lg md:text-xl lg:text-2xl font-semibold text-brand-text-secondary max-w-4xl">
-                  {heroText}
-                </p>
-                <div className="flex justify-center mt-4">
-                  <BookNowCTA />
+       <section className="px-4 sm:px-6 lg:px-8 py-16 bg-brand-background-primary">
+        <div className="max-w-7xl mx-auto">
+          <FadeInSection>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="flex justify-center lg:justify-end">
+                <div className="relative w-full max-w-lg">
+                  <img
+                    src={heroImage}
+                    alt={`Person dealing with ${title.toLowerCase()}`}
+                    className="w-full h-auto rounded-2xl shadow-2xl object-cover"
+                  />
                 </div>
               </div>
+              <div className="text-center lg:text-left">
+                <h2 className="text-xl sm:text-2xl md:text-3xl text-brand-sage  mb-6">
+                  {subtitle}
+                </h2>
+                <p className="text-lg sm:text-xl text-brand-text-primary mb-8 leading-relaxed">
+                  {introText}
+                </p>
+                <BookNowCTA />
+              </div>
+
             </div>
-          </div>
-        </FadeInSection>
+          </FadeInSection>
+        </div>
       </section>
 
       {/* Common Signs Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-6 sm:py-8 bg-brand-background-primary border-t border-brand-gray-warm/10">
-        <FadeInSection>
-          <div className="max-w-6xl mx-auto">
-            <div className="p-6 sm:p-8 md:p-12">
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-brand-text-primary mb-16 text-center">
-                {signsTitle}
-              </h2>
-              <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-                {signs.map((sign, index) => (
-                  <div
-                    key={index}
-                    className="w-40 h-40 sm:w-48 sm:h-48 rounded-full bg-brand-sage/10 flex items-center justify-center p-4 
-                    group hover:bg-brand-sage hover:scale-105 transition-all duration-300"
-                  >
-                    <span className="text-base sm:text-lg font-semibold text-brand-text-primary group-hover:text-white text-center transition-colors duration-300">
-                      {sign}
-                    </span>
-                  </div>
+      {commonSigns && (
+        <section id="signs" className="px-4 sm:px-6 lg:px-8 py-16 bg-brand-background-secondary">
+          <FadeInSection>
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl sm:text-4xl font-serif text-brand-text-primary mb-4">
+                  Common signs you may be experiencing
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                {commonSigns.map((sign, index) => (
+                  <FadeInSection key={index} delay={index * 100}>
+                    <div className="h-full p-6 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex items-center">
+                      <div className="w-4 h-4 bg-brand-blue-soft rounded-full mr-4 flex-shrink-0"></div>
+                      <span className="text-lg text-brand-text-primary font-medium leading-relaxed">
+                        {sign}
+                      </span>
+                    </div>
+                  </FadeInSection>
                 ))}
               </div>
-              <div className="flex justify-center mt-16">
+
+              <div className="text-center">
+                <p className="text-xl text-brand-text-primary mb-8 max-w-3xl mx-auto">
+                  If these symptoms sound familiar, you're not alone—and support is available.
+                </p>
                 <BookNowCTA />
               </div>
             </div>
-          </div>
-        </FadeInSection>
-      </section>
+          </FadeInSection>
+        </section>
+      )}
 
-      {/* Treatment Approach */}
-      <section className="px-4 sm:px-6 lg:px-8 py-6 sm:py-8 bg-brand-background-primary border-t border-brand-gray-warm/10">
+      {/* Challenges Section */}
+      <section id="challenges" className="px-4 sm:px-6 lg:px-8 py-16 bg-brand-background-primary">
         <FadeInSection>
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-brand-text-primary mb-6">
-              {approachTitle}
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl text-brand-text-primary">
-              {approachText}
-            </p>
-          </div>
-        </FadeInSection>
-      </section>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl font-serif text-brand-text-primary mb-4">
+                The pain can bring
+              </h2>
+            </div>
 
-      {/* Therapeutic Approaches Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-10 bg-brand-background-primary border-t border-brand-gray-warm/10">
-        <FadeInSection>
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-brand-text-primary mb-12 text-center">
-              {approachesTitle || 'Therapeutic approaches'}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-              {approaches.map((approach, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-6 sm:p-8 rounded-xl shadow hover:shadow-lg 
-                  transition-all duration-300 text-center group"
-                >
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-4 sm:mb-6 text-brand-sage">
-                    {approach.svg}
+            <div className="space-y-8">
+              {challenges.map((challenge, index) => (
+                <FadeInSection key={index} delay={index * 200}>
+                  <div className="relative">
+                    <div className={`flex flex-col lg:flex-row items-center gap-8 ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                      <div className="flex-1 bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 className="text-2xl font-semibold text-brand-sage mb-4">
+                          {challenge.title}
+                        </h3>
+                        <p className="text-lg text-brand-text-primary leading-relaxed">
+                          {challenge.description}
+                        </p>
+                      </div>
+                      <div className="w-full lg:w-1/3">
+                        <div className="w-16 h-16 bg-brand-blue-soft rounded-full mx-auto flex items-center justify-center shadow-lg">
+                          <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                   <h3 className="text-lg sm:text-xl font-semibold text-brand-sage mb-4 sm:mb-6">
-                    {approach.title}
-                  </h3>
-                  <p className="text-base sm:text-lg text-brand-text-primary">
-                    {approach.description}
-                  </p>
-                </div>
+                </FadeInSection>
               ))}
             </div>
-            <div className="flex justify-center mt-12">
+
+            <FadeInSection delay={600}>
+              <div className="text-center mt-16 p-8 bg-white/50 rounded-2xl backdrop-blur-sm">
+                <p className="text-xl text-brand-text-primary max-w-4xl mx-auto leading-relaxed mb-6">
+                  If these experiences sound familiar, you don't have to face them alone. Support is available.
+                </p>
+                <BookNowCTA />
+              </div>
+            </FadeInSection>
+          </div>
+        </FadeInSection>
+      </section>
+
+      {/* Therapeutic Solution Section */}
+      <section id="solution" className="px-4 sm:px-6 lg:px-8 py-16 bg-brand-background-secondary">
+        <FadeInSection>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl sm:text-4xl font-serif text-brand-text-primary mb-4 ">
+                Our healing solution
+              </h2>
+              <p className="text-xl text-brand-text-primary max-w-4xl mx-auto mb-8">
+                At Mind Matters Center, we provide trauma-focused therapy to help you rebuild trust, manage triggers, and reconnect with yourself and others.
+              </p>
+              <p className="text-lg text-brand-text-primary max-w-4xl mx-auto">
+                Our clinicians are trained in evidence-based approaches including:
+              </p>
+            </div>
+
+            <div className="space-y-8 mb-12">
+              {therapeuticSolution.map((approach, index) => (
+                <FadeInSection key={index} delay={index * 200}>
+                  <div className="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 className="text-2xl font-semibold text-brand-sage mb-4">
+                      {approach.title}
+                    </h3>
+                    <p className="text-lg text-brand-text-primary leading-relaxed">
+                      {approach.description}
+                    </p>
+                  </div>
+                </FadeInSection>
+              ))}
+            </div>
+
+            <div className="text-center">
               <BookNowCTA />
             </div>
           </div>
         </FadeInSection>
       </section>
 
-      {/* Additional Support Section */}
-      <section className="px-4 sm:px-6 lg:px-8 py-8 sm:py-8 bg-brand-background-primary">
+      {/* How It Works Section*/}
+      <section id="process" className="px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-brand-background-primary">
         <FadeInSection>
-          <div className="max-w-5xl mx-auto">
-            <div className="p-6 sm:p-8 md:p-12 text-center">
-              <p className="text-lg sm:text-xl text-brand-text-primary mb-8">
-                {supportText}
-              </p>
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-brand-text-primary mb-12 text-center">
+              How trauma therapy works with us
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              {howItWorks.map((step, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-6 sm:p-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
+                >
+                  <div className="flex items-center mb-4">
+                    <div className="w-8 h-8 bg-brand-coral text-white rounded-full flex items-center justify-center font-bold mr-4">
+                      {index + 1}
+                    </div>
+                    <h3 className="text-xl sm:text-2xl font-semibold text-brand-sage">
+                      {step.title}
+                    </h3>
+                  </div>
+                  <p className="text-base sm:text-lg text-brand-text-primary leading-relaxed">
+                    {step.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div className="text-center">
+              <BookNowCTA />
             </div>
           </div>
         </FadeInSection>
       </section>
 
-      <CTASection />
+      {/* Why Work With Us Section */}
+      <section id="why-us" className="px-4 sm:px-6 lg:px-8 py-16 bg-brand-background-secondary">
+        <FadeInSection>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl font-serif text-brand-text-primary mb-4">
+                Why work with Mind Matters Center?
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              {whyWorkWithUs.map((reason, index) => (
+                <FadeInSection key={index} delay={index * 150}>
+                  <div className="h-full bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 flex flex-col">
+                    <div className="w-16 h-16 bg-brand-blue-soft rounded-full mx-auto mb-6 flex items-center justify-center flex-shrink-0">
+                      <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div className="flex-grow flex flex-col justify-center text-center">
+                      <h3 className="text-xl font-semibold text-brand-sage mb-4">
+                        {reason.title}
+                      </h3>
+                      <p className="text-base text-brand-text-primary leading-relaxed">
+                        {reason.description}
+                      </p>
+                    </div>
+                  </div>
+                </FadeInSection>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <BookNowCTA />
+            </div>
+          </div>
+        </FadeInSection>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq" className="px-4 sm:px-6 lg:px-8 py-16 bg-brand-background-primary">
+        <FadeInSection>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl sm:text-4xl font-serif text-brand-text-primary mb-4">
+                Frequently Asked Questions
+              </h2>
+            </div>
+
+            <div className="space-y-4 mb-12">
+              {faqs.map((faq, index) => (
+                <FadeInSection key={index} delay={index * 100}>
+                  <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-300 group"
+                    >
+                      <h3 className="text-lg sm:text-xl font-semibold text-brand-sage group-hover:text-brand-coral transition-colors pr-4">
+                        {faq.question}
+                      </h3>
+                      <svg
+                        className={`w-6 h-6 text-brand-sage transition-transform duration-300 flex-shrink-0 ${openFAQ === index ? 'transform rotate-180' : ''
+                          }`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                    <div
+                      className={`transition-all duration-300 ease-in-out overflow-hidden ${openFAQ === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                        }`}
+                    >
+                      <div className="px-8 py-6 border-t border-gray-100">
+                        <p className="text-base sm:text-lg text-brand-text-primary leading-relaxed">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </FadeInSection>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <BookNowCTA />
+            </div>
+          </div>
+        </FadeInSection>
+      </section>
+
+      {/* Redesigned Final CTA Section */}
+      <section className="relative px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-br from-brand-sage/10 via-brand-blue-soft/10 to-brand-coral/10 overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-brand-sage/5 rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-brand-blue-soft/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <FadeInSection>
+          <div className="relative max-w-6xl mx-auto text-center">
+            {/* Main heading */}
+            <div className="mb-8">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-brand-text-primary mb-4">
+                Take the first step toward
+              </h2>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-brand-sage">
+                healing
+              </h2>
+              <div className="w-32 h-1 bg-gradient-to-r from-brand-sage to-brand-blue-soft mx-auto rounded-full mt-6"></div>
+            </div>
+
+            {/* Subtitle */}
+            <p className="text-xl sm:text-2xl text-brand-text-primary mb-16 max-w-4xl mx-auto leading-relaxed">
+              Starting trauma therapy can feel overwhelming, but you don't have to do it alone. At Mind Matters Center, we make it simple to get started:
+            </p>
+
+            {/* Three-step process cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-16">
+              {[
+                {
+                  title: "Free Consultation",
+                  description: "Book a free 20-minute consultation to ask questions and see if this feels like the right fit.",
+                  icon: "💬"
+                },
+                {
+                  title: "Schedule Your Session",
+                  description: "Schedule your first session directly if you're ready to begin.",
+                  icon: "📅"
+                },
+                {
+                  title: "Get Quick Response",
+                  description: "Reach out by phone or email—we'll respond within 24 business hours.",
+                  icon: "⚡"
+                }
+              ].map((step, index) => (
+                <FadeInSection key={index} delay={index * 150}>
+                  <div className="group relative bg-white/80 backdrop-blur-sm p-6 lg:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-white/50">
+
+                    {/* Icon */}
+                    <div className="text-4xl mb-4 mt-4 group-hover:scale-110 transition-transform duration-300">
+                      {step.icon}
+                    </div>
+
+                    {/* Content */}
+                    <h3 className="text-xl sm:text-2xl font-semibold text-brand-sage mb-4 group-hover:text-brand-coral transition-colors duration-300">
+                      {step.title}
+                    </h3>
+                    <p className="text-base sm:text-lg text-brand-text-primary leading-relaxed">
+                      {step.description}
+                    </p>
+                  </div>
+                </FadeInSection>
+              ))}
+            </div>
+
+            {/* CTA Buttons */}
+            <FadeInSection delay={500}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-12">
+                <BookNowCTA />
+
+              </div>
+            </FadeInSection>
+
+            {/* Contact info */}
+            <FadeInSection delay={600}>
+              <div className="bg-white/70 backdrop-blur-sm p-6 sm:p-8 rounded-2xl shadow-lg border border-white/50 max-w-2xl mx-auto">
+                <h3 className="text-xl sm:text-2xl font-semibold text-brand-sage mb-4">
+                  Ready to connect?
+                </h3>
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center text-brand-text-primary">
+                  <a
+                    href="tel:+14153790835"
+                    className="flex items-center gap-2 hover:text-brand-coral transition-colors duration-300 font-medium"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    {CONTACT_INFO.phone}
+                  </a>
+                  <a
+                    href="mailto:hello@mindmatterscenter.com"
+                    className="flex items-center gap-2 hover:text-brand-coral transition-colors duration-300 font-medium"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    {CONTACT_INFO.email}
+                  </a>
+                </div>
+                <p className="text-sm text-brand-text-primary/70 mt-4">
+                  We respond within 24 business hours
+                </p>
+              </div>
+            </FadeInSection>
+          </div>
+        </FadeInSection>
+      </section>
     </div>
   );
 };
