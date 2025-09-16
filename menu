@@ -7,9 +7,7 @@
 
 <!-- wp:navigation-link {"label":"Therapy for Asian Americans \u0026amp; BIPOC communities","type":"page","id":515,"url":"/asia-bipoc-therapy","kind":"post-type"} /-->
 
-<!-- wp:navigation-link {"label":"Anxiety therapy","type":"page","id":528,"url":"/anxiety-therapy","kind":"post-type"} /-->
-
-<!-- wp:navigation-link {"label":"Depression therapy","type":"page","id":535,"url":"/depression-therapy","kind":"post-type"} /-->
+<!-- wp:navigation-link {"label":"Anxiety \u0026 Depression Therapy","type":"page","id":528,"url":"/anxiety-depression-therapy","kind":"post-type"} /-->
 
 <!-- wp:navigation-link {"label":"Relationship therapy","type":"page","id":540,"url":"/relationship-counseling","kind":"post-type"} /-->
 
@@ -31,8 +29,6 @@
 
 <!-- wp:navigation-link {"label":"Join our team","type":"page","id":482,"url":"https://mindmatterscenter.com/join-our-team/","kind":"post-type"} /-->
 <!-- /wp:navigation-submenu -->
-
-<!-- wp:navigation-link {"label":"Contact","type":"page","id":883,"url":"https://mindmatterscenter.com/contact/","kind":"post-type"} /-->
 
 <!-- wp:navigation-link {"label":"FAQ","type":"page","id":388,"url":"https://mindmatterscenter.com/faq/","kind":"post-type"} /-->
 

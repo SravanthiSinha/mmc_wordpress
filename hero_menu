@@ -7,9 +7,7 @@
 
 <!-- wp:navigation-link {"label":"Therapy for Asian Americans \u0026amp; BIPOC communities","type":"page","id":515,"url":"/asia-bipoc-therapy","kind":"post-type"} /-->
 
-<!-- wp:navigation-link {"label":"Anxiety therapy","type":"page","id":528,"url":"/anxiety-therapy","kind":"post-type"} /-->
-
-<!-- wp:navigation-link {"label":"Depression therapy","type":"page","id":535,"url":"/depression-therapy","kind":"post-type"} /-->
+<!-- wp:navigation-link {"label":"Anxiety \u0026 Depression Therapy","type":"page","id":528,"url":"/anxiety-depression-therapy/","kind":"post-type"} /-->
 
 <!-- wp:navigation-link {"label":"Relationship therapy","type":"page","id":540,"url":"/relationship-counseling","kind":"post-type"} /-->
 
@@ -32,8 +30,6 @@
 <!-- wp:navigation-link {"label":"Join our team","type":"page","id":482,"url":"https://mindmatterscenter.com/join-our-team/","kind":"post-type"} /-->
 <!-- /wp:navigation-submenu -->
 
-<!-- wp:navigation-link {"label":"Contact","type":"page","id":883,"url":"https://mindmatterscenter.com/contact/","kind":"post-type"} /-->
-
 <!-- wp:navigation-link {"label":"FAQ","type":"page","id":388,"url":"https://mindmatterscenter.com/faq/","kind":"post-type"} /-->
 
 <!-- wp:navigation-link {"label":"Resources","type":"page","id":406,"url":"https://mindmatterscenter.com/resources/","kind":"post-type"} /-->
@@ -41,13 +37,8 @@
 <!-- wp:navigation-link {"label":"Client Portal","type":"link","opensInNewTab":true,"url":"https://mindmatterscenter.janeapp.com/","kind":"custom"} /-->
 
 <!-- wp:buttons {"style":{"spacing":{"padding":{"right":"0px","left":"0px"}},"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"}} -->
-<div class="wp-block-buttons" style="padding-right:0px;padding-left:0px">
-    <!-- wp:button {"backgroundColor":"custom-coral","textColor":"white","className":"hide-on-mobile","style":{"border":{"radius":"50px"},"typography":{"fontWeight":"700","fontStyle":"normal"}}} -->
-    <div class="wp-block-button hide-on-mobile"><a
-        class="wp-block-button__link has-white-color has-custom-coral-background-color has-text-color has-background wp-element-button"
-        href="https://mindmatterscenter.com/contact/"
-        style="border-radius:50px;font-style:normal;font-weight:700">Book
+<div class="wp-block-buttons" style="padding-right:0px;padding-left:0px"><!-- wp:button {"backgroundColor":"custom-coral","textColor":"white","className":"hide-on-mobile","style":{"border":{"radius":"50px"},"typography":{"fontWeight":"700","fontStyle":"normal"}}} -->
+<div class="wp-block-button hide-on-mobile"><a class="wp-block-button__link has-white-color has-custom-coral-background-color has-text-color has-background wp-element-button" href="https://mindmatterscenter.com/contact/" style="border-radius:50px;font-style:normal;font-weight:700">Book
             Now</a></div>
-<!-- /wp:button -->
-</div>
+<!-- /wp:button --></div>
 <!-- /wp:buttons -->
