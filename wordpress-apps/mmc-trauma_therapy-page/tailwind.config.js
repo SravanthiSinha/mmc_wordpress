@@ -23,11 +23,11 @@ export default {
           background: {
             primary: '#FFFFFF',
             // secondary: '#F7F8FA'
-            secondary:'#f9f4f2'
+            secondary: '#f9f4f2'
           },
-          // Supporting Colors
-          sage: '#7FA693',
-          sageLight: '#89a095',
+          // Supporting Colors - Updated for better accessibility
+          sage: '#6B8E7F',
+          sageLight: '#7FA693',
           blue: {
             soft: '#A2C1D4',
             bright: '#2D87D3',
@@ -38,7 +38,7 @@ export default {
           // Text Colors
           text: {
             primary: '#4A5568',
-            secondary:'#e5e5e5',
+            secondary: '#e5e5e5',
           },
           // Action Colors
           coral: '#FF7300',

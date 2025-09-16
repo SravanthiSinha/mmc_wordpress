@@ -1,7 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import BaseTherapyPage from './pages/BaseTherapyPage';
-import Trauma_Support from './assets/images/trauma-support.jpg';
+import TraumaTherapyImage from './assets/images/trauma-support.jpg';
 import './App.css';
 
 function App() {
@@ -21,26 +21,47 @@ function App() {
     },
     {
       title: 'Trouble sleeping/Insomnia',
-      description: 'Sleep disturbances are common with trauma. Racing thoughts, nightmares, or hypervigilance can make it difficult to fall asleep or stay asleep, leaving you feeling exhausted during the day.'
+      description: 'Trauma can disrupt your sleep patterns, making it hard to fall asleep, stay asleep, or feel rested. Racing thoughts, nightmares, or feeling unsafe can keep you awake, leaving you exhausted and struggling to function during the day.'
     }
   ];
 
   // Therapeutic approaches
-  const therapeuticSolution = [
+  const approaches = [
     {
       title: 'IFS (Internal Family Systems)',
+      svg: (
+        <svg viewBox="0 0 60 60" className="w-full h-full">
+          <path d="M30 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20z"
+            fill="none" stroke="currentColor" strokeWidth="2" />
+          <path d="M20 30h20M30 20v20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        </svg>
+      ),
       description: 'A gentle, parts-based therapy that helps you understand and heal the protective and wounded parts of yourself.'
     },
     {
-      title: 'EMDR (Eye Movement Desensitization and Reprocessing)',
+      title: 'EMDR-informed care',
+      svg: (
+        <svg viewBox="0 0 60 60" className="w-full h-full">
+          <circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" strokeWidth="2" />
+          <path d="M15 30h30M30 15v30" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+          <circle cx="30" cy="30" r="10" fill="none" stroke="currentColor" strokeWidth="2" />
+        </svg>
+      ),
       description: 'A structured, research-backed therapy that helps the brain reprocess painful memories so they no longer feel overwhelming.'
     },
     {
-      title: 'Mindfulness-based practices',
+      title: 'Mindfulness-based techniques',
+      svg: (
+        <svg viewBox="0 0 60 60" className="w-full h-full">
+          <circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" strokeWidth="2" />
+          <path d="M30 15c-8.284 0-15 6.716-15 15 0 8.284 6.716 15 15 15 8.284 0 15-6.716 15-15"
+            fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+          <circle cx="30" cy="30" r="5" fill="currentColor" />
+        </svg>
+      ),
       description: 'To calm the nervous system, increase self-awareness, and build resilience.'
     }
   ];
-
   // How trauma therapy works process
   const howItWorks = [
     {
@@ -105,11 +126,12 @@ function App() {
     <div className="wp-react-app">
       <BaseTherapyPage
         title="Trauma Therapy (IFS & EMDR)"
-        heroImage={Trauma_Support}
-        subtitle="Does past trauma still impact your daily life? Are flashbacks, anxiety, or numbness keeping you from living fully?"
-        introText=" If you've experienced painful events that continue to bring fear, avoidance, or emotional distress, you may feel like the past is still shaping your present. Trauma therapy offers you a safe space to process those experiences, regain control, and heal at your own pace."
+        heroImage={TraumaTherapyImage}
+        subtitle="Does past trauma still impact your daily life?"
+        secondarySubtitle="Are flashbacks, anxiety, or numbness keeping you from living fully?"
+        introText="If you've experienced painful events that continue to bring fear, avoidance, or emotional distress, you may feel like the past is still shaping your present. Trauma therapy offers you a safe space to process those experiences, regain control, and heal at your own pace."
         challenges={challenges}
-        therapeuticSolution={therapeuticSolution}
+        approaches={approaches}
         howItWorks={howItWorks}
         whyWorkWithUs={whyWorkWithUs}
         faqs={faqs}
