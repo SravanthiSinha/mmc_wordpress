@@ -5,7 +5,6 @@ import { FadeInSection, HoverCard } from '../components/shared/Animations';
 import BookNowCTA from '../components/shared/BookNowCTA';
 import ZengImg from '../assets/images/profile_pics/zeng.jpg';
 import ElaineImg from '../assets/images/profile_pics/elaine.jpg';
-import ChristineImg from '../assets/images/profile_pics/christine.jpg';
 
 const Home = () => {
 
@@ -263,29 +262,6 @@ const Home = () => {
                 </div>
                 <div className="mt-4 flex justify-center">
                   <BookNowCTA size="sm" therapistId="elaine" />
-                </div>
-              </div>
-
-              {/* Therapist 3 */}
-              <div className="group w-full sm:w-[calc(33%-1rem)] max-w-sm">
-                <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
-                  <img
-                    src={ChristineImg}
-                    alt="Christine Gates, AMFT"
-                    className="w-full h-[450px] object-cover object-center"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 z-20 transform transition-transform duration-500">
-                    <h3 className="text-lg md:text-xl font-serif text-white mb-2">
-                      Christine Gates, AMFT
-                    </h3>
-                    <p className="text-white/90 text-sm">
-                      Associate Therapist
-                    </p>
-                  </div>
-                </div>
-                <div className="mt-4 flex justify-center">
-                  <BookNowCTA size="sm" therapistId="christine" />
                 </div>
               </div>
             </div>

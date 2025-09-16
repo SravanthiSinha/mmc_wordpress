@@ -2,7 +2,6 @@ import TeamMember from '../components/shared/TeamMember';
 import { FadeInSection } from '../components/shared/Animations';
 import ZengImg from '../assets/images/profile_pics/zeng.jpg';
 import ElaineImg from '../assets/images/profile_pics/elaine.jpg';
-import ChristineImg from '../assets/images/profile_pics/christine.jpg';
 import AboutUsImg from '../assets/images/aboutus.jpg';
 import AsianClientImg from '../assets/images/asian-client.jpg';
 import BookNowCTA from '../components/shared/BookNowCTA';
@@ -50,28 +49,6 @@ const About = () => {
       ],
       quote: 'I believe therapy is a collaborative journey where we work together to discover your strengths, navigate challenges, and build resilience. My goal is to create a space where you feel truly understood as you embrace your authentic self.',
       personalContent: "When I'm not working, I love hiking and reading. Both activities allow me to expand my horizons, and I enjoy balancing the adventure of the outdoors with the adventure of a great story."
-    },
-    {
-      id: 'christine',
-      name: 'Christine Gates, AMFT',
-      title: 'Associate Therapist | Mind Matters Center',
-      languages: 'English and Korean',
-      image: ChristineImg,
-      introContent: [
-        'I\'m passionate about helping individuals and families heal from trauma and navigate complex mental health challenges. I understand that life can bring unexpected and distressing experiences—whether it\'s trauma, family struggles, or neurodivergent conditions—and I\'m here to provide a safe space where healing can begin.',
-        'My approach focuses on understanding both the symptoms you\'re experiencing and the underlying causes. I believe in providing practical tools that you can use in your daily life while also helping you process and reframe past experiences that may be impacting your present.'
-      ],
-      credentials: [
-        'Master\'s degree in Marriage and Family Therapy from Northcentral University',
-        'Associated Marriage and Family Therapist (AMFT)',
-        'Specialized training in EMDR, DBT, ABFT, SFBT, and ERP'
-      ],
-      mainContent: [
-        'I work with children (ages 5+), adolescents, young adults, families, and individuals dealing with a wide range of conditions including depression, anxiety, PTSD, eating disorders, OCD, ADHD, bipolar disorder, and other neurodivergent diagnoses. My goal is to meet you where you are and provide support that feels both meaningful and practical.',
-        'Every therapy session is tailored to ensure you\'re gaining new insights and coping strategies that actually work in your real life. I believe in monitoring our progress together and adjusting our approach as needed to make sure you\'re getting the most out of our time together.'
-      ],
-      quote: 'I believe healing happens when we address both the surface symptoms and the deeper experiences that shape us. My goal is to help you develop practical tools that seamlessly integrate into your daily life.',
-      personalContent: 'In my leisure time, I enjoy biking, hiking, and scuba diving in open water. Since May 2000, I have practiced daily meditation, which helps me unwind and reflect on my experiences in life. Additionally, I am passionate about reading and watching documentaries focusing on forensic psychology and neuroscience.'
     }
   ];
   const values = [
