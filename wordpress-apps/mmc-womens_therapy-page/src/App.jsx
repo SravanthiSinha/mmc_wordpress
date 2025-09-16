@@ -1,71 +1,110 @@
-// src/App.jsx
+// src/WomenTherapyApp.jsx
 import React from 'react';
 import BaseTherapyPage from './pages/BaseTherapyPage';
 import Womens_Therapy from './assets/images/womens-therapy.jpg';
 import './App.css';
 
 function App() {
-  // Women's therapy content
-  const signs = [
-    'Role overwhelm',
-    'People-pleasing',
-    'Self-criticism',
-    'Relationship stress',
-    'Identity questions'
+
+  // Detailed challenges with full descriptions from your content
+  const challenges = [
+    {
+      title: 'The pressure of multiple roles',
+      description: 'Many women find themselves balancing careers, family life, friendships, and caregiving. This constant juggling act can leave you feeling exhausted and guilty no matter what you prioritize.'
+    },
+    {
+      title: 'The challenge of people-pleasing',
+      description: 'You may find yourself saying "yes" when you want to say "no," putting others first and pushing your own needs aside. Over time, this can erode self-esteem and create resentment.'
+    },
+    {
+      title: 'The weight of self-criticism',
+      description: 'Women often hold themselves to impossibly high standards. Whether at work, in relationships, or in appearance, the voice of self-criticism can feel relentless and draining.'
+    }
   ];
 
-  const approaches = [
+  // Benefits from therapy (implied from your therapeutic solution content)
+  const therapeuticBenefits = [
+    'Cultivate self-compassion and kindness toward yourself',
+    'Strengthen your voice and communicate your needs',
+    'Feel empowered in your unique journey',
+    'Set down external pressures and reconnect with yourself',
+    'Make choices that reflect your values',
+    'Build lasting resilience and healthier relationships'
+  ];
+
+  // Your "How therapy for women works with us" content
+  const howItWorks = [
     {
-      title: 'Identity & life transitions',
-      svg: (
-        <svg viewBox="0 0 60 60" className="w-full h-full">
-          <circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" strokeWidth="2" />
-          <path d="M20 30c0-5.523 4.477-10 10-10s10 4.477 10 10M18 42c2-5 7-8 12-8s10 3 12 8"
-            fill="none" stroke="currentColor" strokeWidth="2"
-            strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      ),
-      description: 'Support through major life changes and exploration of authentic self-identity'
+      title: 'Explore your story',
+      description: 'We begin by understanding the pressures you\'ve faced—cultural, relational, or personal—and how they\'ve shaped your experience.'
     },
     {
-      title: 'Relationship dynamics',
-      svg: (
-        <svg viewBox="0 0 60 60" className="w-full h-full">
-          <circle cx="20" cy="25" r="10" fill="none" stroke="currentColor" strokeWidth="2" />
-          <circle cx="40" cy="25" r="10" fill="none" stroke="currentColor" strokeWidth="2" />
-          <path d="M30 25h0M25 40a15 15 0 0110 0"
-            stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      ),
-      description: 'Navigate partnerships, friendships, family roles, and create healthy boundaries'
+      title: 'Build strategies for relief',
+      description: 'Together, we create tools for managing stress, setting healthy boundaries, and quieting self-criticism.'
     },
     {
-      title: 'Self-care & empowerment',
-      svg: (
-        <svg viewBox="0 0 60 60" className="w-full h-full">
-          <path d="M30 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20z"
-            fill="none" stroke="currentColor" strokeWidth="2" />
-          <path d="M22 28l5 5 12-12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M30 40v-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      ),
-      description: 'Develop practical strategies for self-compassion and confidence in your choices'
+      title: 'Strengthen identity and confidence',
+      description: 'We help you explore your authentic self, reclaim your voice, and move forward with greater confidence.'
+    },
+    {
+      title: 'Empower long-term growth',
+      description: 'Therapy is not just about reducing stress—it\'s about building lasting resilience, healthier relationships, and a deeper connection to yourself.'
+    }
+  ];
+
+  // Your "Why work with Mind Matters Center?" content
+  const whyWorkWithUs = [
+    {
+      title: 'Specialized in women\'s therapy',
+      description: 'Our therapists understand the unique pressures women face—from role overload to cultural expectations—and provide care tailored to these challenges.'
+    },
+    {
+      title: 'Culturally responsive and inclusive',
+      description: 'We honor the intersections of gender, culture, family, and identity, recognizing that each woman\'s journey is deeply personal.'
+    },
+    {
+      title: 'Evidence-based and compassionate',
+      description: 'We use approaches like CBT, IFS, and mindfulness-based strategies that empower you with practical skills and emotional growth.'
+    },
+    {
+      title: 'Language accessibility',
+      description: 'Our therapists speak Mandarin Chinese, English, and Korean, making therapy more accessible and culturally attuned for clients across diverse backgrounds.'
+    }
+  ];
+
+  // Your FAQ content
+  const faqs = [
+    {
+      question: 'Do I have to know exactly what I want to work on before starting?',
+      answer: 'No. Many women begin therapy simply knowing they feel "stuck" or overwhelmed. Therapy helps you clarify what you want and how to get there.'
+    },
+    {
+      question: 'Can therapy help if I\'ve been struggling with self-esteem for years?',
+      answer: 'Yes. Self-worth can be rebuilt at any stage of life. Many women discover new confidence and self-compassion through this work.'
+    },
+    {
+      question: 'Will therapy help with my relationships, too?',
+      answer: 'Absolutely. As you learn to set boundaries and strengthen your sense of self, your relationships often become healthier and more balanced.'
+    },
+    {
+      question: 'Do you offer online sessions?',
+      answer: 'Yes. We provide secure virtual therapy for women across California, so you can receive support wherever you are.'
     }
   ];
 
   return (
     <div className="wp-react-app">
       <BaseTherapyPage
-        title="Therapy for women"
+        title="Therapy for Women"
         heroImage={Womens_Therapy}
-        heroText="Navigating societal pressures and life transitions? Our therapists help women cultivate self-compassion, explore their identities, and find empowerment in their unique journeys."
-        signs={signs}
-        signsTitle="Common challenges"
-        approachTitle="Our therapeutic approach"
-        approachText="We provide a safe, validating space for women to explore their mental health, relationships, and personal growth. Our therapists understand the unique challenges women face and help you move toward authentic self-expression and empowerment."
-        approaches={approaches}
-        approachesTitle="Therapeutic approaches"
-        supportText="Women often balance multiple roles and responsibilities while navigating societal expectations. Our therapists create a space where you can prioritize your own well-being, explore your authentic identity, and develop strategies for setting boundaries and nurturing your mental health."
+        subtitle="Do you feel pulled in too many directions?"
+        introText="Between career demands, family responsibilities, cultural expectations, and personal growth, women often carry an invisible weight. You may feel overwhelmed, burnt out, or unsure of how to care for yourself while showing up for everyone else. Women's therapy offers you a safe space to pause, reflect, and build the support you need."
+        challenges={challenges}
+        therapeuticSolution="At Mind Matters Center, we help women cultivate self-compassion, strengthen their voices, and feel empowered in their unique journeys. Therapy is a space where you can set down external pressures, reconnect with yourself, and make choices that reflect your values."
+        therapeuticBenefits={therapeuticBenefits}
+        howItWorks={howItWorks}
+        whyWorkWithUs={whyWorkWithUs}
+        faqs={faqs}
       />
     </div>
   );
