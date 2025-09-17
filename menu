@@ -9,15 +9,13 @@
 
 <!-- wp:navigation-link {"label":"Anxiety \u0026 Depression Therapy","type":"page","id":528,"url":"/anxiety-depression-therapy","kind":"post-type"} /-->
 
-<!-- wp:navigation-link {"label":"Relationship therapy","type":"page","id":540,"url":"/relationship-counseling","kind":"post-type"} /-->
-
 <!-- wp:navigation-link {"label":"Family \u0026amp; cultural dynamics","type":"page","id":546,"url":"/family-cultural-dynamic/","kind":"post-type"} /-->
 
 <!-- wp:navigation-link {"label":"Therapy for burn out and stress","type":"page","id":551,"url":"https://mindmatterscenter.com/stress-burnout/","kind":"post-type"} /-->
 
 <!-- wp:navigation-link {"label":"Individual therapy","type":"page","id":567,"url":"https://mindmatterscenter.com/individual-therapy/","kind":"post-type"} /-->
 
-<!-- wp:navigation-link {"label":"Couples therapy","type":"page","id":573,"url":"https://mindmatterscenter.com/couples-therapy/","kind":"post-type"} /-->
+<!-- wp:navigation-link {"label":"Couples \u0026 Relationship Therapy","type":"page","id":573,"url":"/couples-relationship-therapy","kind":"post-type"} /-->
 
 <!-- wp:navigation-link {"label":"Internal Family Systems Therapy","type":"page","id":1234,"url":"https://mindmatterscenter.com/internal-family-systems-therapy/","kind":"post-type"} /-->
 <!-- /wp:navigation-submenu -->

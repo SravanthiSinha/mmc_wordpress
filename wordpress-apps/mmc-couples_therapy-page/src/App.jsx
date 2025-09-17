@@ -1,6 +1,6 @@
 import React from 'react';
 import BaseTherapyPage from './pages/BaseTherapyPage';
-import CouplesTherapyImg from '../assets/images/couples-therapy.svg';
+import CouplesTherapyImg from './assets/images/couples-therapy.jpg';
 
 const App = () => {
   // Couples & Relationship therapy content

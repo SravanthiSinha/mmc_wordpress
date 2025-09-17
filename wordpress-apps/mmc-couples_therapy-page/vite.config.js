@@ -26,6 +26,6 @@ export default defineConfig({
   },
   // Base path to use in production - update this to match your WordPress plugin path
   base: process.env.NODE_ENV === 'production' 
-    ? '/mmc/wp-content/plugins/mmc-wordpress-app/dist/' 
+    ? '/mmc/wp-content/plugins/mmc-couples_therapy-page/dist/' 
     : '/',
 });
