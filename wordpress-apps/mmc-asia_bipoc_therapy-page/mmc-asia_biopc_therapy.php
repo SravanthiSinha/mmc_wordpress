@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: MMC - Asia BIOPC Therapy PAGE
- * Description: Integration of MMC - Asia BIOPC Therapy PAGE with WordPress
+ * Plugin Name: MMC - Asia BIPOC Therapy PAGE
+ * Description: Integration of MMC - Asia BIPOC Therapy PAGE with WordPress
  * Version: 1.0.0
  * Author: Sravanthi Sinha
- * Text Domain: mmc-asia_biopc_therapy
+ * Text Domain: mmc-asia_bipoc_therapy
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
@@ -17,13 +17,13 @@ if (!defined('ABSPATH')) {
 /**
  * Main plugin class
  * 
- * Handles integration of  MMC - Asia BIOPC Therapy PAGE with WordPress
+ * Handles integration of  MMC - Asia BIPOC Therapy PAGE with WordPress
  */
-class MMC_ASIA_BIOPC_THERAPY_App {
+class MMC_ASIA_BIPOC_THERAPY_App {
     /**
      * Plugin instance
      *
-     * @var MMC_ASIA_BIOPC_THERAPY_App
+     * @var MMC_ASIA_BIPOC_THERAPY_App
      */
     private static $instance = null;
     
@@ -44,7 +44,7 @@ class MMC_ASIA_BIOPC_THERAPY_App {
     /**
      * Get plugin instance
      *
-     * @return MMC_ASIA_BIOPC_THERAPY_App
+     * @return MMC_ASIA_BIPOC_THERAPY_App
      */
     public static function get_instance() {
         if (null === self::$instance) {
@@ -61,7 +61,7 @@ class MMC_ASIA_BIOPC_THERAPY_App {
         $this->plugin_url = plugin_dir_url(__FILE__);
         
         // Register shortcode
-        add_shortcode('mmc_asia_biopc_therapy', array($this, 'render_react_app'));
+        add_shortcode('mmc_asia_bipoc_therapy', array($this, 'render_react_app'));
         
         // Enqueue scripts and styles with high priority to ensure they load after other scripts
         add_action('wp_enqueue_scripts', array($this, 'register_assets'), 99);
@@ -85,15 +85,15 @@ class MMC_ASIA_BIOPC_THERAPY_App {
         if (version_compare(PHP_VERSION, '7.0', '<')) {
             deactivate_plugins(plugin_basename(__FILE__));
             wp_die(
-                esc_html__('MMC ASIA_BIOPC_THERAPY requires PHP 7.0 or higher.', 'mmc-asia_biopc_therapy'),
-                esc_html__('Plugin Activation Error', 'mmc-asia_biopc_therapy'),
+                esc_html__('MMC ASIA_BIPOC_THERAPY requires PHP 7.0 or higher.', 'mmc-asia_bipoc_therapy'),
+                esc_html__('Plugin Activation Error', 'mmc-asia_bipoc_therapy'),
                 array('back_link' => true)
             );
         }
         
         // Check if dist directory exists
         if (!file_exists($this->plugin_dir . 'dist') || !is_dir($this->plugin_dir . 'dist')) {
-            error_log('MMC ASIA_BIOPC_THERAPY Plugin: dist directory not found during activation.');
+            error_log('MMC ASIA_BIPOC_THERAPY Plugin: dist directory not found during activation.');
         }
         
         // Flush rewrite rules
@@ -123,7 +123,7 @@ class MMC_ASIA_BIOPC_THERAPY_App {
         
         // Check if dist directory exists
         if (!file_exists($plugin_dir . 'dist') || !is_dir($plugin_dir . 'dist')) {
-            error_log('MMC ASIA_BIOPC_THERAPY Plugin: dist directory not found.');
+            error_log('MMC ASIA_BIPOC_THERAPY Plugin: dist directory not found.');
             return;
         }
         
@@ -145,7 +145,7 @@ class MMC_ASIA_BIOPC_THERAPY_App {
         $manifest = json_decode(file_get_contents($manifest_file), true);
         
         if (!$manifest || !is_array($manifest)) {
-            error_log('MMC ASIA_BIOPC_THERAPY Plugin: Invalid manifest file');
+            error_log('MMC ASIA_BIPOC_THERAPY Plugin: Invalid manifest file');
             return;
         }
         
@@ -157,7 +157,7 @@ class MMC_ASIA_BIOPC_THERAPY_App {
             
             $file_path = $this->plugin_dir . 'dist/' . $details['file'];
             $file_url = $this->plugin_url . 'dist/' . $details['file'];
-            $handle = 'mmc-asia_biopc_therapy-' . sanitize_title(basename($details['file']));
+            $handle = 'mmc-asia_bipoc_therapy-' . sanitize_title(basename($details['file']));
             
             wp_register_style(
                 $handle,
@@ -178,7 +178,7 @@ class MMC_ASIA_BIOPC_THERAPY_App {
             
             $file_path = $this->plugin_dir . 'dist/' . $details['file'];
             $file_url = $this->plugin_url . 'dist/' . $details['file'];
-            $handle = 'mmc-asia_biopc_therapy-' . sanitize_title(basename($details['file']));
+            $handle = 'mmc-asia_bipoc_therapy-' . sanitize_title(basename($details['file']));
             
             // Check if this is the main entry file
             $is_main = isset($details['isEntry']) && $details['isEntry'] === true;
@@ -216,7 +216,7 @@ class MMC_ASIA_BIOPC_THERAPY_App {
             // Add localized data for the main script
             wp_localize_script(
                 $main_handle,
-                'mmcAsia_BIOPC_TherapyData',
+                'mmcAsia_BIPOC_TherapyData',
                 $this->get_localized_data()
             );
         }
@@ -237,7 +237,7 @@ class MMC_ASIA_BIOPC_THERAPY_App {
             }
             
             $file_name = basename($css_file);
-            $handle = 'mmc-asia_biopc_therapy-css-' . $index;
+            $handle = 'mmc-asia_bipoc_therapy-css-' . $index;
             
             wp_register_style(
                 $handle,
@@ -255,7 +255,7 @@ class MMC_ASIA_BIOPC_THERAPY_App {
             }
             
             $file_name = basename($js_file);
-            $handle = 'mmc-asia_biopc_therapy-js-' . $index;
+            $handle = 'mmc-asia_bipoc_therapy-js-' . $index;
             
             // The main file should depend on any other files
             if (strpos($file_name, 'main') !== false || strpos($file_name, 'index') !== false) {
@@ -291,7 +291,7 @@ class MMC_ASIA_BIOPC_THERAPY_App {
             // Add localized data for the main script
             wp_localize_script(
                 $main_handle,
-                'mmcAsia_BIOPC_TherapyData',
+                'mmcAsia_BIPOC_TherapyData',
                 $this->get_localized_data()
             );
         }
@@ -304,11 +304,11 @@ class MMC_ASIA_BIOPC_THERAPY_App {
         global $post;
         
         // Only load assets when the shortcode is used
-        if (is_a($post, 'WP_Post') && has_shortcode($post->post_content, 'mmc_asia_biopc_therapy')) {
+        if (is_a($post, 'WP_Post') && has_shortcode($post->post_content, 'mmc_asia_bipoc_therapy')) {
             // Enqueue all registered styles
             $styles = wp_styles();
             foreach ($styles->registered as $handle => $style) {
-                if (strpos($handle, 'mmc-asia_biopc_therapy') === 0) {
+                if (strpos($handle, 'mmc-asia_bipoc_therapy') === 0) {
                     wp_enqueue_style($handle);
                 }
             }
@@ -316,7 +316,7 @@ class MMC_ASIA_BIOPC_THERAPY_App {
             // Enqueue all registered scripts
             $scripts = wp_scripts();
             foreach ($scripts->registered as $handle => $script) {
-                if (strpos($handle, 'mmc-asia_biopc_therapy') === 0) {
+                if (strpos($handle, 'mmc-asia_bipoc_therapy') === 0) {
                     wp_enqueue_script($handle);
                 }
             }
@@ -329,9 +329,9 @@ class MMC_ASIA_BIOPC_THERAPY_App {
      * @return array
      */
     private function get_localized_data() {
-        return apply_filters('mmc_asia_biopc_therapy_localized_data', array(
+        return apply_filters('mmc_asia_bipoc_therapy_localized_data', array(
             'ajaxUrl' => admin_url('admin-ajax.php'),
-            'nonce' => wp_create_nonce('mmc_asia_biopc_therapy_nonce'),
+            'nonce' => wp_create_nonce('mmc_asia_bipoc_therapy_nonce'),
             'homeUrl' => home_url(),
             'siteUrl' => site_url(),
             'pluginUrl' => $this->plugin_url,
@@ -349,10 +349,10 @@ class MMC_ASIA_BIOPC_THERAPY_App {
     public function render_react_app($atts) {
         // Extract shortcode attributes
         $atts = shortcode_atts(array(
-            'id' => 'mmc-asia_biopc_therapy-' . uniqid(), // Generate a unique ID
+            'id' => 'mmc-asia_bipoc_therapy-' . uniqid(), // Generate a unique ID
             'class' => '',
             'category' => '', // Optional category filter
-        ), $atts, 'mmc_asia_biopc_therapy');
+        ), $atts, 'mmc_asia_bipoc_therapy');
         
         // Build data attributes
         $data_attrs = '';
@@ -365,13 +365,13 @@ class MMC_ASIA_BIOPC_THERAPY_App {
         // Return the container for the React app with both ID and class
         return sprintf(
             '<div id="%s" class="wp-react-app-container %s"%s>' . 
-            '<noscript>' . esc_html__('JavaScript is required to view the ASIA_BIOPC_THERAPY content.', 'mmc-asia_biopc_therapy') . '</noscript>' .
+            '<noscript>' . esc_html__('JavaScript is required to view the ASIA_BIPOC_THERAPY content.', 'mmc-asia_bipoc_therapy') . '</noscript>' .
             '<p class="react-loading-placeholder">%s</p>' .
             '</div>',
             esc_attr($atts['id']),
             esc_attr($atts['class']),
             $data_attrs,
-            esc_html__('Loading ASIA_BIOPC_THERAPY content...', 'mmc-asia_biopc_therapy')
+            esc_html__('Loading ASIA_BIPOC_THERAPY content...', 'mmc-asia_bipoc_therapy')
         );
     }
     
@@ -383,7 +383,7 @@ class MMC_ASIA_BIOPC_THERAPY_App {
         ?>
         <script>
         (function() {
-            console.group('MMC ASIA_BIOPC_THERAPY Debug Information');
+            console.group('MMC ASIA_BIPOC_THERAPY Debug Information');
             
             document.addEventListener('DOMContentLoaded', function() {
                 console.log('DOMContentLoaded triggered');
@@ -401,7 +401,7 @@ class MMC_ASIA_BIOPC_THERAPY_App {
                         // Check which scripts were loaded
                         const scripts = document.querySelectorAll('script');
                         const reactScripts = Array.from(scripts).filter(script => 
-                            script.src && (script.src.includes('mmc-asia_biopc_therapy') || script.src.includes('dist/assets'))
+                            script.src && (script.src.includes('mmc-asia_bipoc_therapy') || script.src.includes('dist/assets'))
                         );
                         
                         if (reactScripts.length === 0) {
@@ -425,11 +425,11 @@ class MMC_ASIA_BIOPC_THERAPY_App {
 /**
  * Return the plugin instance
  * 
- * @return MMC_ASIA_BIOPC_THERAPY_App
+ * @return MMC_ASIA_BIPOC_THERAPY_App
  */
-function mmc_asia_biopc_therapy_plugin() {
-    return MMC_ASIA_BIOPC_THERAPY_App::get_instance();
+function mmc_asia_bipoc_therapy_plugin() {
+    return MMC_ASIA_BIPOC_THERAPY_App::get_instance();
 }
 
 // Initialize the plugin
-mmc_asia_biopc_therapy_plugin();
+mmc_asia_bipoc_therapy_plugin();

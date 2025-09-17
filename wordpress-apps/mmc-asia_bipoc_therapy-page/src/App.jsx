@@ -1,73 +1,119 @@
 // src/App.jsx
 import React from 'react';
 import BaseTherapyPage from './pages/BaseTherapyPage';
-import BIPOC_Therapy from './assets/images/asia-bipoc-therapy.jpg';
+import AsianAmericanTherapyImage from './assets/images/asia-bipoc-therapy.jpg';
 import './App.css';
 
 function App() {
-  // ASIA/BIPOC therapy content
-  const signs = [
-    'Cultural identity',
-    'Family expectations',
+  // Asian American & Culturally Sensitive Therapy content
+  const commonChallenges = [
+    'Cultural identity struggles',
+    'Family expectations and generational conflicts',
     'Intergenerational trauma',
-    'Racial stress',
-    'Acculturation'
+    'Racial stress and discrimination',
+    'Acculturation and bicultural tension'
   ];
 
-  const approaches = [
+  const struggles = [
     {
-      title: 'Cultural identity & integration',
-      svg: (
-        <svg viewBox="0 0 60 60" className="w-full h-full">
-          <circle cx="30" cy="20" r="10" fill="none" stroke="currentColor" strokeWidth="2" />
-          <path d="M15 45c0-8.284 6.716-15 15-15s15 6.716 15 15"
-            fill="none" stroke="currentColor" strokeWidth="2"
-            strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M20 25a15 15 0 0120 0"
-            stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      ),
-      description: 'Explore and honor your cultural heritage while navigating multiple identities and finding balance'
+      title: 'Cultural identity and belonging',
+      description: 'Living between cultures can leave you questioning where you truly belong. You may feel pressure to adapt to one environment, while being judged in another.'
     },
     {
-      title: 'Culturally responsive care',
-      svg: (
-        <svg viewBox="0 0 60 60" className="w-full h-full">
-          <path d="M30 10c-11.046 0-20 8.954-20 20s8.954 20 20 20 20-8.954 20-20-8.954-20-20-20z"
-            fill="none" stroke="currentColor" strokeWidth="2" />
-          <path d="M20 20c5 5 15 5 20 0M20 40c5-5 15-5 20 0"
-            stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-          <path d="M30 20v20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      ),
-      description: 'Therapy that acknowledges cultural context, family dynamics, and societal pressures unique to BIPOC experiences'
+      title: 'Family expectations and intergenerational conflict',
+      description: 'Many clients feel the weight of parental or cultural expectations—around education, career, marriage, or caregiving—making it difficult to follow their own path.'
     },
     {
-      title: 'Healing & empowerment',
-      svg: (
-        <svg viewBox="0 0 60 60" className="w-full h-full">
-          <circle cx="30" cy="30" r="28" fill="none" stroke="currentColor" strokeWidth="2" />
-          <path d="M25 20a5 5 0 0110 0c0 5-10 8-10 15M30 44v-4"
-            fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      ),
-      description: 'Develop resilience strategies that honor your cultural strengths and address systemic challenges'
+      title: 'Racial stress and systemic inequities',
+      description: 'Experiences of discrimination, stereotyping, or microaggressions can create ongoing stress and erode self-esteem. Over time, these experiences take a toll on mental health.'
+    }
+  ];
+
+  const therapeuticSolution = "At Mind Matters Center, we offer culturally sensitive therapy designed specifically for Asian Americans and BIPOC clients. Our approach acknowledges the unique challenges of navigating identity, family, and systemic pressures—while helping you build resilience and empowerment.";
+
+  const familyDynamics = {
+    title: "Family & Cultural Dynamics",
+    description: "Family relationships are at the center of many cultural experiences. For Asian American and BIPOC clients, family expectations can shape life choices, career decisions, and even personal identity. Sometimes, these expectations create tension:",
+    points: [
+      "Pressure to meet cultural or family standards (achievement, caregiving, marriage)",
+      "Cultural stigma around mental health that discourages open conversations",
+      "Intergenerational misunderstandings between parents and children growing up in different cultural contexts"
+    ],
+    conclusion: "Therapy provides a space to explore these dynamics with compassion. We help clients honor cultural values while also developing healthy boundaries, improving communication, and finding balance between family obligations and personal growth."
+  };
+
+  const howItWorks = [
+    {
+      title: 'Create a safe and validating space',
+      description: 'We begin by honoring your story, including cultural and generational experiences that shape who you are.'
+    },
+    {
+      title: 'Understand your unique challenges',
+      description: 'Together, we explore the impact of cultural identity, family dynamics, racial stress, or intergenerational trauma.'
+    },
+    {
+      title: 'Build tools for resilience',
+      description: 'We develop strategies for managing stress, setting boundaries, and strengthening self-compassion.'
+    },
+    {
+      title: 'Empower authentic growth',
+      description: 'Therapy supports you in embracing your identity fully and creating a life aligned with your values—not just expectations.'
+    }
+  ];
+
+  const whyWorkWithUs = [
+    {
+      title: 'Specialized in culturally responsive care',
+      description: 'Our therapists are trained to understand cultural identity, family obligations, and systemic inequities—and how they affect mental health.'
+    },
+    {
+      title: 'Representation matters',
+      description: 'As an Asian-owned and women-owned practice, we bring lived understanding of cultural nuance and create a space where clients feel less alone.'
+    },
+    {
+      title: 'Language accessibility',
+      description: 'Our therapists speak Mandarin Chinese, English, and Korean, making therapy more accessible and culturally attuned for clients across diverse backgrounds.'
+    },
+    {
+      title: 'Evidence-based and empowering',
+      description: 'We use approaches like CBT, IFS, EMDR-informed therapy, and mindfulness, tailored to your cultural context and healing needs.'
+    }
+  ];
+
+  const faqs = [
+    {
+      question: 'Do I have to explain my culture to my therapist?',
+      answer: 'No. Our therapists are familiar with cultural issues common to Asian American and BIPOC communities. We understand, so you don\'t have to educate us.'
+    },
+    {
+      question: 'What if my family doesn\'t support therapy?',
+      answer: 'That\'s common. Therapy is your safe space, even if it\'s not talked about at home. We can also help you navigate family stigma or resistance.'
+    },
+    {
+      question: 'Can therapy help with racial trauma?',
+      answer: 'Yes. Therapy can provide tools to process painful experiences of racism, reduce their emotional weight, and build resilience.'
+    },
+    {
+      question: 'Do you offer online therapy?',
+      answer: 'Yes, we provide secure virtual therapy for clients across California.'
     }
   ];
 
   return (
     <div className="wp-react-app">
       <BaseTherapyPage
-        title="Therapy for Asian Americans & BIPOC communities"
-        heroImage={BIPOC_Therapy}
-        heroText="Balancing cultural identity with family expectations? Our culturally sensitive therapy creates a space where your unique experiences are seen, understood, and honored."
-        signs={signs}
-        signsTitle="Common challenges"
-        approachTitle="Our therapeutic approach"
-        approachText="We provide culturally affirming therapy that recognizes the complex interplay between personal identity, family dynamics, and societal factors. Our therapists understand the nuances of navigating multiple cultural contexts and honor your unique journey."
-        approaches={approaches}
-        approachesTitle="Therapeutic approaches"
-        supportText="We understand that seeking therapy can be especially complex when navigating cultural stigma around mental health. Our therapists create a safe, non-judgmental space where your cultural background is not just acknowledged but understood as an integral part of who you are and your healing journey."
+        title="Asian American & Culturally Sensitive Therapy"
+        tagline="Compassionate, culturally sensitive therapy designed to honor your identity, family, and lived experience."
+        heroImage={AsianAmericanTherapyImage}
+        subtitle="Do you ever feel caught between cultures?"
+        introText="Balancing cultural identity, family expectations, and societal pressures can feel overwhelming. You may feel invisible in mainstream spaces, misunderstood at home, or unsure how to honor both your cultural roots and your authentic self. Therapy can provide a safe, affirming space where your unique experiences are seen, understood, and respected."
+        commonChallenges={commonChallenges}
+        struggles={struggles}
+        therapeuticSolution={therapeuticSolution}
+        familyDynamics={familyDynamics}
+        howItWorks={howItWorks}
+        whyWorkWithUs={whyWorkWithUs}
+        faqs={faqs}
       />
     </div>
   );
