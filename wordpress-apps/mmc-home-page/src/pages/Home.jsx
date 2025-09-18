@@ -18,48 +18,48 @@ const Home = () => {
   ];
 
   // Our specialties for quick access
-  const specialties = [
-    {
-      title: 'Trauma Therapy',
-      path: '/trauma-therapy',
-      description: 'Healing from trauma with evidence-based approaches for strength and recovery'
-    },
-    {
-      title: 'Therapy for Women',
-      path: '/womens-therapy',
-      description: 'Supporting women through unique challenges, life transitions, and personal growth'
-    },
-    {
-      title: 'Therapy for Asian Americans and BIPOC',
-      path: '/asia-bipoc-therapy',
-      description: 'Culturally sensitive therapy for navigating identity and systemic challenges'
-    },
-    {
-      title: 'Anxiety Therapy',
-      path: '/anxiety-therapy',
-      description: 'Evidence-based techniques to manage worry and regain a sense of calm'
-    },
-    {
-      title: 'Depression Therapy',
-      path: '/depression-therapy',
-      description: 'Support for understanding emotions and rediscovering motivation and joy'
-    },
-    {
-      title: 'Relationship Therapy',
-      path: '/relationship-counseling',
-      description: 'Guidance to build communication, trust, and emotional connection'
-    },
-    {
-      title: 'Family & Cultural Dynamics',
-      path: '/family-cultural-dynamic',
-      description: 'Navigating intergenerational issues and family expectations with compassion'
-    },
-    {
-      title: 'Therapy for Burnout and Stress',
-      path: '/stress-burnout',
-      description: 'Restoring balance and well-being in your personal and professional life'
-    }
-  ];
+const specialties = [
+  {
+    title: 'Trauma Therapy',
+    path: '/trauma-therapy',
+    description: 'Healing from trauma with evidence-based approaches for strength and recovery'
+  },
+  {
+    title: 'Therapy for Women',
+    path: '/womens-therapy',
+    description: 'Supporting women through unique challenges, life transitions, and personal growth'
+  },
+  {
+    title: 'Therapy for Asian Americans and BIPOC',
+    path: '/asia-bipoc-therapy',
+    description: 'Culturally sensitive therapy for navigating identity and systemic challenges'
+  },
+  {
+    title: 'Anxiety & Depression Therapy',
+    path: '/anxiety-depression-therapy',
+    description: 'Evidence-based techniques to manage both conditions, reducing stress and restoring calm and joy'
+  },
+  {
+    title: 'Individual Therapy',
+    path: '/individual-therapy',
+    description: 'Culturally responsive therapy to help you manage stress, anxiety, depression, and life transitions'
+  },
+  {
+    title: 'Couples & Relationship Therapy',
+    path: '/couples-relationship-therapy',
+    description: 'Improve communication, rebuild trust, and navigate challenges together using evidence-based approaches'
+  },
+  {
+    title: 'Therapy for Burnout and Stress',
+    path: '/stress-burnout',
+    description: 'Restoring balance and well-being in your personal and professional life'
+  },
+  {
+    title: 'Insomnia & Sleep Therapy (CBT-I)',
+    path: '/insomnia-sleep-therapy',
+    description: 'Evidence-based techniques to reset your sleep rhythm and develop healthy sleep habits naturally'
+  }
+];
 
   const features = [
     {
@@ -312,7 +312,7 @@ const Home = () => {
                   icon: CouplesTherapyImg,
                   title: "Couples therapy",
                   description: "Building stronger relationships through open communication and understanding.",
-                  path: "/couples-therapy"
+                  path: "/couples-relationship-therapy"
                 },
                 {
                   icon: IFSTherapyImg,

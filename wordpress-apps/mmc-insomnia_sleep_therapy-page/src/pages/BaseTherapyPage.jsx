@@ -44,7 +44,7 @@ const BaseTherapyPage = ({
                     <img
                       src={heroImage}
                       alt="Sleep therapy"
-                      className="w-4/5 h-auto rounded-2xl shadow-2xl object-cover"
+                      className="w-ful h-auto rounded-2xl shadow-2xl object-cover"
                     />
                   </div>
                 </div>

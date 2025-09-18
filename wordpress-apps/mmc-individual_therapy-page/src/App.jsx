@@ -1,7 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import BaseTherapyPage from './pages/BaseTherapyPage';
-import IndividualTherapyImage from './assets/images/individual-therapy.svg';
+import IndividualTherapyImage from './assets/images/asian-client.jpg';
 import './App.css';
 
 function App() {

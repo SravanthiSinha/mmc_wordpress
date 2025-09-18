@@ -2,10 +2,11 @@ import React from 'react';
 import Anxiety_Therapy from '../assets/images/anxiety.jpg';
 import Womens_Therapy from '../assets/images/womens-therapy.jpg';
 import BIPOC_Therapy from '../assets/images/asia-bipoc-therapy.jpg';
-import Depression_Img from '../assets/images/depression.jpg';
+import Individual_Therapy from '../assets/images/asian-client.jpg';
+// import Depression_Img from '../assets/images/depression.jpg';
 import Stress_Burnout from '../assets/images/stress-burnout.jpg';
 import Relationship_Counseling from '../assets/images/relationship-counseling.jpg';
-import Cultural_Family from '../assets/images/cultural-family.jpg';
+import Sleep_Insomnia_Therapy from '../assets/images/sleep_insomnia.jpg';
 import Trauma_Support from '../assets/images/trauma-support.jpg';
 import { FadeInSection, SpecialtyCard } from '../components/shared/Animations';
 import CTASection from '../components/shared/CTASection';
@@ -35,39 +36,32 @@ const Specialties = () => {
             title: 'Anxiety & Depression Therapy',
             path: '/anxiety-depression-therapy',
             img_path: Anxiety_Therapy,
-           description: 'Anxiety and depression often occur together, creating overwhelming cycles of worry, sadness, and hopelessness that can affect every aspect of your life. Our therapists use practical, evidence-based techniques to help you understand and manage both conditions, developing effective coping strategies to reduce stress, lift your mood, and regain a sense of calm, confidence, and joy in your daily life.'
+            description: 'Anxiety and depression often occur together, creating overwhelming cycles of worry, sadness, and hopelessness that can affect every aspect of your life. Our therapists use practical, evidence-based techniques to help you understand and manage both conditions, developing effective coping strategies to reduce stress, lift your mood, and regain a sense of calm, confidence, and joy in your daily life.'
         },
-         {
+        {
             title: 'Therapy for burn out and stress',
             path: '/stress-burnout',
             img_path: Stress_Burnout,
             description: 'Chronic stress and burnout can leave you feeling exhausted, unmotivated, and disconnected. Our therapy sessions help you identify stressors, set boundaries, and develop self-care strategies to restore balance and well-being in your personal and professional life.',
-        },       
-        // {
-        //     title: 'Family & cultural dynamics',
-        //     path: '/family-cultural-dynamic',
-        //     img_path: Cultural_Family,
-        //     description: 'Navigating intergenerational issues and family expectations can be tough. We help you understand and manage these pressures with compassion and insight.',
-        // },
-       
-        // {
-        //     title: 'Individual therapy',
-        //     path: '/individual-therapy',
-        //     img_path: Anxiety_Therapy, // Using a placeholder image, update with actual IndividualTherapyImg when available
-        //     description: 'We provide culturally responsive individual therapy to help you manage stress, anxiety, depression, and life transitions. Our therapists create a safe, supportive space where you can explore your thoughts, emotions, and challenges at your own pace.',
-        // },
-        // {
-        //     title: 'Couples therapy',
-        //     path: '/couples-therapy',
-        //     img_path: Relationship_Counseling, // Using relationship counseling image as a placeholder
-        //     description: 'We offer couples therapy to help partners improve communication, rebuild trust, and navigate challenges together. Using evidence-based approaches like Gottman Method and Emotionally Focused Therapy (EFT), we support couples in deepening their understanding of each other and fostering a healthier relationship.',
-        // },
-        // {
-        //     title: 'Wellness coaching',
-        //     path: '/wellness-coaching',
-        //     img_path: Stress_Burnout, // Using a placeholder image, update with actual WellnessCoachingImg when available
-        //     description: "Your mental well-being goes beyond therapy. Our wellness coaching services help you build resilience, set meaningful goals, and create a balanced life. Whether you're looking to improve stress management, enhance self-care, or develop healthier habits, we offer personalized coaching to support your journey.",
-        // },
+        },
+        {
+            title: 'Individual therapy',
+            path: '/individual-therapy',
+            img_path: Individual_Therapy,
+            description: 'We provide culturally responsive individual therapy to help you manage stress, anxiety, depression, and life transitions. Our therapists create a safe, supportive space where you can explore your thoughts, emotions, and challenges at your own pace.',
+        },
+        {
+            title: 'Couples & Relationship therapy',
+            path: '/couples-relationship-therapy',
+            img_path: Relationship_Counseling,
+            description: 'We offer couples therapy to help partners improve communication, rebuild trust, and navigate challenges together. Using evidence-based approaches like Gottman Method and Emotionally Focused Therapy (EFT), we support couples in deepening their understanding of each other and fostering a healthier relationship.',
+        },
+        {
+            "title": "Insomnia & Sleep Therapy (CBT-I)",
+            "path": "/insomnia-sleep-therapy",
+            "img_path": Sleep_Insomnia_Therapy,
+            "description": "Sleep problems affect your energy, mood, and health. Our specialized Cognitive Behavioral Therapy for Insomnia (CBT-I) uses evidence-based techniques to help you reset your natural sleep rhythm, quiet racing thoughts, and develop lasting healthy sleep habits—naturally, without medication."
+        }
     ];
 
     return (

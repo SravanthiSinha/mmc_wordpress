@@ -1,7 +1,7 @@
 // Insomnia & Sleep Therapy (CBT-I) Page Content
 import React from 'react';
 import BaseTherapyPage from './pages/BaseTherapyPage';
-import SleepTherapyImage from './assets/images/sleep_insomnia.svg';
+import SleepTherapyImage from './assets/images/sleep_insomnia.jpg';
 import './App.css';
 
 function App() {
