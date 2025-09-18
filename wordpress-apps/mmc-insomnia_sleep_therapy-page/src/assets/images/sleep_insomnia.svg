@@ -1,0 +1,90 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with subtle gradient -->
+  <defs>
+    <radialGradient id="bgGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f9f4f2;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#6B8E7F;stop-opacity:0.05"/>
+    </radialGradient>
+    
+    <!-- Gradient for central moon -->
+    <radialGradient id="moonGradient" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#A2C1D4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2D87D3;stop-opacity:1"/>
+    </radialGradient>
+    
+    <!-- Gradients for sleep elements -->
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B8E7F"/>
+      <stop offset="100%" style="stop-color:#7FA693"/>
+    </linearGradient>
+    
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A2C1D4"/>
+      <stop offset="100%" style="stop-color:#2D87D3"/>
+    </linearGradient>
+    
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF7300"/>
+      <stop offset="100%" style="stop-color:#FE6701"/>
+    </linearGradient>
+    
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B8E7F"/>
+      <stop offset="100%" style="stop-color:#A2C1D4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGradient)" stroke="#6B8E7F" stroke-width="0.5" opacity="0.3"/>
+  
+  <!-- Outer ring of subtle dots for rhythm/cycles -->
+  <circle cx="100" cy="45" r="2" fill="#6B8E7F" opacity="0.3"/>
+  <circle cx="131" cy="55" r="2" fill="#A2C1D4" opacity="0.3"/>
+  <circle cx="155" cy="100" r="2" fill="#6B8E7F" opacity="0.3"/>
+  <circle cx="131" cy="145" r="2" fill="#A2C1D4" opacity="0.3"/>
+  <circle cx="100" cy="155" r="2" fill="#6B8E7F" opacity="0.3"/>
+  <circle cx="69" cy="145" r="2" fill="#A2C1D4" opacity="0.3"/>
+  <circle cx="45" cy="100" r="2" fill="#6B8E7F" opacity="0.3"/>
+  <circle cx="69" cy="55" r="2" fill="#A2C1D4" opacity="0.3"/>
+  
+  <!-- Sleep cycle elements - flowing teardrop shapes representing different CBT-I aspects -->
+  
+  <!-- Top: Mind quieting -->
+  <path d="M100 65 Q105 55 100 50 Q95 55 100 65" fill="url(#grad1)" opacity="0.8"/>
+  
+  <!-- Top Right: Sleep schedule -->
+  <path d="M125 75 Q135 70 130 60 Q125 70 125 75" fill="url(#grad2)" opacity="0.8"/>
+  
+  <!-- Right: Sleep environment -->
+  <path d="M135 100 Q145 105 140 110 Q135 105 135 100" fill="url(#grad3)" opacity="0.8"/>
+  
+  <!-- Bottom Right: Sleep habits -->
+  <path d="M125 125 Q135 130 130 140 Q125 130 125 125" fill="url(#grad4)" opacity="0.8"/>
+  
+  <!-- Bottom: Relaxation -->
+  <path d="M100 135 Q105 145 100 150 Q95 145 100 135" fill="url(#grad1)" opacity="0.8"/>
+  
+  <!-- Bottom Left: Sleep thoughts -->
+  <path d="M75 125 Q65 130 70 140 Q75 130 75 125" fill="url(#grad2)" opacity="0.8"/>
+  
+  <!-- Left: Sleep patterns -->
+  <path d="M65 100 Q55 105 60 110 Q65 105 65 100" fill="url(#grad3)" opacity="0.8"/>
+  
+  <!-- Top Left: Sleep hygiene -->
+  <path d="M75 75 Q65 70 70 60 Q75 70 75 75" fill="url(#grad4)" opacity="0.8"/>
+  
+  <!-- Central moon representing peaceful sleep -->
+  <circle cx="100" cy="100" r="18" fill="url(#moonGradient)" opacity="0.9"/>
+  
+  <!-- Moon crescent detail -->
+  <path d="M88 100 Q100 88 112 100 Q100 112 88 100" fill="#ffffff" opacity="0.3"/>
+  
+  <!-- Small stars around the moon -->
+  <path d="M85 90 L87 92 L85 94 L83 92 Z" fill="#ffffff" opacity="0.6"/>
+  <path d="M115 88 L117 90 L115 92 L113 90 Z" fill="#ffffff" opacity="0.6"/>
+  <path d="M110 112 L112 114 L110 116 L108 114 Z" fill="#ffffff" opacity="0.6"/>
+  
+  <!-- Subtle sleep waves emanating from center -->
+  <circle cx="100" cy="100" r="30" fill="none" stroke="#6B8E7F" stroke-width="0.5" opacity="0.15"/>
+  <circle cx="100" cy="100" r="35" fill="none" stroke="#A2C1D4" stroke-width="0.5" opacity="0.1"/>
+</svg>
