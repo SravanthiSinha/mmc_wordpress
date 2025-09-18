@@ -32,35 +32,24 @@ const Specialties = () => {
             description: 'Navigating mental health while balancing cultural identity, family expectations, and systemic challenges can be complex. We offer culturally sensitive therapy tailored to the experiences of Asian Americans and BIPOC individuals, providing a space where you feel seen, understood, and supported.'
         },
         {
-            title: 'Anxiety therapy',
-            path: '/anxiety-therapy',
+            title: 'Anxiety & Depression Therapy',
+            path: '/anxiety-depression-therapy',
             img_path: Anxiety_Therapy,
-            description: 'Anxiety can feel overwhelming, affecting your daily life, relationships, and overall well-being. Our therapists use practical, evidence-based techniques to help you manage worry, reduce stress, and regain a sense of calm and confidence in your life.',
+           description: 'Anxiety and depression often occur together, creating overwhelming cycles of worry, sadness, and hopelessness that can affect every aspect of your life. Our therapists use practical, evidence-based techniques to help you understand and manage both conditions, developing effective coping strategies to reduce stress, lift your mood, and regain a sense of calm, confidence, and joy in your daily life.'
         },
-        {
-            title: 'Depression therapy',
-            path: '/depression-therapy',
-            img_path: Depression_Img,
-            description: "When sadness, fatigue, and hopelessness take over, it's important to have support. Our depression therapy focuses on helping you understand your emotions, develop coping strategies, and rediscover motivation and joy in life.",
-        },
-        {
-            title: 'Relationship therapy',
-            path: '/relationship-counseling',
-            img_path: Relationship_Counseling,
-            description: "Healthy relationships require communication, trust, and emotional connection. Whether you're experiencing conflict, struggling with intimacy, or seeking to strengthen your bond, our therapists provide guidance to help you build a fulfilling and lasting relationship.",
-        },
-        {
-            title: 'Family & cultural dynamics',
-            path: '/family-cultural-dynamic',
-            img_path: Cultural_Family,
-            description: 'Navigating intergenerational issues and family expectations can be tough. We help you understand and manage these pressures with compassion and insight.',
-        },
-        {
+         {
             title: 'Therapy for burn out and stress',
             path: '/stress-burnout',
             img_path: Stress_Burnout,
             description: 'Chronic stress and burnout can leave you feeling exhausted, unmotivated, and disconnected. Our therapy sessions help you identify stressors, set boundaries, and develop self-care strategies to restore balance and well-being in your personal and professional life.',
-        },
+        },       
+        // {
+        //     title: 'Family & cultural dynamics',
+        //     path: '/family-cultural-dynamic',
+        //     img_path: Cultural_Family,
+        //     description: 'Navigating intergenerational issues and family expectations can be tough. We help you understand and manage these pressures with compassion and insight.',
+        // },
+       
         // {
         //     title: 'Individual therapy',
         //     path: '/individual-therapy',
