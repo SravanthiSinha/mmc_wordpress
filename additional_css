@@ -245,17 +245,6 @@ ul li.current-menu-item a {
   margin-top: 0 !important;
 }
 
-@media (max-width: 1350px) {
-body:has(.wp-block-navigation__responsive-container.is-menu-open) .floating-book-now-mobile.floating-book-now-mobile {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-
-.wp-block-navigation .wp-block-navigation-item {
-  outline: none !important;
-}
-
 /* ================================== */
 /* CONTACT FORM 7 STYLING */
 /* ================================== */
@@ -409,118 +398,6 @@ body:has(.wp-block-navigation__responsive-container.is-menu-open) .floating-book
   margin-right: auto !important;
 }
 
-/* ================================== */
-/* BIRTHDAY ROW LAYOUT - SPECIFIC TO HTML STRUCTURE */
-/* ================================== */
-
-/* Target the birthday-row container */
-.birthday-row {
-  width: 100%;
-}
-
-/* Make the paragraph inside birthday-row a flex container */
-.birthday-row p {
-  display: flex !important;
-  gap: 12px !important;
-  margin-bottom: 1.5rem !important;
-  align-items: stretch !important;
-}
-
-/* Target each span wrapper inside the birthday row */
-.birthday-row .wpcf7-form-control-wrap {
-  flex: 1 !important;
-  min-width: 0 !important; /* Prevents overflow */
-}
-
-/* Target the select elements inside birthday row */
-.birthday-row .wpcf7-form-control-wrap select {
-  width: 100% !important;
-  margin-bottom: 0 !important;
-  box-sizing: border-box !important;
-}
-
-/* File upload styling improvements */
-.wpcf7 input[type="file"] {
-  width: 100%;
-  padding: 12px 16px;
-  border: 2px dashed #e5e7eb;
-  border-radius: 8px;
-  background-color: #f9fafb;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.wpcf7 input[type="file"]:hover {
-  border-color: #7fa693;
-  background-color: #f0fdf4;
-}
-
-.wpcf7 input[type="file"]:focus {
-  outline: none;
-  border-color: #7fa693;
-  box-shadow: 0 0 0 3px rgba(127, 166, 147, 0.1);
-}
-
-/* Checkbox/acceptance field styling */
-.wpcf7 input[type="checkbox"] {
-  width: auto !important;
-  margin-right: 8px;
-  transform: scale(1.2);
-  accent-color: #7fa693;
-}
-
-.wpcf7 .wpcf7-list-item {
-  margin: 0;
-  padding: 12px 0;
-}
-
-.wpcf7 .wpcf7-list-item label {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  font-weight: normal;
-  line-height: 1.5;
-  cursor: pointer;
-}
-
-/* Small text styling */
-.wpcf7 small {
-  color: #6b7280;
-  font-size: 14px;
-  display: block;
-  margin-top: 4px;
-  font-style: italic;
-}
-
-/* Mobile responsive adjustments for birthday row */
-@media (max-width: 600px) {
-  .wpcf7 p:has(select[name="birth-month"]) select {
-    width: calc(33.333% - 4px);
-    margin-right: 6px;
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-  
-  .birthday-row {
-    gap: 6px;
-  }
-  
-  .birthday-row select {
-    min-width: 80px;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Stack birthday selects on very small screens if needed */
-  .birthday-mobile-stack .birthday-row {
-    flex-direction: column;
-    gap: 8px;
-  }
-  
-  .birthday-mobile-stack .birthday-row select {
-    width: 100%;
-  }
-}
 /* Responsive adjustments for the card */
 @media (max-width: 1200px) {
   .contact-form-card {
@@ -579,3 +456,13 @@ body:has(.wp-block-navigation__responsive-container.is-menu-open) .floating-book
   }
 }
 
+@media (max-width: 1350px) {
+body:has(.wp-block-navigation__responsive-container.is-menu-open) .floating-book-now-mobile.floating-book-now-mobile {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+
+.wp-block-navigation .wp-block-navigation-item {
+  outline: none !important;
+}
