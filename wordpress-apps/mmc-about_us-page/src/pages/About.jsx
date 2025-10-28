@@ -15,18 +15,21 @@ const About = () => {
       languages: 'English and Mandarin Chinese',
       image: ZengImg,
       introContent: [
-        'As an Asian American immigrant, my journey into mental health care was shaped by a deep commitment to breaking cultural and linguistic barriers that often prevent Asian American communities from accessing therapy. Navigating life between two cultures has given me a firsthand understanding of the unique stressors and mental health challenges that arise from bicultural identity, immigration, and intergenerational dynamics.'
+        'As an Asian American immigrant, my journey into mental health care was shaped by a deep commitment to breaking cultural and linguistic barriers that often prevent Asian American communities from accessing therapy. Navigating life between two cultures has given me a firsthand understanding of the unique stressors and mental health challenges that arise from bicultural identity, immigration, and intergenerational dynamics. My current doctoral research focuses on mental health stigma among Asian American populations and interventions that promote help-seeking and engagement in care.'
       ],
       credentials: [
         'Dual master\'s degrees in Social Work (MSW) and Gerontology (MSG) from University of Southern California',
         'Currently pursuing a Doctorate in Social Work (DSW) at University of Pennsylvania',
-        'Licensed Clinical Social Worker'
+        'Licensed Clinical Social Worker',
+        'Trained in Cognitive Behavioral Therapy for Insomnia (CBT-I), CBT, DBT, Internal Family System (IFS), relational therapy, and psychodynamic approaches',
+        'Clinical Supervisor in California, providing supervision and mentorship to associate therapists since 2018'
       ],
       mainContent: [
-        'As a bilingual Licensed Clinical Social Worker fluent in both English and Chinese, I integrate evidence-based treatment approaches, including Cognitive Behavioral Therapy (CBT), attachment-based techniques, and relational-focused methods. My clinical expertise includes working with individuals across the lifespan, with a special focus on older adults, individuals with chronic illnesses, and immigrants, particularly within the Asian American community.'
+        'As a bilingual Licensed Clinical Social Worker fluent in both English and Chinese, I integrate evidence-based and insight-oriented approaches, including Cognitive Behavioral Therapy (CBT), Cognitive Behavioral Therapy for Insomnia (CBT-I), attachment-based techniques, relational therapy, and Internal Family Systems (IFS). My clinical expertise spans individuals across the lifespan, with a special focus on Asian American clients, immigrants, and individuals managing chronic illnesses or sleep-related challenges.',
+        'I also provide clinical supervision for pre-licensed associate therapists, supporting their professional growth and development through a reflective, culturally responsive lens.'
       ],
       quote: 'At Mind Matters Center, I aim to create a safe and culturally responsive space where clients feel seen, heard, and empowered to navigate life\'s challenges. I believe in therapy that honors personal values, fosters self-awareness and strengthens resilience.',
-      personalContent: 'Outside of therapy, I enjoy exploring new places, traveling, reading, practicing yoga, hiking, backpacking, and indulging in delicious food. I also love animals—especially dogs- who hold a special place in my heart.'
+      personalContent: 'Outside of therapy, I enjoy exploring new places, traveling, reading, practicing yoga, hiking, backpacking, and indulging in delicious food. I also love animals, especially dogs- who hold a special place in my heart. I share my adventures with my miniature American Shepherd, Rico.'
     },
     {
       id: 'elaine',
