@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  {/* Background Circle */}
+  <circle cx="120" cy="120" r="120" fill="#F7F8FA"/>
+  
+  {/* Left Cultural Symbol - Eastern Architecture */}
+  <path d="M40 100 l20-15 l20 15 v40 h-40 z" fill="#FF7F50" opacity="0.8"/>
+  <path d="M35 100 h50 l-5-5 h-40 z" fill="#E86A47"/>
+  <rect x="50" y="115" width="10" height="15" fill="#FFFFFF" opacity="0.6"/>
+  
+  {/* Right Cultural Symbol - Western Architecture */}
+  <rect x="160" y="90" width="40" height="50" fill="#A2C1D4" opacity="0.8"/>
+  <rect x="165" y="100" width="10" height="12" fill="#FFFFFF" opacity="0.6"/>
+  <rect x="185" y="100" width="10" height="12" fill="#FFFFFF" opacity="0.6"/>
+  <rect x="165" y="120" width="10" height="12" fill="#FFFFFF" opacity="0.6"/>
+  <rect x="185" y="120" width="10" height="12" fill="#FFFFFF" opacity="0.6"/>
+  
+  {/* Bridge/Path connecting cultures - left side */}
+  <path d="M80 120 Q100 125 120 130" 
+        stroke="#7FA693" 
+        strokeWidth="4" 
+        fill="none" 
+        strokeLinecap="round"/>
+  
+  {/* Bridge/Path connecting cultures - right side */}
+  <path d="M160 120 Q140 125 120 130" 
+        stroke="#7FA693" 
+        strokeWidth="4" 
+        fill="none" 
+        strokeLinecap="round"/>
+  
+  {/* Central Person Figure */}
+  <circle cx="120" cy="145" r="18" fill="#2D3748"/>
+  <path d="M120 163 l-12 30 h24 z" fill="#2D3748"/>
+  
+  {/* Integration Symbol - Overlapping circles representing harmony */}
+  <circle cx="110" cy="75" r="15" fill="#FF7F50" opacity="0.4"/>
+  <circle cx="130" cy="75" r="15" fill="#A2C1D4" opacity="0.4"/>
+  <circle cx="120" cy="75" r="10" fill="#7FA693" opacity="0.6"/>
+  
+  {/* Growth Plant - representing personal development */}
+  <path d="M120 195 
+           c-3 0 -3 -5 0 -8
+           c3 -3 6 -3 6 0
+           c0 3 0 8 0 8 z" 
+        fill="#7FA693"/>
+  <path d="M115 195 
+           c-2 -3 -4 -5 -6 -5
+           c-2 0 -2 2 0 4
+           c2 2 4 3 6 5 z" 
+        fill="#7FA693" 
+        opacity="0.8"/>
+  <path d="M125 195 
+           c2 -3 4 -5 6 -5
+           c2 0 2 2 0 4
+           c-2 2 -4 3 -6 5 z" 
+        fill="#7FA693" 
+        opacity="0.8"/>
+  <rect x="118" y="193" width="4" height="12" fill="#6A8F7D"/>
+  
+  {/* Connecting hearts - representing emotional integration */}
+  <path d="M120 110 
+           c-1.5-2 -4-2 -5 0
+           c-1 2 -1 4 0 5
+           l5 5
+           l5-5
+           c1-1 1-3 0-5
+           c-1-2 -3.5-2 -5 0z" 
+        fill="#FF7F50" 
+        opacity="0.7"/>
+  
+  {/* Decorative flowing lines - representing journey/transition */}
+  <path d="M60 160 Q90 155 120 160" 
+        stroke="#A2C1D4" 
+        strokeWidth="2" 
+        fill="none" 
+        strokeDasharray="5,5" 
+        opacity="0.5"/>
+  <path d="M180 160 Q150 155 120 160" 
+        stroke="#FF7F50" 
+        strokeWidth="2" 
+        fill="none" 
+        strokeDasharray="5,5" 
+        opacity="0.5"/>
+</svg>
