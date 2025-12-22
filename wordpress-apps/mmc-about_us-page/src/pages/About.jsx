@@ -2,6 +2,7 @@ import TeamMember from '../components/shared/TeamMember';
 import { FadeInSection } from '../components/shared/Animations';
 import ZengImg from '../assets/images/profile_pics/zeng.jpg';
 import ElaineImg from '../assets/images/profile_pics/elaine.jpg';
+import ViniImg from '../assets/images/profile_pics/vini.jpg';
 import AboutUsImg from '../assets/images/aboutus.jpg';
 import AsianClientImg from '../assets/images/asian-client.jpg';
 import BookNowCTA from '../components/shared/BookNowCTA';
@@ -30,6 +31,29 @@ const About = () => {
       ],
       quote: 'At Mind Matters Center, I aim to create a safe and culturally responsive space where clients feel seen, heard, and empowered to navigate life\'s challenges. I believe in therapy that honors personal values, fosters self-awareness and strengthens resilience.',
       personalContent: 'Outside of therapy, I enjoy exploring new places, traveling, reading, practicing yoga, hiking, backpacking, and indulging in delicious food. I also love animals, especially dogs- who hold a special place in my heart. I share my adventures with my miniature American Shepherd, Rico.'
+    },
+    {
+      id: 'vini',
+      name: 'Vini Kalra, PsyD',
+      title: 'Clinical Psychologist | Mind Matters Center',
+      languages: 'English',
+      image: ViniImg,
+      introContent: [
+        'Many individuals seek therapy feeling stuck, overwhelmed, or uncertain about how to manage life\'s challenges. They may struggle with distressing emotions, unhelpful patterns, or symptoms that interfere with their daily functioning and overall well-being.',
+        'I provide compassionate, evidence-based care in a safe and non-judgmental environment. My approach is warm, supportive, and individualized, integrating evidence-based modalities such as Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), mindfulness-based strategies, and other therapeutic techniques as appropriate. I balance practical skill-building with deeper self-exploration to support meaningful and lasting change.'
+      ],
+      credentials: [
+        'Doctor of Psychology (PsyD) from Illinois School of Professional Psychology',
+        'Licensed Clinical Psychologist in California and Illinois',
+        'Trained in Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), Mindfulness-Based Interventions, Motivational Interviewing, Interpersonal Psychotherapy (IPT), and Exposure and Response Prevention (ERP)'
+      ],
+      mainContent: [
+        'I am dedicated to providing evidence-based psychological care to adults and seniors, with experience supporting individuals facing a wide range of mental health concerns. These include anxiety, depression, bipolar disorder, substance use and addiction, ADD/ADHD, stress management, panic disorders, grief and loss, and cultural and ethnic identity concerns.',
+        'I value creating an empowering, open-minded, and culturally responsive therapeutic space where clients feel understood and supported. My clinical approach integrates Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), Mindfulness-Based Interventions, Motivational Interviewing, Interpersonal Psychotherapy (IPT), and Exposure and Response Prevention (ERP) to meet each client\'s unique needs.',
+        'Through our work together, clients can expect to develop effective coping skills, gain insight into patterns impacting their mental health, and build emotional resilience. My goal is to support clients in creating meaningful changes in their daily lives while fostering long-term personal growth and healing.'
+      ],
+      quote: 'I believe in creating an empowering, open-minded, and culturally responsive therapeutic space where clients feel understood and supported on their journey toward meaningful change and lasting well-being.',
+      personalContent: 'Outside of work, I enjoy spending time with my son and husband and visiting family in Chicago. I also love desserts and am always on the lookout for new places to try them.'
     },
     {
       id: 'elaine',
