@@ -3,6 +3,8 @@ import { FadeInSection } from '../components/shared/Animations';
 import ZengImg from '../assets/images/profile_pics/zeng.jpg';
 import ElaineImg from '../assets/images/profile_pics/elaine.jpg';
 import ViniImg from '../assets/images/profile_pics/vini.jpg';
+import DanImg from '../assets/images/profile_pics/dan.jpg';
+import PoyaImg from '../assets/images/profile_pics/poya.jpg';
 import AboutUsImg from '../assets/images/aboutus.jpg';
 import AsianClientImg from '../assets/images/asian-client.jpg';
 import BookNowCTA from '../components/shared/BookNowCTA';
@@ -21,7 +23,7 @@ const About = () => {
       credentials: [
         'Dual master\'s degrees in Social Work (MSW) and Gerontology (MSG) from University of Southern California',
         'Currently pursuing a Doctorate in Social Work (DSW) at University of Pennsylvania',
-        'Licensed Clinical Social Worker',
+        'Licensed Clinical Social Worker in California and Washington',
         'Trained in Cognitive Behavioral Therapy for Insomnia (CBT-I), CBT, DBT, Internal Family System (IFS), relational therapy, and psychodynamic approaches',
         'Clinical Supervisor in California, providing supervision and mentorship to associate therapists since 2018'
       ],
@@ -36,7 +38,7 @@ const About = () => {
       id: 'vini',
       name: 'Vini Kalra, PsyD',
       title: 'Clinical Psychologist | Mind Matters Center',
-      languages: 'English',
+      languages: 'English and Hindi',
       image: ViniImg,
       introContent: [
         'Many individuals seek therapy feeling stuck, overwhelmed, or uncertain about how to manage life\'s challenges. They may struggle with distressing emotions, unhelpful patterns, or symptoms that interfere with their daily functioning and overall well-being.',
@@ -76,6 +78,75 @@ const About = () => {
       ],
       quote: 'I believe therapy is a collaborative journey where we work together to discover your strengths, navigate challenges, and build resilience. My goal is to create a space where you feel truly understood as you embrace your authentic self.',
       personalContent: "When I'm not working, I love hiking and reading. Both activities allow me to expand my horizons, and I enjoy balancing the adventure of the outdoors with the adventure of a great story."
+    },
+    {
+      id: 'dan',
+      name: 'Dan Song, AMFT, APCC',
+      title: 'Associate Marriage and Family Therapist | Associate Professional Clinical Counselor | Mind Matters Center',
+      languages: 'English, Cantonese, and Mandarin Chinese',
+      image: DanImg,
+      introContent: [
+        'Many people come to therapy feeling overwhelmed, uncertain, or quietly exhausted. You may wonder whether therapy will actually help, feel pressure to already have answers, or carry a sense that you "should be handling things better by now."',
+        'For those navigating cultural expectations, family responsibilities, caregiving roles, or the layered stress of immigration and adaptation, these feelings can feel especially heavy and isolating. Moving between languages, cultures, or roles—often while staying strong for others—can leave little space to pause, reflect, or be supported.'
+      ],
+      credentials: [
+        'Registered Associate Marriage and Family Therapist',
+        'Registered Associate Professional Clinical Counselor',
+        'Bachelor\'s degree from San Francisco State University',
+        'Master\'s degree in Counseling Psychology from Golden Gate University',
+        'Trained in Acceptance and Commitment Therapy (ACT), Cognitive Behavioral Therapy (CBT), Motivational Interviewing, and Solution-Focused Therapy'
+      ],
+      clientFocus: [
+        'Adolescents (high school and above)',
+        'College students navigating transition and identity development',
+        'Adults across the lifespan',
+        'Caregivers experiencing emotional fatigue',
+        'Professionals managing sustained work and leadership pressure',
+        'Individuals navigating relationship challenges',
+        'New immigrants managing cross-cultural transitions'
+      ],
+      areasOfFocus: [
+        'Anxiety, stress, and emotional overwhelm',
+        'Caregiver stress and compassion fatigue',
+        'Work-related and financial strain',
+        'Immigration-related stress and cross-cultural adjustment',
+        'Family-of-origin and intergenerational dynamics',
+        'Stress related to being an only child or primary support figure'
+      ],
+      mainContent: [
+        'I take a holistic, individualized, and culturally responsive approach to therapy. I don\'t expect clients to arrive fully clear, emotionally articulate, or "ready." Instead, I meet you where you are and work collaboratively at a pace that feels steady, respectful, and realistic.',
+        'My work draws from evidence-based approaches while staying grounded in your lived experience—your cultural background, values, responsibilities, and the real pressures shaping your life. Therapy with me is not about fixing you or pushing quick solutions, but about creating room to understand what you\'ve been carrying and what you may need moving forward.',
+        'When helpful, sessions may take place in English, Cantonese, or Mandarin. I am attentive to how language, culture, and immigration experiences can shape how emotions are expressed, understood, or held—especially for clients who are used to adapting, translating, or holding things together for others.',
+        'As an immigrant myself, I bring a lived understanding of cross-cultural adjustment, identity negotiation, and the quiet pressures that often accompany building stability in a new environment. My clinical experience spans both school-based and community-based mental health settings, where I have supported high school students, college-age clients, and adults across the lifespan from diverse cultural and socioeconomic backgrounds, including AAPI communities.',
+        'Prior to my clinical training, I worked in high-stakes, high-pressure business environments. This background allows me to bring a grounded understanding of work-related stress, leadership pressure, and performance expectations into the therapy space, while keeping the focus firmly on each client\'s emotional well-being and therapeutic goals.'
+      ],
+      quote: 'My goal is to create a grounded, welcoming therapeutic space where you feel understood rather than judged. I place strong emphasis on the therapeutic relationship, believing that feeling safe and genuinely seen is what allows meaningful change to happen.',
+      personalContent: 'Outside of my clinical work, I enjoy reading widely, from global affairs to fiction. Staying curious about different perspectives helps me remain thoughtful, grounded, and open-minded in both life and therapy. I also value spending time with family, staying physically active, and maintaining meaningful connections with friends. These practices remind me that balance and resilience are not abstract ideas, but lived experiences that matter in everyday life.'
+    },
+    {
+      id: 'poya',
+      name: 'Poya Lai, AMFT',
+      title: 'Associate Marriage and Family Therapist | Mind Matters Center',
+      languages: 'English and Mandarin Chinese',
+      image: PoyaImg,
+      introContent: [
+        'Many people begin therapy feeling emotionally exhausted, stuck, or unsure of where they belong. This can be especially true for those navigating multiple cultures, identities, and expectations at once. When family values, cultural norms, and personal needs don\'t fully align, it\'s common to feel pulled in different directions—or to quietly lose touch with yourself.',
+        'Over time, this strain may show up as burnout, anxiety, relationship stress, or a lingering sense that something isn\'t quite right, even if everything looks "fine" on the outside.'
+      ],
+      credentials: [
+        'Registered Associate Marriage and Family Therapist (AMFT)',
+        'Bachelor of Arts (B.A.)',
+        'Master\'s degree in Counseling Psychology with a concentration in Marriage and Family Therapy from the University of San Francisco',
+        'Trained in Acceptance and Commitment Therapy (ACT), Cognitive Behavioral Therapy (CBT), Motivational Interviewing, Mindfulness-based approaches, Attachment-based therapy, Emotionally Focused Therapy, Person-centered therapy, and Solution-Focused Therapy'
+      ],
+      mainContent: [
+        'I take a collaborative, culturally responsive approach to therapy that honors the complexity of your lived experience. I don\'t believe there is one "right" way to feel, heal, or move forward—especially when identity, family dynamics, and cultural expectations play such a central role in your life.',
+        'My work integrates evidence-based modalities such as Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), Emotion-Focused Therapy, family systems therapy, and person-centered approaches. Together, we will make sense of patterns shaped by your past experiences and relationships while building practical coping skills that support meaningful, sustainable change.',
+        'I earned my Master\'s degree in Counseling Psychology with a concentration in Marriage and Family Therapy from the University of San Francisco. During graduate training, I completed my internship at Gateway Public Schools, where I worked with adolescents ages 11–18. In this role, I supported students navigating anxiety, depression, trauma, identity development, and a wide range of family-related and personal challenges, gaining hands-on experience working within complex systems that impact young people\'s emotional well-being.',
+        'Over time, clients often gain greater emotional clarity, self-trust, and a stronger sense of agency—feeling more empowered to live in ways that feel authentic rather than obligatory. Therapy is a space where you don\'t have to choose between parts of yourself—you can bring all of you into the room.'
+      ],
+      quote: 'My goal is to create a supportive and affirming therapeutic space where you feel genuinely seen, heard, and understood. We will explore how family dynamics, identity development, and cultural influences have shaped your experiences, while also focusing on what matters most to you moving forward.',
+      personalContent: 'Outside of therapy, I value humor, perspective, and taking meaningful chances in life. One quote that resonates with me is: "You miss 100% of the shots you don\'t take." – Wayne Gretzky — Michael Scott. This mindset reflects my belief in growth, courage, and the importance of showing up for yourself—even when the next step feels uncertain.'
     }
   ];
   const values = [

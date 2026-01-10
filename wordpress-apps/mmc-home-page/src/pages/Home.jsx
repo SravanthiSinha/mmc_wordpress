@@ -1,3 +1,4 @@
+import React from 'react';
 import IndividualTherapyImg from '../assets/images/individual-therapy.svg';
 import CouplesTherapyImg from '../assets/images/couples-therapy.svg';
 import IFSTherapyImg from '../assets/images/ifs-therapy.svg';
@@ -6,8 +7,99 @@ import BookNowCTA from '../components/shared/BookNowCTA';
 import ZengImg from '../assets/images/profile_pics/zeng.jpg';
 import ElaineImg from '../assets/images/profile_pics/elaine.jpg';
 import ViniImg from '../assets/images/profile_pics/vini.jpg';
+import DanImg from '../assets/images/profile_pics/dan.jpg';
+import PoyaImg from '../assets/images/profile_pics/poya.jpg';
 
 const Home = () => {
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = React.useState(true);
+
+  const teamMembers = [
+    {
+      id: 'stella',
+      name: 'Yajun (Stella) Zeng, LCSW',
+      title: 'Clinical Director',
+      image: ZengImg
+    },
+    {
+      id: 'vini',
+      name: 'Vini Kalra, PsyD',
+      title: 'Clinical Psychologist',
+      image: ViniImg
+    },
+    {
+      id: 'elaine',
+      name: 'Elaine Li, ASW',
+      title: 'Associate Therapist',
+      image: ElaineImg
+    },
+    {
+      id: 'dan',
+      name: 'Da (Dan) Song, AMFT, APCC',
+      title: 'Associate Therapist',
+      image: DanImg
+    },
+    {
+      id: 'poya',
+      name: 'Poya Lai, AMFT',
+      title: 'Associate Therapist',
+      image: PoyaImg
+    },
+   
+  ];
+
+  // This ensures the last slide always shows 3 cards
+  const desktopMembers = [...teamMembers, ...teamMembers.slice(0, 2)];
+
+  // Calculate max slides based on screen size
+  const getMaxSlides = () => {
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth >= 1024) return 2; // Desktop: 3 slides (0, 1, 2) showing 3 cards each
+      if (window.innerWidth >= 768) return teamMembers.length - 1; // Tablet
+    }
+    return teamMembers.length - 1; // Mobile
+  };
+
+  const [maxSlides, setMaxSlides] = React.useState(getMaxSlides());
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setMaxSlides(getMaxSlides());
+      setCurrentSlide(0); // Reset to first slide on resize
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Auto-play functionality
+  React.useEffect(() => {
+    if (!isAutoPlaying) return;
+
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => {
+        if (prev >= maxSlides) return 0;
+        return prev + 1;
+      });
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [isAutoPlaying, maxSlides]);
+
+  const nextSlide = () => {
+    setIsAutoPlaying(false);
+    setCurrentSlide((prev) => (prev >= maxSlides ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setIsAutoPlaying(false);
+    setCurrentSlide((prev) => (prev === 0 ? maxSlides : prev - 1));
+  };
+
+  const goToSlide = (index) => {
+    setIsAutoPlaying(false);
+    setCurrentSlide(index);
+  };
 
   const checklistItems = [
     "Feeling anxious or overwhelmed by life's demands?",
@@ -205,10 +297,10 @@ const specialties = [
         </FadeInSection>
       </section>
 
-      {/* Team Introduction Section */}
+      {/* Team Introduction Section with Carousel */}
       <section className="py-12 md:py-20 bg-brand-background-primary">
         <FadeInSection delay={100}>
-          <div className="max-w mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-brand-text-primary inline-block relative">
                 Our Clinical Team
@@ -219,74 +311,150 @@ const specialties = [
               </p>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-10">
-              {/* Therapist 1 */}
-              <div className="group w-full sm:w-[calc(33%-1rem)] max-w-sm">
-                <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
-                  <img
-                    src={ZengImg}
-                    alt="Yajun (Stella) Zeng, LCSW"
-                    className="w-full h-[450px] object-cover object-center"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 z-20 transform transition-transform duration-500">
-                    <h3 className="text-lg md:text-xl font-serif text-white mb-2">
-                      Yajun (Stella) Zeng, LCSW
-                    </h3>
-                    <p className="text-white/90 text-sm">
-                      Clinical Director
-                    </p>
+            {/* Carousel Container */}
+            <div className="relative max-w-7xl mx-auto">
+              {/* Desktop View - Show 3 cards */}
+              <div className="hidden lg:block">
+                <div className="overflow-hidden">
+                  <div 
+                    className="flex transition-transform duration-500 ease-in-out"
+                    style={{ transform: `translateX(-${currentSlide * 33.333}%)` }}
+                  >
+                    {desktopMembers.map((member, index) => (
+                      <div key={`${member.id}-${index}`} className="w-1/3 flex-shrink-0 px-4">
+                        <div className="group">
+                          <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+                            <img
+                              src={member.image}
+                              alt={member.name}
+                              className="w-full h-[450px] object-cover object-center"
+                            />
+                            <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+                              <h3 className="text-lg md:text-xl font-serif text-white mb-2">
+                                {member.name}
+                              </h3>
+                              <p className="text-white/90 text-sm">
+                                {member.title}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="mt-4 flex justify-center">
+                            <BookNowCTA size="sm" therapistId={member.id} />
+                          </div>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                </div>
-                <div className="mt-4 flex justify-center">
-                  <BookNowCTA size="sm" therapistId="stella" />
                 </div>
               </div>
 
-              {/* Therapist 2 */}
-              <div className="group w-full sm:w-[calc(33%-1rem)] max-w-sm">
-                <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
-                  <img
-                    src={ViniImg}
-                    alt="Vini Kalra, PsyD"
-                    className="w-full h-[450px] object-cover object-center"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 z-20 transform transition-transform duration-500">
-                    <h3 className="text-lg md:text-xl font-serif text-white mb-2">
-                      Vini Kalra, PsyD
-                    </h3>
-                    <p className="text-white/90 text-sm">
-                      Clinical Psychologist
-                    </p>
+              {/* Tablet View - Show 2 cards */}
+              <div className="hidden md:block lg:hidden">
+                <div className="overflow-hidden">
+                  <div 
+                    className="flex transition-transform duration-500 ease-in-out"
+                    style={{ transform: `translateX(-${currentSlide * 50}%)` }}
+                  >
+                    {teamMembers.map((member) => (
+                      <div key={member.id} className="w-1/2 flex-shrink-0 px-4">
+                        <div className="group">
+                          <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+                            <img
+                              src={member.image}
+                              alt={member.name}
+                              className="w-full h-[450px] object-cover object-center"
+                            />
+                            <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+                              <h3 className="text-lg md:text-xl font-serif text-white mb-2">
+                                {member.name}
+                              </h3>
+                              <p className="text-white/90 text-sm">
+                                {member.title}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="mt-4 flex justify-center">
+                            <BookNowCTA size="sm" therapistId={member.id} />
+                          </div>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                </div>
-                <div className="mt-4 flex justify-center">
-                  <BookNowCTA size="sm" therapistId="vini" />
                 </div>
               </div>
 
-              {/* Therapist 3*/}
-              <div className="group w-full sm:w-[calc(33%-1rem)] max-w-sm">
-                <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
-                  <img
-                    src={ElaineImg}
-                    alt="Elaine Li, ASW"
-                    className="w-full h-[450px] object-cover object-center"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 z-20 transform transition-transform duration-500">
-                    <h3 className="text-lg md:text-xl font-serif text-white mb-2">
-                      Elaine Li, ASW
-                    </h3>
-                    <p className="text-white/90 text-sm">
-                      Associate Therapist
-                    </p>
+              {/* Mobile View - Show 1 card */}
+              <div className="block md:hidden">
+                <div className="overflow-hidden">
+                  <div 
+                    className="flex transition-transform duration-500 ease-in-out"
+                    style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                  >
+                    {teamMembers.map((member) => (
+                      <div key={member.id} className="w-full flex-shrink-0 px-4">
+                        <div className="group max-w-sm mx-auto">
+                          <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+                            <img
+                              src={member.image}
+                              alt={member.name}
+                              className="w-full h-[450px] object-cover object-center"
+                            />
+                            <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+                              <h3 className="text-lg md:text-xl font-serif text-white mb-2">
+                                {member.name}
+                              </h3>
+                              <p className="text-white/90 text-sm">
+                                {member.title}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="mt-4 flex justify-center">
+                            <BookNowCTA size="sm" therapistId={member.id} />
+                          </div>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
-                <div className="mt-4 flex justify-center">
-                  <BookNowCTA size="sm" therapistId="elaine" />
-                </div>
+              </div>
+
+              {/* Navigation Arrows */}
+              <button
+                onClick={prevSlide}
+                className="absolute left-0 top-1/2 -translate-y-1/2 -ml-2 sm:-ml-4 lg:-ml-12 bg-white/90 hover:bg-white text-brand-sage p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
+                aria-label="Previous therapist"
+              >
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                onClick={nextSlide}
+                className="absolute right-0 top-1/2 -translate-y-1/2 -mr-2 sm:-mr-4 lg:-mr-12 bg-white/90 hover:bg-white text-brand-sage p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
+                aria-label="Next therapist"
+              >
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+
+              {/* Dot Indicators */}
+              <div className="flex justify-center gap-2 mt-8">
+                {Array.from({ length: maxSlides + 1 }).map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      currentSlide === index
+                        ? 'bg-brand-sage w-8'
+                        : 'bg-brand-sage/30 hover:bg-brand-sage/50'
+                    }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
               </div>
             </div>
 
@@ -306,7 +474,7 @@ const specialties = [
       </section>
 
       {/* Services Section - What We Offer */}
-      < section className="py-12 md:py-20 bg-brand-background-secondary" >
+      <section className="py-12 md:py-20 bg-brand-background-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-xl md:text-3xl lg:text-5xl font-serif text-brand-text-primary mb-6 md:mb-16">
@@ -364,10 +532,10 @@ const specialties = [
             </div>
           </div>
         </div>
-      </section >
+      </section>
 
       {/* Specialties Section - Areas of Expertise */}
-      < section className="py-12 md:py-20 bg-brand-background-primary" >
+      <section className="py-12 md:py-20 bg-brand-background-primary">
         <FadeInSection delay={100}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
@@ -442,10 +610,10 @@ const specialties = [
             </div>
           </div>
         </FadeInSection>
-      </section >
+      </section>
 
       {/* Additional Resources Section */}
-      < section className="py-12 md:py-20 bg-brand-background-primary" >
+      <section className="py-12 md:py-20 bg-brand-background-primary">
         <FadeInSection delay={300}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
@@ -547,10 +715,10 @@ const specialties = [
             </div>
           </div>
         </FadeInSection>
-      </section >
+      </section>
 
       {/* Final CTA */}
-      < section className="py-12 md:py-20 bg-brand-background-secondary" >
+      <section className="py-12 md:py-20 bg-brand-background-secondary">
         <FadeInSection delay={400}>
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p className="text-xl md:text-2xl lg:text-3xl text-brand-text-primary mb-8">
@@ -568,7 +736,7 @@ const specialties = [
             </div>
           </div>
         </FadeInSection>
-      </section >
+      </section>
     </>
   );
 };
