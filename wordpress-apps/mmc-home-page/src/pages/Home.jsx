@@ -266,7 +266,7 @@ const specialties = [
                   We support Asian Americans and BIPOC communities using culturally <span className="text-brand-coral">sensitive</span> therapy to meet you where you are
                 </p>
                 <p className="text-xl md:text-2xl lg:text-3xl text-brand-text-primary">
-                  At Mind Matters Center, we provide inclusive, compassionate care to help you find clarity, balance, and empowerment.
+                  At Between Therapy, we provide inclusive, compassionate care to help you find clarity, balance, and empowerment.
                 </p>
               </div>
             </div>
@@ -286,7 +286,7 @@ const specialties = [
                 You are not alone – We're here to help you reclaim your life
               </h2>
               <p className="text-base md:text-xl text-brand-text-primary">
-                At Mind Matters Center, we're committed to walking alongside you on your journey toward healing and growth.
+                At Between Therapy, we're committed to walking alongside you on your journey toward healing and growth.
                 Our dedicated therapists in California provide the support and understanding you need to overcome obstacles and start living your life with confidence and peace.
               </p>
               <div className="mt-8">
