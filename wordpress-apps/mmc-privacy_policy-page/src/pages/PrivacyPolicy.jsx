@@ -150,7 +150,7 @@ const PrivacyPolicy = () => {
                             Effective Date: Feb 7th, 2025
                         </p>
                         <p className="text-base sm:text-lg md:text-xl text-brand-text-primary">
-                            <strong className="text-brand-text-primary">Mind Matters Center</strong> ("we," "us," or "our") is committed to protecting your privacy.
+                            <strong className="text-brand-text-primary">Between Therapy</strong> ("we," "us," or "our") is committed to protecting your privacy.
                             This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website and engage with our services. By using our website, you agree to the terms outlined below.
                         </p>
                     </div>
