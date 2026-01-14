@@ -131,7 +131,7 @@ const BaseTherapyPage = ({
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl font-serif text-brand-text-primary mb-4">
-                  Why work with Mind Matters Center?
+                  Why work with Between Therapy?
                 </h2>
               </div>
 
