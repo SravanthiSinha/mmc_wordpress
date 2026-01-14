@@ -14,7 +14,7 @@ const About = () => {
     {
       id: 'stella',
       name: 'Yajun (Stella) Zeng, LCSW',
-      title: 'Clinical Director | Mind Matters Center',
+      title: 'Clinical Director | Between Therapy',
       languages: 'English and Mandarin Chinese',
       image: ZengImg,
       introContent: [
@@ -31,13 +31,13 @@ const About = () => {
         'As a bilingual Licensed Clinical Social Worker fluent in both English and Chinese, I integrate evidence-based and insight-oriented approaches, including Cognitive Behavioral Therapy (CBT), Cognitive Behavioral Therapy for Insomnia (CBT-I), attachment-based techniques, relational therapy, and Internal Family Systems (IFS). My clinical expertise spans individuals across the lifespan, with a special focus on Asian American clients, immigrants, and individuals managing chronic illnesses or sleep-related challenges.',
         'I also provide clinical supervision for pre-licensed associate therapists, supporting their professional growth and development through a reflective, culturally responsive lens.'
       ],
-      quote: 'At Mind Matters Center, I aim to create a safe and culturally responsive space where clients feel seen, heard, and empowered to navigate life\'s challenges. I believe in therapy that honors personal values, fosters self-awareness and strengthens resilience.',
+      quote: 'At Between Therapy, I aim to create a safe and culturally responsive space where clients feel seen, heard, and empowered to navigate life\'s challenges. I believe in therapy that honors personal values, fosters self-awareness and strengthens resilience.',
       personalContent: 'Outside of therapy, I enjoy exploring new places, traveling, reading, practicing yoga, hiking, backpacking, and indulging in delicious food. I also love animals, especially dogs- who hold a special place in my heart. I share my adventures with my miniature American Shepherd, Rico.'
     },
     {
       id: 'vini',
       name: 'Vini Kalra, PsyD',
-      title: 'Clinical Psychologist | Mind Matters Center',
+      title: 'Clinical Psychologist | Between Therapy',
       languages: 'English and Hindi',
       image: ViniImg,
       introContent: [
@@ -60,7 +60,7 @@ const About = () => {
     {
       id: 'elaine',
       name: 'Elaine Li, ASW',
-      title: 'Associate Therapist | Mind Matters Center',
+      title: 'Associate Therapist | Between Therapy',
       languages: 'English and Mandarin Chinese',
       image: ElaineImg,
       introContent: [
@@ -82,7 +82,7 @@ const About = () => {
     {
       id: 'dan',
       name: 'Dan Song, AMFT, APCC',
-      title: 'Associate Marriage and Family Therapist | Associate Professional Clinical Counselor | Mind Matters Center',
+      title: 'Associate Marriage and Family Therapist | Associate Professional Clinical Counselor | Between Therapy',
       languages: 'English, Cantonese, and Mandarin Chinese',
       image: DanImg,
       introContent: [
@@ -126,7 +126,7 @@ const About = () => {
     {
       id: 'poya',
       name: 'Poya Lai, AMFT',
-      title: 'Associate Marriage and Family Therapist | Mind Matters Center',
+      title: 'Associate Marriage and Family Therapist | Between Therapy',
       languages: 'English and Mandarin Chinese',
       image: PoyaImg,
       introContent: [
@@ -186,7 +186,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-brand-text-primary mb-6 sm:mb-8">
-              Welcome to <span className="text-brand-text-primary">Mind Matters Center</span>
+              Welcome to <span className="text-brand-text-primary">Between Therapy</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-brand-text-primary mb-6">
               An Asian-owned, women-owned company committed to providing compassionate,
@@ -221,7 +221,7 @@ const About = () => {
                   Our mission
                 </h2>
                 <p className="text-lg text-brand-text-primary/80 leading-relaxed mb-6">
-                  At <strong className="text-brand-primary">Mind Matters Center</strong>,
+                  At <strong className="text-brand-primary">Between Therapy</strong>,
                   we believe that everyone deserves the opportunity to heal, grow, and live a fulfilling life.
                   As an Asian-owned, women-owned company, we are deeply committed to providing compassionate,
                   culturally sensitive therapy and wellness services that empower individuals and couples
@@ -235,7 +235,7 @@ const About = () => {
               <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg mx-auto lg:mx-0 w-full max-w-2xl">
                 <img
                   src={AboutUsImg}
-                  alt="Mind Matters Center peaceful therapy space"
+                  alt="Between Therapy peaceful therapy space"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
@@ -336,7 +336,7 @@ const About = () => {
               Ready to begin your journey?
             </h2>
             <p className="text-base sm:text-lg text-brand-text-primary mb-6 sm:mb-8">
-              Take the first step towards healing and growth with Mind Matters Center.
+              Take the first step towards healing and growth with Between Therapy.
             </p>
             <div className="flex flex-col items-center gap-2">
               <BookNowCTA />
