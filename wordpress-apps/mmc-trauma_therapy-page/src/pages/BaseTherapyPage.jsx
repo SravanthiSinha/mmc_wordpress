@@ -133,7 +133,7 @@ const BaseTherapyPage = ({
                     Our healing solution
                   </h2>
                   <p className="text-xl text-brand-text-primary max-w-4xl mx-auto">
-                    At Mind Matters Center, we provide trauma-focused therapy to help you rebuild trust, manage triggers, and reconnect with yourself and others. Our clinicians are trained in evidence-based approaches including:
+                    At Between Therapy, we provide trauma-focused therapy to help you rebuild trust, manage triggers, and reconnect with yourself and others. Our clinicians are trained in evidence-based approaches including:
                   </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
@@ -200,14 +200,14 @@ const BaseTherapyPage = ({
           </section>
         )}
 
-        {/* Why Work With Mind Matters Center Section */}
+        {/* Why Work With Between Therapy Section */}
         {whyWorkWithUs && (
           <section id="why-us" className="px-4 sm:px-6 lg:px-8 py-16 bg-brand-background-primary">
             <FadeInSection>
               <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
                   <h2 className="text-3xl sm:text-4xl font-serif text-brand-text-primary mb-4">
-                    Why work with Mind Matters Center?
+                    Why work with Between Therapy?
                   </h2>
                 </div>
 
@@ -319,7 +319,7 @@ const BaseTherapyPage = ({
 
               {/* Subtitle */}
               <p className="text-xl sm:text-2xl text-brand-text-primary mb-16 max-w-4xl mx-auto leading-relaxed">
-                Starting trauma therapy can feel overwhelming, but you don't have to do it alone. At Mind Matters Center, we make it simple to get started:
+                Starting trauma therapy can feel overwhelming, but you don't have to do it alone. At Between Therapy, we make it simple to get started:
               </p>
 
               {/* Three-step process cards */}
