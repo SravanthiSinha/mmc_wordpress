@@ -48,7 +48,7 @@ const ChineseServices = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-brand-text-primary mb-6">
-              Mind Matters Center
+              Between Therapy
             </h1>
             <p className="text-xl sm:text-2xl text-brand-text-primary mb-4">
               用心陪伴您的心理旅程
@@ -67,14 +67,14 @@ const ChineseServices = () => {
                   关于我们
                 </h2>
                 <p className="text-lg text-brand-text-primary/80 leading-relaxed">
-                  <strong className="text-brand-primary">Mind Matters Center (MMC)</strong> 是一家专注于为加州华人与亚裔社区提供心理治疗与心理健康的机构。我们理解不同文化背景下的心理压力与困扰往往有不同的表现与原因。我们以尊重文化差异为出发点,结合科学的心理治疗方法,让您在熟悉、安全的环境中获得理解与支持。
+                  <strong className="text-brand-primary">Between Therapy</strong> 是一家专注于为加州华人与亚裔社区提供心理治疗与心理健康的机构。我们理解不同文化背景下的心理压力与困扰往往有不同的表现与原因。我们以尊重文化差异为出发点,结合科学的心理治疗方法,让您在熟悉、安全的环境中获得理解与支持。
                 </p>
               </div>
 
               <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg mx-auto lg:mx-0 w-full max-w-2xl">
                 <img
                   src={AboutUsImg}
-                  alt="Mind Matters Center peaceful therapy space"
+                  alt="Between Therapy peaceful therapy space"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
