@@ -97,7 +97,7 @@ const BaseTherapyPage = ({
                   What individual therapy can help with
                 </h2>
                 <p className="text-xl text-brand-text-primary max-w-4xl mx-auto">
-                  At Mind Matters Center, we offer therapy tailored to your unique needs. Our specialties include:
+                  At Between Therapy, we offer therapy tailored to your unique needs. Our specialties include:
                 </p>
               </div>
 
@@ -145,7 +145,7 @@ const BaseTherapyPage = ({
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl font-serif text-brand-text-primary mb-4">
-                  Why work with Mind Matters Center?
+                  Why work with Between Therapy?
                 </h2>
               </div>
 
@@ -201,7 +201,7 @@ const BaseTherapyPage = ({
 
               {/* Subtitle */}
               <p className="text-xl sm:text-2xl text-brand-text-primary mb-16 max-w-4xl mx-auto leading-relaxed">
-                Starting therapy can feel daunting, but you don't have to do it alone. At Mind Matters Center, we make it easy:
+                Starting therapy can feel daunting, but you don't have to do it alone. At Between Therapy, we make it easy:
               </p>
 
               {/* Three-step process cards */}
