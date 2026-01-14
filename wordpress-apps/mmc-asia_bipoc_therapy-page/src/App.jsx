@@ -29,7 +29,7 @@ function App() {
     }
   ];
 
-  const therapeuticSolution = "At Mind Matters Center, we offer culturally sensitive therapy designed specifically for Asian Americans and BIPOC clients. Our approach acknowledges the unique challenges of navigating identity, family, and systemic pressures—while helping you build resilience and empowerment.";
+  const therapeuticSolution = "At Between Therapy, we offer culturally sensitive therapy designed specifically for Asian Americans and BIPOC clients. Our approach acknowledges the unique challenges of navigating identity, family, and systemic pressures—while helping you build resilience and empowerment.";
 
   const familyDynamics = {
     title: "Family & Cultural Dynamics",
