@@ -1,7 +1,7 @@
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"1.5vh","bottom":"1.5vh","left":"1vw","right":"1vw"}},"position":{"type":"sticky","top":"0px"}},"backgroundColor":"custom-secondary","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
 <div class="wp-block-group has-custom-secondary-background-color has-background" style="padding-top:1.5vh;padding-right:1vw;padding-bottom:1.5vh;padding-left:1vw"><!-- wp:group {"style":{"spacing":{"blockGap":"10px"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
   <div class="wp-block-group"><!-- wp:image {"id":2179,"width":"40px","height":"auto","sizeSlug":"full","linkDestination":"none"} -->
-  <figure class="wp-block-image size-full is-resized"><img src="https://mindmatterscenter.com/wp-content/uploads/2025/04/logo-600x600-1.png" alt="Between Therapy Logo" class="wp-image-2179" style="width:40px;height:auto"/></figure>
+  <figure class="wp-block-image size-full is-resized"><img src="https://between-therapy.com/wp-content/uploads/2025/04/logo-600x600-1.png" alt="Between Therapy Logo" class="wp-image-2179" style="width:40px;height:auto"/></figure>
   <!-- /wp:image -->
   
   <!-- wp:heading {"level":1,"className":"is-style-default","style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"custom-text-primary","fontSize":"x-large"} -->
