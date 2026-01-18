@@ -270,7 +270,7 @@ const BaseTherapyPage = ({
                       {CONTACT_INFO.phone}
                     </a>
                     <a
-                      href="mailto:hello@mindmatterscenter.com"
+                      href="mailto:info@between-therapy.com"
                       className="flex items-center gap-2 hover:text-brand-coral transition-colors duration-300 font-medium"
                     >
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

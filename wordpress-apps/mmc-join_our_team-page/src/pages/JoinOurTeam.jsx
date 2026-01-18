@@ -84,10 +84,10 @@ const JoinOurTeam = () => {
                                         For more information, please email us at:
                                     </p>
                                     <a
-                                        href="mailto:info@mindmatterscenter.com"
+                                        href="mailto:info@between-therapy.com"
                                         className="text-base sm:text-lg text-brand-coral hover:text-brand-coralLight transition-colors duration-200"
                                     >
-                                        info@mindmatterscenter.com
+                                        info@between-therapy.com
                                     </a>
                                 </div>
                             </div>

@@ -1,42 +1,42 @@
-<!-- wp:navigation-link {"label":"Home","type":"page","id":273,"url":"https://between-therapy.com/","kind":"post-type","fontSize":"medium"} /-->
+<!-- wp:navigation-link {"label":"Home","type":"page","id":273,"url":"https://between-therapy.com/","kind":"post-type","fontSize":"large"} /-->
 
-<!-- wp:navigation-submenu {"label":"Services","url":"/services","kind":"custom","fontSize":"medium"} -->
-<!-- wp:navigation-link {"label":"Trauma therapy","type":"page","id":498,"url":"/trauma-therapy","kind":"post-type"} /-->
+<!-- wp:navigation-submenu {"label":"Services","url":"/services","kind":"custom","fontSize":"large"} -->
+<!-- wp:navigation-link {"label":"Trauma therapy","type":"page","id":498,"url":"/trauma-therapy","kind":"post-type","fontSize":"medium"} /-->
 
-<!-- wp:navigation-link {"label":"Therapy for women","type":"page","id":508,"url":"/womens-therapy","kind":"post-type"} /-->
+<!-- wp:navigation-link {"label":"Therapy for women","type":"page","id":508,"url":"/womens-therapy","kind":"post-type","fontSize":"medium"} /-->
 
-<!-- wp:navigation-link {"label":"Therapy for Asian Americans \u0026amp; BIPOC communities","type":"page","id":515,"url":"/asia-bipoc-therapy","kind":"post-type"} /-->
+<!-- wp:navigation-link {"label":"Therapy for Asian Americans \u0026amp; BIPOC communities","type":"page","id":515,"url":"/asia-bipoc-therapy","kind":"post-type","fontSize":"medium"} /-->
 
-<!-- wp:navigation-link {"label":"Anxiety \u0026 Depression Therapy","type":"page","id":528,"url":"/anxiety-depression-therapy/","kind":"post-type"} /-->
+<!-- wp:navigation-link {"label":"Anxiety \u0026 Depression Therapy","type":"page","id":528,"url":"/anxiety-depression-therapy/","kind":"post-type","fontSize":"medium"} /-->
 
-<!-- wp:navigation-link {"label":"Therapy for burn out and stress","type":"page","id":551,"url":"https://between-therapy.com/stress-burnout/","kind":"post-type"} /-->
+<!-- wp:navigation-link {"label":"Therapy for burn out and stress","type":"page","id":551,"url":"https://between-therapy.com/stress-burnout/","kind":"post-type","fontSize":"medium"} /-->
 
-<!-- wp:navigation-link {"label":"Individual therapy","type":"page","id":567,"url":"https://between-therapy.com/individual-therapy/","kind":"post-type"} /-->
+<!-- wp:navigation-link {"label":"Individual therapy","type":"page","id":567,"url":"https://between-therapy.com/individual-therapy/","kind":"post-type","fontSize":"medium"} /-->
 
-<!-- wp:navigation-link {"label":"Couples \u0026 Relationship Therapy","type":"page","id":573,"url":"/couples-relationship-therapy","kind":"post-type"} /-->
+<!-- wp:navigation-link {"label":"Couples \u0026 Relationship Therapy","type":"page","id":573,"url":"/couples-relationship-therapy","kind":"post-type","fontSize":"medium"} /-->
 
-<!-- wp:navigation-link {"label":"Internal Family Systems Therapy","type":"page","id":1234,"url":"https://between-therapy.com/internal-family-systems-therapy/","kind":"post-type"} /-->
+<!-- wp:navigation-link {"label":"Internal Family Systems Therapy","type":"page","id":1234,"url":"https://between-therapy.com/internal-family-systems-therapy/","kind":"post-type","fontSize":"medium"} /-->
 
-<!-- wp:navigation-link {"label":"Insomnia \u0026amp; Sleep Therapy","type":"page","id":1920,"url":"https://between-therapy.com/insomnia-sleep-therapy/","kind":"post-type"} /-->
+<!-- wp:navigation-link {"label":"Insomnia \u0026amp; Sleep Therapy","type":"page","id":1920,"url":"https://between-therapy.com/insomnia-sleep-therapy/","kind":"post-type","fontSize":"medium"} /-->
 <!-- /wp:navigation-submenu -->
 
-<!-- wp:navigation-link {"label":"中文服务","type":"page","id":434,"url":"https://between-therapy.com/chinese-services/","kind":"post-type","fontSize":"medium"} /-->
+<!-- wp:navigation-link {"label":"中文服务","type":"page","id":434,"url":"https://between-therapy.com/chinese-services/","kind":"post-type","fontSize":"large"} /-->
 
-<!-- wp:navigation-submenu {"label":"Our Team","fontSize":"medium"} -->
-<!-- wp:navigation-link {"label":"About us","type":"page","id":461,"url":"https://between-therapy.com/about-us/","kind":"post-type"} /-->
+<!-- wp:navigation-submenu {"label":"Our Team","fontSize":"large"} -->
+<!-- wp:navigation-link {"label":"About us","type":"page","id":461,"url":"https://between-therapy.com/about-us/","kind":"post-type","fontSize":"medium"} /-->
 
-<!-- wp:navigation-link {"label":"Join our team","type":"page","id":482,"url":"https://between-therapy.com/join-our-team/","kind":"post-type"} /-->
+<!-- wp:navigation-link {"label":"Join our team","type":"page","id":482,"url":"https://between-therapy.com/join-our-team/","kind":"post-type","fontSize":"medium"} /-->
 <!-- /wp:navigation-submenu -->
 
-<!-- wp:navigation-link {"label":"FAQ","type":"page","id":388,"url":"https://between-therapy.com/faq/","kind":"post-type","fontSize":"medium"} /-->
+<!-- wp:navigation-link {"label":"FAQ","type":"page","id":388,"url":"https://between-therapy.com/faq/","kind":"post-type","fontSize":"large"} /-->
 
-<!-- wp:navigation-link {"label":"Resources","type":"page","id":406,"url":"https://between-therapy.com/resources/","kind":"post-type","fontSize":"medium"} /-->
+<!-- wp:navigation-link {"label":"Resources","type":"page","id":406,"url":"https://between-therapy.com/resources/","kind":"post-type","fontSize":"large"} /-->
 
-<!-- wp:navigation-link {"label":"Client Portal","type":"link","opensInNewTab":true,"url":"https://mindmatterscenter.janeapp.com/","kind":"custom","fontSize":"medium"} /-->
+<!-- wp:navigation-link {"label":"Client Portal","type":"link","opensInNewTab":true,"url":"https://betweentherapy.janeapp.com/","kind":"custom","fontSize":"large"} /-->
 
 <!-- wp:buttons {"style":{"spacing":{"padding":{"right":"0px","left":"0px"}},"layout":{"selfStretch":"fit","flexSize":null}},"layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"}} -->
 <div class="wp-block-buttons" style="padding-right:0px;padding-left:0px"><!-- wp:button {"backgroundColor":"custom-coral","textColor":"white","className":"hide-on-mobile","style":{"border":{"radius":"50px"},"typography":{"fontWeight":"700","fontStyle":"normal"}}} -->
-    <div class="wp-block-button hide-on-mobile"><a class="wp-block-button__link has-white-color has-custom-coral-background-color has-text-color has-background wp-element-button" href="https://between-therapy.com/contact/" style="border-radius:50px;font-style:normal;font-weight:700">Book
+    <div class="wp-block-button hide-on-mobile"><a class="wp-block-button__link has-white-color has-custom-coral-background-color has-text-color has-background wp-element-button" href="https://between-therapy.com/contact/" style="border-radius:50px;font-style:normal;font-weight:700" target="_blank" rel="noreferrer noopener">Book
                 Now</a></div>
     <!-- /wp:button --></div>
     <!-- /wp:buttons -->
