@@ -1,4 +1,4 @@
-@media (max-width: 1350px) {
+@media (max-width: 1300px) {
   .hide-on-mobile {
     display: none !important;
   }
@@ -56,7 +56,7 @@ ul li.current-menu-item a {
 /* Mobile-only styles for WordPress Block Navigation 
  Apply these styles only on mobile devices */
 
-@media (max-width: 1350px) {
+@media (max-width: 1300px) {
 
   /* Make the mobile menu container scrollable and properly sized */
   .wp-block-navigation__responsive-container.is-menu-open {
@@ -156,7 +156,7 @@ ul li.current-menu-item a {
 }
 
 /* Change mobile menu breakpoint to 1350px */
-@media (max-width: 1350px) {
+@media (max-width: 1300px) {
 
   /* Show mobile menu elements */
   .wp-block-navigation__responsive-container-open:not(.always-shown) {
@@ -178,7 +178,7 @@ ul li.current-menu-item a {
 }
 
 /* Mobile-specific improvements for contact section */
-@media (max-width: 1350px) {
+@media (max-width: 1300px) {
 
   /* Contact info section mobile styling */
   .contact-info-card {
@@ -413,7 +413,7 @@ ul li.current-menu-item a {
   }
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1300px) {
   .wpcf7 input[type="text"],
   .wpcf7 input[type="email"],
   .wpcf7 input[type="tel"],
@@ -434,7 +434,7 @@ ul li.current-menu-item a {
     padding: 1.5rem 1rem !important;
     margin: 0 0.5rem !important;
   }
-  
+
   /* Adjust form field spacing on mobile */
   .wpcf7 p {
     margin-bottom: 1.25rem;
@@ -456,13 +456,21 @@ ul li.current-menu-item a {
   }
 }
 
-@media (max-width: 1350px) {
-body:has(.wp-block-navigation__responsive-container.is-menu-open) .floating-book-now-mobile.floating-book-now-mobile {
+@media (max-width: 1300px) {
+  body:has(.wp-block-navigation__responsive-container.is-menu-open) .floating-book-now-mobile.floating-book-now-mobile {
     display: none !important;
     visibility: hidden !important;
   }
 }
 
 .wp-block-navigation .wp-block-navigation-item {
+  outline: none !important;
+}
+
+/* mobile menu logo resize*/
+.wp-block-navigation__responsive-container-open svg {
+  width: 35px !important;
+  height: 35px !important;
+  margin-bottom: 10px !important;
   outline: none !important;
 }

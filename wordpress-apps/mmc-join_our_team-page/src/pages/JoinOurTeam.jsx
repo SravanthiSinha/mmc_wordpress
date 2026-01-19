@@ -13,7 +13,7 @@ const JoinOurTeam = () => {
                             Join our team
                         </h1>
                         <p className="text-base sm:text-lg md:text-xl text-brand-text-primary max-w-3xl mx-auto">
-                            Join Mind Matters Center, a culturally responsive and thriving therapy practice dedicated to providing
+                            Join Between Therapy, a culturally responsive and thriving therapy practice dedicated to providing
                             compassionate, evidence-based mental health care.
                         </p>
                     </div>
@@ -84,10 +84,10 @@ const JoinOurTeam = () => {
                                         For more information, please email us at:
                                     </p>
                                     <a
-                                        href="mailto:info@mindmatterscenter.com"
+                                        href="mailto:info@between-therapy.com"
                                         className="text-base sm:text-lg text-brand-coral hover:text-brand-coralLight transition-colors duration-200"
                                     >
-                                        info@mindmatterscenter.com
+                                        info@between-therapy.com
                                     </a>
                                 </div>
                             </div>

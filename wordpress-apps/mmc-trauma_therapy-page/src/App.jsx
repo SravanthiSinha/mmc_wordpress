@@ -82,7 +82,6 @@ function App() {
     }
   ];
 
-  // Why work with Mind Matters Center
   const whyWorkWithUs = [
     {
       title: 'Specialized trauma care',

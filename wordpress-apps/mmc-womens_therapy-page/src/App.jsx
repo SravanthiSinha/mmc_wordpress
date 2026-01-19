@@ -52,7 +52,6 @@ function App() {
     }
   ];
 
-  // Your "Why work with Mind Matters Center?" content
   const whyWorkWithUs = [
     {
       title: 'Specialized in women\'s therapy',
@@ -100,7 +99,7 @@ function App() {
         subtitle="Do you feel pulled in too many directions?"
         introText="Between career demands, family responsibilities, cultural expectations, and personal growth, women often carry an invisible weight. You may feel overwhelmed, burnt out, or unsure of how to care for yourself while showing up for everyone else. Women's therapy offers you a safe space to pause, reflect, and build the support you need."
         challenges={challenges}
-        therapeuticSolution="At Mind Matters Center, we help women cultivate self-compassion, strengthen their voices, and feel empowered in their unique journeys. Therapy is a space where you can set down external pressures, reconnect with yourself, and make choices that reflect your values."
+        therapeuticSolution="At Between Therapy, we help women cultivate self-compassion, strengthen their voices, and feel empowered in their unique journeys. Therapy is a space where you can set down external pressures, reconnect with yourself, and make choices that reflect your values."
         therapeuticBenefits={therapeuticBenefits}
         howItWorks={howItWorks}
         whyWorkWithUs={whyWorkWithUs}

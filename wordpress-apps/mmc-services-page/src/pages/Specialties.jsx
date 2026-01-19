@@ -74,7 +74,7 @@ const Specialties = () => {
                             Our specialties
                         </h1>
                         <p className="text-base sm:text-lg md:text-xl text-brand-text-primary">
-                            At <strong className="text-brand-text-primary font-semibold">Mind Matters Center</strong>, we specialize in providing culturally sensitive therapy designed to support the mental health and well-being of Asian American individuals and couples.
+                            At <strong className="text-brand-text-primary font-semibold">Between Therapy</strong>, we specialize in providing culturally sensitive therapy designed to support the mental health and well-being of Asian American individuals and couples.
 
                         </p>
                         <p className="text-base sm:text-lg md:text-xl text-brand-text-primary">
@@ -110,7 +110,7 @@ const Specialties = () => {
                             <p>
                                 We offer Cognitive Behavioral Therapy (CBT), Trauma-Focused Therapy, mindfulness-based therapy, relational therapy, EMDR, Internal Family System ( IFS),
                                 attachment therapy and psychodynamic therapy, all tailored to your unique needs.
-                                At <span className="font-semibold text-brand-text-primary">Mind Matters Center</span>,we believe that therapy should respect and integrate your cultural background while helping you move forward with confidence and clarity.
+                                At <span className="font-semibold text-brand-text-primary">Between Therapy</span>,we believe that therapy should respect and integrate your cultural background while helping you move forward with confidence and clarity.
                             </p>
                             <p>
                                 Our goal is to help you feel heard, understood, and empowered as you work toward emotional healing and a more balanced life.

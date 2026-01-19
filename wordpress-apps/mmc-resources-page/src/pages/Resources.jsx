@@ -69,7 +69,7 @@ const Resources = () => {
                             Resources for your mental health journey
                         </h1>
                         <p className="text-base sm:text-lg md:text-xl text-brand-text-primary mb-4">
-                            At <span className="font-semibold text-brand-text-primary">Mind Matters Center</span>, we offer various resources to support your emotional well-being.
+                            At <span className="font-semibold text-brand-text-primary">Between Therapy</span>, we offer various resources to support your emotional well-being.
                         </p>
                         <p className="text-base sm:text-lg md:text-xl text-brand-text-primary">
                             <span className="font-semibold">While we do not provide crisis services</span>, we've compiled helpful tools for managing stress, anxiety, and other mental health concerns.

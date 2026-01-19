@@ -165,7 +165,7 @@ const BaseTherapyPage = ({
                 </h2>
                 {/* <div className="w-48 h-1 bg-brand-blue-soft mx-auto rounded-full mb-6"></div> */}
                 <p className="text-xl text-brand-text-primary max-w-4xl mx-auto">
-                  At Mind Matters Center, we help you identify stress patterns, set healthier boundaries, and develop practical coping strategies. Our goal is to help you regain energy, restore calm, and create space for a more balanced and fulfilling life.
+                  At Between Therapy, we help you identify stress patterns, set healthier boundaries, and develop practical coping strategies. Our goal is to help you regain energy, restore calm, and create space for a more balanced and fulfilling life.
                 </p>
               </div>
               {therapeuticSolution && <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
@@ -228,7 +228,7 @@ const BaseTherapyPage = ({
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl font-serif text-brand-text-primary mb-4">
-                  Why work with Mind Matters Center?
+                  Why work with Between Therapy?
                 </h2>
               </div>
 
@@ -337,7 +337,7 @@ const BaseTherapyPage = ({
 
               {/* Subtitle */}
               <p className="text-xl sm:text-2xl text-brand-text-primary mb-16 max-w-4xl mx-auto leading-relaxed">
-              You don’t have to keep pushing through exhaustion. Stress & Burnout Therapy can help you regain energy, focus, and balance. At Mind Matters Center, we make it easy to begin:
+              You don’t have to keep pushing through exhaustion. Stress & Burnout Therapy can help you regain energy, focus, and balance. At Between Therapy, we make it easy to begin:
               </p>
 
               {/* Three-step process cards */}
@@ -406,7 +406,7 @@ const BaseTherapyPage = ({
                       {CONTACT_INFO.phone}
                     </a>
                     <a
-                      href="mailto:hello@mindmatterscenter.com"
+                      href="mailto:info@between-therapy.com"
                       className="flex items-center gap-2 hover:text-brand-coral transition-colors duration-300 font-medium"
                     >
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

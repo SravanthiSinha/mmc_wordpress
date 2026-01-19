@@ -317,7 +317,7 @@ const BaseTherapyPage = ({
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl font-serif text-brand-text-primary mb-4">
-                  Why work with Mind Matters Center?
+                  Why work with Between Therapy?
                 </h2>
               </div>
 
@@ -426,7 +426,7 @@ const BaseTherapyPage = ({
 
               {/* Subtitle */}
               <p className="text-xl sm:text-2xl text-brand-text-primary mb-16 max-w-4xl mx-auto leading-relaxed">
-                Seeking therapy while navigating cultural stigma can feel daunting—but you don't have to do it alone. At Mind Matters Center, we make it simple to begin:
+                Seeking therapy while navigating cultural stigma can feel daunting—but you don't have to do it alone. At Between Therapy, we make it simple to begin:
               </p>
 
               {/* Three-step process cards */}
@@ -495,7 +495,7 @@ const BaseTherapyPage = ({
                       {CONTACT_INFO.phone}
                     </a>
                     <a
-                      href="mailto:hello@mindmatterscenter.com"
+                      href="mailto:info@between-therapy.com"
                       className="flex items-center gap-2 hover:text-brand-coral transition-colors duration-300 font-medium"
                     >
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

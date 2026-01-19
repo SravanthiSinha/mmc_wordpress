@@ -131,7 +131,7 @@ const BaseTherapyPage = ({
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-3xl sm:text-4xl font-serif text-brand-text-primary mb-4">
-                  Why work with Mind Matters Center?
+                  Why work with Between Therapy?
                 </h2>
               </div>
 
@@ -256,7 +256,7 @@ const BaseTherapyPage = ({
                       {CONTACT_INFO.phone}
                     </a>
                     <a
-                      href="mailto:hello@mindmatterscenter.com"
+                      href="mailto:info@between-therapy.com"
                       className="flex items-center gap-2 hover:text-brand-coral transition-colors duration-300 font-medium"
                     >
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
