@@ -1,0 +1,118 @@
+<!-- wp:group {"metadata":{"categories":["team-member"],"patternName":"mindmatters/team-member-stella-zeng","name":"Team Member - Stella Zeng"},"align":"full","className":"is-style-section-1","style":{"spacing":{"padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"backgroundColor":"custom-primary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull is-style-section-1 has-custom-primary-background-color has-background" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"align":"wide","className":"team-member-wrapper","style":{"border":{"radius":"16px"},"shadow":"var:preset|shadow|natural"},"backgroundColor":"base","layout":{"type":"default"}} -->
+  <div class="wp-block-group alignwide team-member-wrapper has-base-background-color has-background" style="border-radius:16px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:columns {"verticalAlignment":"top","className":"team-member-columns","style":{"spacing":{"blockGap":{"left":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}}} -->
+  <div class="wp-block-columns are-vertically-aligned-top team-member-columns" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"verticalAlignment":"top","width":"33%","className":"team-member-left-column","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+  <div class="wp-block-column is-vertically-aligned-top team-member-left-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;flex-basis:33%"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
+  <div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"url":"https://between-therapy.com/wp-content/uploads/2025/04/zeng.jpg","id":373,"dimRatio":0,"overlayColor":"black","focalPoint":{"x":0.52,"y":0.2},"customGradient":"linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0.6) 100%)","contentPosition":"bottom left","className":"team-member-image","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"border":{"radius":{"topLeft":"16px","topRight":"0px","bottomLeft":"0px","bottomRight":"16px"}},"layout":{"selfStretch":"fit","flexSize":null},"dimensions":{"aspectRatio":"2/3"}},"layout":{"type":"constrained"}} -->
+  <div class="wp-block-cover has-custom-content-position is-position-bottom-left team-member-image" style="border-top-left-radius:16px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:16px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><img class="wp-block-cover__image-background wp-image-373" alt="" src="https://between-therapy.com/wp-content/uploads/2025/04/zeng.jpg" style="object-position:52% 20%" data-object-fit="cover" data-object-position="52% 20%"/><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim-0 has-background-dim has-background-gradient" style="background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0.6) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"left","style":{"typography":{"fontWeight":"700","lineHeight":"1.3","fontStyle":"normal"},"elements":{"link":{"color":{"text":"var:preset|color|base"}}},"spacing":{"margin":{"bottom":"8px"}}},"textColor":"base","fontSize":"large","fontFamily":"quattrocento"} -->
+  <h2 class="wp-block-heading has-text-align-left has-base-color has-text-color has-link-color has-quattrocento-font-family has-large-font-size" style="margin-bottom:8px;font-style:normal;font-weight:700;line-height:1.3">Yajun (Stella) Zeng, LCSW</h2>
+  <!-- /wp:heading -->
+  
+  <!-- wp:paragraph {"style":{"typography":{"fontSize":"1.125rem","fontStyle":"italic","fontWeight":"400","lineHeight":"1.4","textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(255,255,255,0.9)"}}}},"textColor":"base","fontFamily":"quattrocento"} -->
+  <p class="has-text-align-left has-base-color has-text-color has-link-color has-quattrocento-font-family" style="font-size:1.125rem;font-style:italic;font-weight:400;line-height:1.4">Clinical Director | Between Therapy</p>
+  <!-- /wp:paragraph --></div></div>
+  <!-- /wp:cover -->
+  
+  <!-- wp:group {"className":"consultation-button-area","style":{"spacing":{"padding":{"left":"var:preset|spacing|40","right":"var:preset|spacing|40","top":"0.5rem","bottom":"0.5rem"},"blockGap":"8px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+  <div class="wp-block-group consultation-button-area" style="padding-top:0.5rem;padding-right:var(--wp--preset--spacing--40);padding-bottom:0.5rem;padding-left:var(--wp--preset--spacing--40)"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+  <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"custom-coral","width":100,"className":"book-now-cta","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"12px","bottom":"12px","left":"32px","right":"32px"}},"typography":{"fontWeight":"700","fontSize":"1rem","fontStyle":"normal"}}} -->
+  <div class="wp-block-button has-custom-width wp-block-button__width-100 book-now-cta"><a class="wp-block-button__link has-custom-coral-background-color has-background has-custom-font-size wp-element-button" href="https://betweentherapy.janeapp.com/#/staff_member/1" style="border-radius:50px;padding-top:12px;padding-right:32px;padding-bottom:12px;padding-left:32px;font-size:1rem;font-style:normal;font-weight:700" target="_blank" rel="noreferrer noopener">Book Now</a></div>
+  <!-- /wp:button --></div>
+  <!-- /wp:buttons -->
+  
+  <!-- wp:paragraph {"className":"has-custom-text-primary-color has-text-color has-link-color","style":{"typography":{"textAlign":"center"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.8)"}}}},"textColor":"custom-text-primary","fontSize":"medium"} -->
+  <p class="has-text-align-center has-custom-text-primary-color has-text-color has-link-color has-medium-font-size">Free 20 Minute Consultation</p>
+  <!-- /wp:paragraph --></div>
+  <!-- /wp:group --></div>
+  <!-- /wp:group --></div>
+  <!-- /wp:column -->
+  
+  <!-- wp:column {"verticalAlignment":"top","width":"66%","className":"team-member-right-column","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+  <div class="wp-block-column is-vertically-aligned-top team-member-right-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;flex-basis:66%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|60","padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"default"}} -->
+  <div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"left":"1.25rem","right":"1rem"}}},"layout":{"type":"default"}} -->
+  <div class="wp-block-group" style="padding-right:1rem;padding-left:1.25rem"><!-- wp:heading {"textAlign":"left","level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary"}}},"spacing":{"margin":{"bottom":"8px"},"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontSize":"x-large","fontFamily":"quattrocento"} -->
+  <h1 class="wp-block-heading has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-x-large-font-size" style="margin-bottom:8px;padding-left:var(--wp--preset--spacing--20)"><strong>Yajun (Stella) Zeng <span style="font-size: 1rem;">L.C.S.W</span></strong></h1>
+  <!-- /wp:heading -->
+  
+  <!-- wp:paragraph {"style":{"typography":{"textAlign":"left","fontStyle":"italic","fontWeight":"400"},"elements":{"link":{"color":{"text":"rgba(255,255,255,0.9)"}}},"spacing":{"padding":{"right":"0","left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+  <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-right:0;padding-left:var(--wp--preset--spacing--20);font-style:italic;font-weight:400">Clinical Director | Between Therapy</p>
+  <!-- /wp:paragraph -->
+  
+  <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+  <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">As an Asian American immigrant, my journey into mental health care was shaped by a deep commitment to breaking cultural and linguistic barriers that often prevent Asian American communities from accessing therapy. Navigating life between two cultures has given me a firsthand understanding of the unique stressors and mental health challenges that arise from bicultural identity, immigration, and intergenerational dynamics. My current doctoral research focuses on mental health stigma among Asian American populations and interventions that promote help-seeking and engagement in care.</p>
+  <!-- /wp:paragraph -->
+  
+  <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|40"},"border":{"radius":"8px"}},"backgroundColor":"custom-secondary","fontSize":"medium","layout":{"type":"default"}} -->
+  <div class="wp-block-group has-custom-secondary-background-color has-background has-medium-font-size" style="border-radius:8px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontStyle":"normal"},"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary"}}},"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}},"textColor":"custom-text-primary","fontSize":"large","fontFamily":"quattrocento"} -->
+  <h3 class="wp-block-heading has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--40);font-style:normal;font-weight:700">Education &amp; Credentials</h3>
+  <!-- /wp:heading -->
+  
+  <!-- wp:list {"className":"credentials-list","style":{"typography":{"lineHeight":"1.7"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"0"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+  <ul style="padding-left:0;line-height:1.7" class="wp-block-list credentials-list has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family"><!-- wp:list-item -->
+  <li>Dual master's degrees in Social Work (MSW) and Gerontology (MSG) from University of Southern California</li>
+  <!-- /wp:list-item -->
+  
+  <!-- wp:list-item -->
+  <li>Currently pursuing a Doctorate in Social Work (DSW) at University of Pennsylvania</li>
+  <!-- /wp:list-item -->
+  
+  <!-- wp:list-item -->
+  <li>Licensed Clinical Social Worker in California and Washington</li>
+  <!-- /wp:list-item -->
+  
+  <!-- wp:list-item -->
+  <li>Trained in Cognitive Behavioral Therapy for Insomnia (CBT-I), CBT, DBT, Internal Family System (IFS), relational therapy, and psychodynamic approaches</li>
+  <!-- /wp:list-item -->
+  
+  <!-- wp:list-item -->
+  <li>Clinical Supervisor in California, providing supervision and mentorship to associate therapists since 2018</li>
+  <!-- /wp:list-item --></ul>
+  <!-- /wp:list --></div>
+  <!-- /wp:group -->
+  
+  <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}},"border":{"radius":"8px"}},"backgroundColor":"custom-color-1","fontSize":"medium","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+  <div class="wp-block-group has-custom-color-1-background-color has-background has-medium-font-size" style="border-radius:8px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":2501,"width":"20px","height":"20px","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+  <figure class="wp-block-image size-full is-resized"><img src="https://between-therapy.com/wp-content/uploads/2026/01/languages.png" alt="" class="wp-image-2501" style="object-fit:cover;width:20px;height:20px"/></figure>
+  <!-- /wp:image -->
+  
+  <!-- wp:group {"style":{"spacing":{"blockGap":"4px"}},"layout":{"type":"default"}} -->
+  <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","fontStyle":"normal"},"elements":{"link":{"color":{"text":"var:preset|color|custom-sage"}}},"spacing":{"margin":{"bottom":"4px"}}},"textColor":"custom-sage","fontSize":"medium"} -->
+  <p class="has-custom-sage-color has-text-color has-link-color has-medium-font-size" style="margin-bottom:4px;font-style:normal;font-weight:600">Sessions Available In</p>
+  <!-- /wp:paragraph -->
+  
+  <!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontStyle":"normal"},"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary"}}}},"textColor":"custom-text-primary","fontSize":"medium","fontFamily":"quattrocento"} -->
+  <p class="has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-medium-font-size" style="font-style:normal;font-weight:700">English &amp; Mandarin Chinese</p>
+  <!-- /wp:paragraph --></div>
+  <!-- /wp:group --></div>
+  <!-- /wp:group -->
+  
+  <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
+  <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+  <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">As a bilingual Licensed Clinical Social Worker fluent in both English and Chinese, I integrate evidence-based and insight-oriented approaches, including Cognitive Behavioral Therapy (CBT), Cognitive Behavioral Therapy for Insomnia (CBT-I), attachment-based techniques, relational therapy, and Internal Family Systems (IFS). My clinical expertise spans individuals across the lifespan, with a special focus on Asian American clients, immigrants, and individuals managing chronic illnesses or sleep-related challenges.</p>
+  <!-- /wp:paragraph -->
+  
+  <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+  <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">I also provide clinical supervision for pre-licensed associate therapists, supporting their professional growth and development through a reflective, culturally responsive lens.</p>
+  <!-- /wp:paragraph -->
+  
+  <!-- wp:quote {"style":{"border":{"left":{"color":"var:preset|color|custom-sage","width":"4px"}},"spacing":{"padding":{"left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","right":"0"},"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"fontSize":"large"} -->
+  <blockquote class="wp-block-quote has-large-font-size" style="border-left-color:var(--wp--preset--color--custom-sage);border-left-width:4px;margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);padding-top:var(--wp--preset--spacing--40);padding-right:0;padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontSize":"medium","fontFamily":"quattrocento"} -->
+  <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-medium-font-size" style="padding-left:var(--wp--preset--spacing--20)"><em>At Between Therapy, I aim to create a safe and culturally responsive space where clients feel seen, heard, and empowered to navigate life's challenges. I believe in therapy that honors personal values, fosters self-awareness and strengthens resilience.</em></p>
+  <!-- /wp:paragraph --></blockquote>
+  <!-- /wp:quote -->
+  
+  <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+  <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">Outside of therapy, I enjoy exploring new places, traveling, reading, practicing yoga, hiking, backpacking, and indulging in delicious food. I also love animals, especially dogs- who hold a special place in my heart. I share my adventures with my miniature American Shepherd, Rico.</p>
+  <!-- /wp:paragraph --></div>
+  <!-- /wp:group --></div>
+  <!-- /wp:group --></div>
+  <!-- /wp:group --></div>
+  <!-- /wp:column --></div>
+  <!-- /wp:columns --></div>
+  <!-- /wp:group -->
+  <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"var:preset|spacing|50"}},"border":{"radius":"8px"}},"backgroundColor":"custom-color-1","layout":{"type":"default"}} -->
+      <div class="wp-block-group has-custom-color-1-background-color has-background" style="border-radius:8px;margin-top:var(--wp--preset--spacing--50);padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--50)"><!-- wp:paragraph {"className":"has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-sage"}}},"typography":{"fontWeight":"600","textAlign":"center","fontStyle":"normal"}},"textColor":"custom-text-primary","fontSize":"medium"} -->
+      <p class="has-text-align-center has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-medium-font-size" style="font-style:normal;font-weight:600">We have a diverse team of therapists with different specialties. <a href="https://between-therapy.com/about-us/" data-type="link" data-id="https://between-therapy.com/about-us/">View our full team</a> to find who resonates with you.</p>
+      <!-- /wp:paragraph --></div>
+      <!-- /wp:group --></div>
+  <!-- /wp:group -->

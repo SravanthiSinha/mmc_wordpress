@@ -1,0 +1,115 @@
+<!-- wp:group {"metadata":{"categories":["team-member"],"patternName":"mindmatters/team-member-elaine-li","name":"Team Member - Elaine Li"},"align":"full","className":"is-style-section-1","style":{"spacing":{"padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"backgroundColor":"custom-primary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull is-style-section-1 has-custom-primary-background-color has-background" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"align":"wide","className":"team-member-wrapper","style":{"border":{"radius":"16px"},"shadow":"var:preset|shadow|natural"},"backgroundColor":"base","layout":{"type":"default"}} -->
+    <div class="wp-block-group alignwide team-member-wrapper has-base-background-color has-background" style="border-radius:16px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:columns {"verticalAlignment":"top","className":"team-member-columns","style":{"spacing":{"blockGap":{"left":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}}} -->
+    <div class="wp-block-columns are-vertically-aligned-top team-member-columns" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"verticalAlignment":"top","width":"33%","className":"team-member-left-column","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+    <div class="wp-block-column is-vertically-aligned-top team-member-left-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;flex-basis:33%"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
+    <div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"url":"https://between-therapy.com/wp-content/uploads/2025/04/elaine.jpg","id":374,"dimRatio":0,"customOverlayColor":"#9e9c9d","isUserOverlayColor":false,"customGradient":"linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0.6) 100%)","contentPosition":"bottom left","isDark":false,"sizeSlug":"full","className":"team-member-image","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"border":{"radius":{"topLeft":"16px","topRight":"0px","bottomLeft":"0px","bottomRight":"16px"}},"layout":{"selfStretch":"fit","flexSize":null},"dimensions":{"aspectRatio":"2/3"}},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-cover is-light has-custom-content-position is-position-bottom-left team-member-image" style="border-top-left-radius:16px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:16px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><img class="wp-block-cover__image-background wp-image-374 size-full" alt="" src="https://between-therapy.com/wp-content/uploads/2025/04/elaine.jpg" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim has-background-gradient" style="background-color:#9e9c9d;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0.6) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"left","style":{"typography":{"fontWeight":"700","lineHeight":"1.3","fontStyle":"normal"},"elements":{"link":{"color":{"text":"var:preset|color|base"}}},"spacing":{"margin":{"bottom":"8px"}}},"textColor":"base","fontSize":"large","fontFamily":"quattrocento"} -->
+    <h2 class="wp-block-heading has-text-align-left has-base-color has-text-color has-link-color has-quattrocento-font-family has-large-font-size" style="margin-bottom:8px;font-style:normal;font-weight:700;line-height:1.3">Elaine Li, ASW</h2>
+    <!-- /wp:heading -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"fontSize":"1.125rem","fontStyle":"italic","fontWeight":"400","lineHeight":"1.4","textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(255,255,255,0.9)"}}}},"textColor":"base","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-base-color has-text-color has-link-color has-quattrocento-font-family" style="font-size:1.125rem;font-style:italic;font-weight:400;line-height:1.4">Associate Therapist | Between Therapy</p>
+    <!-- /wp:paragraph --></div></div>
+    <!-- /wp:cover -->
+    
+    <!-- wp:group {"className":"consultation-button-area","style":{"spacing":{"padding":{"left":"var:preset|spacing|40","right":"var:preset|spacing|40","top":"0.5rem","bottom":"0.5rem"},"blockGap":"8px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+    <div class="wp-block-group consultation-button-area" style="padding-top:0.5rem;padding-right:var(--wp--preset--spacing--40);padding-bottom:0.5rem;padding-left:var(--wp--preset--spacing--40)"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+    <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"custom-coral","width":100,"className":"book-now-cta","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"12px","bottom":"12px","left":"32px","right":"32px"}},"typography":{"fontWeight":"700","fontSize":"1rem","fontStyle":"normal"}}} -->
+    <div class="wp-block-button has-custom-width wp-block-button__width-100 book-now-cta"><a class="wp-block-button__link has-custom-coral-background-color has-background has-custom-font-size wp-element-button" href="https://betweentherapy.janeapp.com/#/staff_member/2" style="border-radius:50px;padding-top:12px;padding-right:32px;padding-bottom:12px;padding-left:32px;font-size:1rem;font-style:normal;font-weight:700" target="_blank" rel="noreferrer noopener">Book Now</a></div>
+    <!-- /wp:button --></div>
+    <!-- /wp:buttons -->
+    
+    <!-- wp:paragraph {"className":"has-custom-text-primary-color has-text-color has-link-color","style":{"typography":{"textAlign":"center"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.8)"}}}},"textColor":"custom-text-primary","fontSize":"medium"} -->
+    <p class="has-text-align-center has-custom-text-primary-color has-text-color has-link-color has-medium-font-size">Free 20 Minute Consultation</p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:column -->
+    
+    <!-- wp:column {"verticalAlignment":"top","width":"66%","className":"team-member-right-column","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+    <div class="wp-block-column is-vertically-aligned-top team-member-right-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;flex-basis:66%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|60","padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"default"}} -->
+    <div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"left":"1.25rem","right":"1rem"}}},"layout":{"type":"default"}} -->
+    <div class="wp-block-group" style="padding-right:1rem;padding-left:1.25rem"><!-- wp:heading {"textAlign":"left","level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary"}}},"spacing":{"margin":{"bottom":"8px"},"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontSize":"x-large","fontFamily":"quattrocento"} -->
+    <h1 class="wp-block-heading has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-x-large-font-size" style="margin-bottom:8px;padding-left:var(--wp--preset--spacing--20)"><strong>Elaine Li <span style="font-size: 1rem;">ASW</span></strong></h1>
+    <!-- /wp:heading -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"textAlign":"left","fontStyle":"italic","fontWeight":"400"},"elements":{"link":{"color":{"text":"rgba(255,255,255,0.9)"}}},"spacing":{"padding":{"right":"0","left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-right:0;padding-left:var(--wp--preset--spacing--20);font-style:italic;font-weight:400">Associate Therapist | Between Therapy</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">My name is Elaine Li, and I'm an associate therapist dedicated to helping individuals navigate their personal growth, relationships, and mental health challenges. My therapeutic approach integrates evidence-based techniques such as Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), and Motivational Interviewing (MI) to support clients in achieving meaningful change in their lives.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">As an Asian American, I deeply understand the unique struggles and challenges that come with navigating multiple cultures and identities. Many of my clients, especially those from immigrant backgrounds, experience acculturation stress, family dynamics, and the complexities of balancing traditional values with the demands of living in a new culture. These challenges can lead to feelings of isolation, anxiety, and confusion, but I believe that with the right support, everyone can find their path toward healing, self-discovery, and resilience.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|40"},"border":{"radius":"8px"}},"backgroundColor":"custom-secondary","fontSize":"medium","layout":{"type":"default"}} -->
+    <div class="wp-block-group has-custom-secondary-background-color has-background has-medium-font-size" style="border-radius:8px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontStyle":"normal"},"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary"}}},"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}},"textColor":"custom-text-primary","fontSize":"large","fontFamily":"quattrocento"} -->
+    <h3 class="wp-block-heading has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--40);font-style:normal;font-weight:700">Education &amp; Credentials</h3>
+    <!-- /wp:heading -->
+    
+    <!-- wp:list {"className":"credentials-list","style":{"typography":{"lineHeight":"1.7"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"0"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <ul style="padding-left:0;line-height:1.7" class="wp-block-list credentials-list has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family"><!-- wp:list-item -->
+    <li>Master of Social Work from California State University, Los Angeles</li>
+    <!-- /wp:list-item -->
+    
+    <!-- wp:list-item -->
+    <li>Associated Social Worker</li>
+    <!-- /wp:list-item --></ul>
+    <!-- /wp:list --></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}},"border":{"radius":"8px"}},"backgroundColor":"custom-color-1","fontSize":"medium","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+    <div class="wp-block-group has-custom-color-1-background-color has-background has-medium-font-size" style="border-radius:8px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"width":"20px","height":"20px","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+    <figure class="wp-block-image size-full is-resized"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2387A96B'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129'/%3E%3C/svg%3E" alt="" style="object-fit:cover;width:20px;height:20px"/></figure>
+    <!-- /wp:image -->
+    
+    <!-- wp:group {"style":{"spacing":{"blockGap":"4px"}},"layout":{"type":"default"}} -->
+    <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","fontStyle":"normal"},"elements":{"link":{"color":{"text":"var:preset|color|custom-sage"}}},"spacing":{"margin":{"bottom":"4px"}}},"textColor":"custom-sage","fontSize":"medium"} -->
+    <p class="has-custom-sage-color has-text-color has-link-color has-medium-font-size" style="margin-bottom:4px;font-style:normal;font-weight:600">Sessions Available In</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontStyle":"normal"},"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary"}}}},"textColor":"custom-text-primary","fontSize":"medium","fontFamily":"quattrocento"} -->
+    <p class="has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-medium-font-size" style="font-style:normal;font-weight:700">English &amp; Mandarin Chinese</p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
+    <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">Throughout my career, I have worked extensively with both adults and older adults, helping them overcome a variety of issues such as anxiety, depression, trauma, and relationship difficulties. I have seen firsthand how powerful the therapeutic process can be in helping individuals move through difficult transitions, whether it's adjusting to life in a new country, coping with family pressures, or addressing long-standing emotional struggles.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">My work with clients is built on empathy, respect, and the belief that each person is capable of growth. I focus on creating a safe and non-judgmental space where you can feel heard, understood, and empowered to make positive changes. Together, we will work on improving your mental health, developing coping strategies, strengthening family relationships, and navigating the complexities of cultural identity.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">Whether you're struggling with family dynamics, adjusting to life in a new environment, or seeking personal growth, my goal is to help you regain a sense of balance and find peace within yourself. By combining my cultural understanding with my professional training, I can offer a supportive and effective space for healing.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:quote {"style":{"border":{"left":{"color":"var:preset|color|custom-sage","width":"4px"}},"spacing":{"padding":{"left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","right":"0"},"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"fontSize":"large"} -->
+    <blockquote class="wp-block-quote has-large-font-size" style="border-left-color:var(--wp--preset--color--custom-sage);border-left-width:4px;margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);padding-top:var(--wp--preset--spacing--40);padding-right:0;padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontSize":"medium","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-medium-font-size" style="padding-left:var(--wp--preset--spacing--20)"><em>I believe therapy is a collaborative journey where we work together to discover your strengths, navigate challenges, and build resilience. My goal is to create a space where you feel truly understood as you embrace your authentic self.</em></p>
+    <!-- /wp:paragraph --></blockquote>
+    <!-- /wp:quote -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">When I'm not working, I love hiking and reading. Both activities allow me to expand my horizons, and I enjoy balancing the adventure of the outdoors with the adventure of a great story.</p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:column --></div>
+    <!-- /wp:columns --></div>
+    <!-- /wp:group -->
+         
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"var:preset|spacing|50"}},"border":{"radius":"8px"}},"backgroundColor":"custom-color-1","layout":{"type":"default"}} -->
+    <div class="wp-block-group has-custom-color-1-background-color has-background" style="border-radius:8px;margin-top:var(--wp--preset--spacing--50);padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--50)"><!-- wp:paragraph {"className":"has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-sage"}}},"typography":{"fontWeight":"600","textAlign":"center","fontStyle":"normal"}},"textColor":"custom-text-primary","fontSize":"medium"} -->
+    <p class="has-text-align-center has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-medium-font-size" style="font-style:normal;font-weight:600">We have a diverse team of therapists with different specialties. <a href="https://between-therapy.com/about-us/" data-type="link" data-id="https://between-therapy.com/about-us/">View our full team</a> to find who resonates with you.</p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group -->

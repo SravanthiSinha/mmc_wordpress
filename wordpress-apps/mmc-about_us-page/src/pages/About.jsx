@@ -1,4 +1,4 @@
-import TeamMember from '../components/shared/TeamMember';
+import React from 'react';
 import { FadeInSection } from '../components/shared/Animations';
 import ZengImg from '../assets/images/profile_pics/zeng.jpg';
 import ElaineImg from '../assets/images/profile_pics/elaine.jpg';
@@ -10,145 +10,101 @@ import AsianClientImg from '../assets/images/asian-client.jpg';
 import BookNowCTA from '../components/shared/BookNowCTA';
 
 const About = () => {
+  const [currentSlide, setCurrentSlide] = React.useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = React.useState(true);
+
   const teamMembers = [
     {
       id: 'stella',
       name: 'Yajun (Stella) Zeng, LCSW',
-      title: 'Clinical Director | Between Therapy',
-      languages: 'English and Mandarin Chinese',
+      title: 'Clinical Director',
       image: ZengImg,
-      introContent: [
-        'As an Asian American immigrant, my journey into mental health care was shaped by a deep commitment to breaking cultural and linguistic barriers that often prevent Asian American communities from accessing therapy. Navigating life between two cultures has given me a firsthand understanding of the unique stressors and mental health challenges that arise from bicultural identity, immigration, and intergenerational dynamics. My current doctoral research focuses on mental health stigma among Asian American populations and interventions that promote help-seeking and engagement in care.'
-      ],
-      credentials: [
-        'Dual master\'s degrees in Social Work (MSW) and Gerontology (MSG) from University of Southern California',
-        'Currently pursuing a Doctorate in Social Work (DSW) at University of Pennsylvania',
-        'Licensed Clinical Social Worker in California and Washington',
-        'Trained in Cognitive Behavioral Therapy for Insomnia (CBT-I), CBT, DBT, Internal Family System (IFS), relational therapy, and psychodynamic approaches',
-        'Clinical Supervisor in California, providing supervision and mentorship to associate therapists since 2018'
-      ],
-      mainContent: [
-        'As a bilingual Licensed Clinical Social Worker fluent in both English and Chinese, I integrate evidence-based and insight-oriented approaches, including Cognitive Behavioral Therapy (CBT), Cognitive Behavioral Therapy for Insomnia (CBT-I), attachment-based techniques, relational therapy, and Internal Family Systems (IFS). My clinical expertise spans individuals across the lifespan, with a special focus on Asian American clients, immigrants, and individuals managing chronic illnesses or sleep-related challenges.',
-        'I also provide clinical supervision for pre-licensed associate therapists, supporting their professional growth and development through a reflective, culturally responsive lens.'
-      ],
-      quote: 'At Between Therapy, I aim to create a safe and culturally responsive space where clients feel seen, heard, and empowered to navigate life\'s challenges. I believe in therapy that honors personal values, fosters self-awareness and strengthens resilience.',
-      personalContent: 'Outside of therapy, I enjoy exploring new places, traveling, reading, practicing yoga, hiking, backpacking, and indulging in delicious food. I also love animals, especially dogs- who hold a special place in my heart. I share my adventures with my miniature American Shepherd, Rico.'
+      url: 'https://between-therapy.com/stella-zeng/',
     },
     {
       id: 'vini',
       name: 'Vini Kalra, PsyD',
-      title: 'Clinical Psychologist | Between Therapy',
-      languages: 'English and Hindi',
+      title: 'Clinical Psychologist',
       image: ViniImg,
-      introContent: [
-        'Many individuals seek therapy feeling stuck, overwhelmed, or uncertain about how to manage life\'s challenges. They may struggle with distressing emotions, unhelpful patterns, or symptoms that interfere with their daily functioning and overall well-being.',
-        'I provide compassionate, evidence-based care in a safe and non-judgmental environment. My approach is warm, supportive, and individualized, integrating evidence-based modalities such as Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), mindfulness-based strategies, and other therapeutic techniques as appropriate. I balance practical skill-building with deeper self-exploration to support meaningful and lasting change.'
-      ],
-      credentials: [
-        'Doctor of Psychology (PsyD) from Illinois School of Professional Psychology',
-        'Licensed Clinical Psychologist in California and Illinois',
-        'Trained in Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), Mindfulness-Based Interventions, Motivational Interviewing, Interpersonal Psychotherapy (IPT), and Exposure and Response Prevention (ERP)'
-      ],
-      mainContent: [
-        'I am dedicated to providing evidence-based psychological care to adults and seniors, with experience supporting individuals facing a wide range of mental health concerns. These include anxiety, depression, bipolar disorder, substance use and addiction, ADD/ADHD, stress management, panic disorders, grief and loss, and cultural and ethnic identity concerns.',
-        'I value creating an empowering, open-minded, and culturally responsive therapeutic space where clients feel understood and supported. My clinical approach integrates Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), Mindfulness-Based Interventions, Motivational Interviewing, Interpersonal Psychotherapy (IPT), and Exposure and Response Prevention (ERP) to meet each client\'s unique needs.',
-        'Through our work together, clients can expect to develop effective coping skills, gain insight into patterns impacting their mental health, and build emotional resilience. My goal is to support clients in creating meaningful changes in their daily lives while fostering long-term personal growth and healing.'
-      ],
-      quote: 'I believe in creating an empowering, open-minded, and culturally responsive therapeutic space where clients feel understood and supported on their journey toward meaningful change and lasting well-being.',
-      personalContent: 'Outside of work, I enjoy spending time with my son and husband and visiting family in Chicago. I also love desserts and am always on the lookout for new places to try them.'
-    },
-    {
-      id: 'elaine',
-      name: 'Elaine Li, ASW',
-      title: 'Associate Therapist | Between Therapy',
-      languages: 'English and Mandarin Chinese',
-      image: ElaineImg,
-      introContent: [
-        "My name is Elaine Li, and I'm an associate therapist dedicated to helping individuals navigate their personal growth, relationships, and mental health challenges. My therapeutic approach integrates evidence-based techniques such as Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), and Motivational Interviewing (MI) to support clients in achieving meaningful change in their lives.",
-        "As an Asian American, I deeply understand the unique struggles and challenges that come with navigating multiple cultures and identities. Many of my clients, especially those from immigrant backgrounds, experience acculturation stress, family dynamics, and the complexities of balancing traditional values with the demands of living in a new culture. These challenges can lead to feelings of isolation, anxiety, and confusion, but I believe that with the right support, everyone can find their path toward healing, self-discovery, and resilience."
-      ],
-      credentials: [
-        'Master of Social Work from California State University, Los Angeles',
-        'Associated Social Worker'
-      ],
-      mainContent: [
-        "Throughout my career, I have worked extensively with both adults and older adults, helping them overcome a variety of issues such as anxiety, depression, trauma, and relationship difficulties. I have seen firsthand how powerful the therapeutic process can be in helping individuals move through difficult transitions, whether it's adjusting to life in a new country, coping with family pressures, or addressing long-standing emotional struggles.",
-        "My work with clients is built on empathy, respect, and the belief that each person is capable of growth. I focus on creating a safe and non-judgmental space where you can feel heard, understood, and empowered to make positive changes. Together, we will work on improving your mental health, developing coping strategies, strengthening family relationships, and navigating the complexities of cultural identity.",
-        "Whether you're struggling with family dynamics, adjusting to life in a new environment, or seeking personal growth, my goal is to help you regain a sense of balance and find peace within yourself. By combining my cultural understanding with my professional training, I can offer a supportive and effective space for healing."
-      ],
-      quote: 'I believe therapy is a collaborative journey where we work together to discover your strengths, navigate challenges, and build resilience. My goal is to create a space where you feel truly understood as you embrace your authentic self.',
-      personalContent: "When I'm not working, I love hiking and reading. Both activities allow me to expand my horizons, and I enjoy balancing the adventure of the outdoors with the adventure of a great story."
+      url: 'https://between-therapy.com/vini-kalra/',
     },
     {
       id: 'dan',
-      name: 'Dan Song, AMFT, APCC',
-      title: 'Associate Marriage and Family Therapist | Associate Professional Clinical Counselor | Between Therapy',
-      languages: 'English, Cantonese, and Mandarin Chinese',
+      name: 'Da (Dan) Song, AMFT, APCC',
+      title: 'Associate Therapist',
       image: DanImg,
-      introContent: [
-        'Many people come to therapy feeling overwhelmed, uncertain, or quietly exhausted. You may wonder whether therapy will actually help, feel pressure to already have answers, or carry a sense that you "should be handling things better by now."',
-        'For those navigating cultural expectations, family responsibilities, caregiving roles, or the layered stress of immigration and adaptation, these feelings can feel especially heavy and isolating. Moving between languages, cultures, or roles—often while staying strong for others—can leave little space to pause, reflect, or be supported.'
-      ],
-      credentials: [
-        'Registered Associate Marriage and Family Therapist',
-        'Registered Associate Professional Clinical Counselor',
-        'Bachelor\'s degree from San Francisco State University',
-        'Master\'s degree in Counseling Psychology from Golden Gate University',
-        'Trained in Acceptance and Commitment Therapy (ACT), Cognitive Behavioral Therapy (CBT), Motivational Interviewing, and Solution-Focused Therapy'
-      ],
-      clientFocus: [
-        'Adolescents (high school and above)',
-        'College students navigating transition and identity development',
-        'Adults across the lifespan',
-        'Caregivers experiencing emotional fatigue',
-        'Professionals managing sustained work and leadership pressure',
-        'Individuals navigating relationship challenges',
-        'New immigrants managing cross-cultural transitions'
-      ],
-      areasOfFocus: [
-        'Anxiety, stress, and emotional overwhelm',
-        'Caregiver stress and compassion fatigue',
-        'Work-related and financial strain',
-        'Immigration-related stress and cross-cultural adjustment',
-        'Family-of-origin and intergenerational dynamics',
-        'Stress related to being an only child or primary support figure'
-      ],
-      mainContent: [
-        'I take a holistic, individualized, and culturally responsive approach to therapy. I don\'t expect clients to arrive fully clear, emotionally articulate, or "ready." Instead, I meet you where you are and work collaboratively at a pace that feels steady, respectful, and realistic.',
-        'My work draws from evidence-based approaches while staying grounded in your lived experience—your cultural background, values, responsibilities, and the real pressures shaping your life. Therapy with me is not about fixing you or pushing quick solutions, but about creating room to understand what you\'ve been carrying and what you may need moving forward.',
-        'When helpful, sessions may take place in English, Cantonese, or Mandarin. I am attentive to how language, culture, and immigration experiences can shape how emotions are expressed, understood, or held—especially for clients who are used to adapting, translating, or holding things together for others.',
-        'As an immigrant myself, I bring a lived understanding of cross-cultural adjustment, identity negotiation, and the quiet pressures that often accompany building stability in a new environment. My clinical experience spans both school-based and community-based mental health settings, where I have supported high school students, college-age clients, and adults across the lifespan from diverse cultural and socioeconomic backgrounds, including AAPI communities.',
-        'Prior to my clinical training, I worked in high-stakes, high-pressure business environments. This background allows me to bring a grounded understanding of work-related stress, leadership pressure, and performance expectations into the therapy space, while keeping the focus firmly on each client\'s emotional well-being and therapeutic goals.'
-      ],
-      quote: 'My goal is to create a grounded, welcoming therapeutic space where you feel understood rather than judged. I place strong emphasis on the therapeutic relationship, believing that feeling safe and genuinely seen is what allows meaningful change to happen.',
-      personalContent: 'Outside of my clinical work, I enjoy reading widely, from global affairs to fiction. Staying curious about different perspectives helps me remain thoughtful, grounded, and open-minded in both life and therapy. I also value spending time with family, staying physically active, and maintaining meaningful connections with friends. These practices remind me that balance and resilience are not abstract ideas, but lived experiences that matter in everyday life.'
+      url: 'https://between-therapy.com/dan-song/',
     },
     {
       id: 'poya',
       name: 'Poya Lai, AMFT',
-      title: 'Associate Marriage and Family Therapist | Between Therapy',
-      languages: 'English and Mandarin Chinese',
+      title: 'Associate Therapist',
       image: PoyaImg,
-      introContent: [
-        'Many people begin therapy feeling emotionally exhausted, stuck, or unsure of where they belong. This can be especially true for those navigating multiple cultures, identities, and expectations at once. When family values, cultural norms, and personal needs don\'t fully align, it\'s common to feel pulled in different directions—or to quietly lose touch with yourself.',
-        'Over time, this strain may show up as burnout, anxiety, relationship stress, or a lingering sense that something isn\'t quite right, even if everything looks "fine" on the outside.'
-      ],
-      credentials: [
-        'Registered Associate Marriage and Family Therapist (AMFT)',
-        'Bachelor of Arts (B.A.)',
-        'Master\'s degree in Counseling Psychology with a concentration in Marriage and Family Therapy from the University of San Francisco',
-        'Trained in Acceptance and Commitment Therapy (ACT), Cognitive Behavioral Therapy (CBT), Motivational Interviewing, Mindfulness-based approaches, Attachment-based therapy, Emotionally Focused Therapy, Person-centered therapy, and Solution-Focused Therapy'
-      ],
-      mainContent: [
-        'I take a collaborative, culturally responsive approach to therapy that honors the complexity of your lived experience. I don\'t believe there is one "right" way to feel, heal, or move forward—especially when identity, family dynamics, and cultural expectations play such a central role in your life.',
-        'My work integrates evidence-based modalities such as Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), Emotion-Focused Therapy, family systems therapy, and person-centered approaches. Together, we will make sense of patterns shaped by your past experiences and relationships while building practical coping skills that support meaningful, sustainable change.',
-        'I earned my Master\'s degree in Counseling Psychology with a concentration in Marriage and Family Therapy from the University of San Francisco. During graduate training, I completed my internship at Gateway Public Schools, where I worked with adolescents ages 11–18. In this role, I supported students navigating anxiety, depression, trauma, identity development, and a wide range of family-related and personal challenges, gaining hands-on experience working within complex systems that impact young people\'s emotional well-being.',
-        'Over time, clients often gain greater emotional clarity, self-trust, and a stronger sense of agency—feeling more empowered to live in ways that feel authentic rather than obligatory. Therapy is a space where you don\'t have to choose between parts of yourself—you can bring all of you into the room.'
-      ],
-      quote: 'My goal is to create a supportive and affirming therapeutic space where you feel genuinely seen, heard, and understood. We will explore how family dynamics, identity development, and cultural influences have shaped your experiences, while also focusing on what matters most to you moving forward.',
-      personalContent: 'Outside of therapy, I value humor, perspective, and taking meaningful chances in life. One quote that resonates with me is: "You miss 100% of the shots you don\'t take." – Wayne Gretzky — Michael Scott. This mindset reflects my belief in growth, courage, and the importance of showing up for yourself—even when the next step feels uncertain.'
-    }
+      url: 'https://between-therapy.com/poya-lai/',
+    },
+    {
+      id: 'elaine',
+      name: 'Elaine Li, ASW',
+      title: 'Associate Therapist',
+      image: ElaineImg,
+      url: 'https://between-therapy.com/elaine-li/',
+    },
+
   ];
+
+  // This ensures the last slide always shows 3 cards
+  const desktopMembers = [...teamMembers, ...teamMembers.slice(0, 2)];
+
+  // Calculate max slides based on screen size
+  const getMaxSlides = () => {
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth >= 1024) return 2; // Desktop: 3 slides (0, 1, 2) showing 3 cards each
+      if (window.innerWidth >= 768) return teamMembers.length - 1; // Tablet
+    }
+    return teamMembers.length - 1; // Mobile
+  };
+
+  const [maxSlides, setMaxSlides] = React.useState(getMaxSlides());
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setMaxSlides(getMaxSlides());
+      setCurrentSlide(0); // Reset to first slide on resize
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Auto-play functionality
+  React.useEffect(() => {
+    if (!isAutoPlaying) return;
+
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => {
+        if (prev >= maxSlides) return 0;
+        return prev + 1;
+      });
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [isAutoPlaying, maxSlides]);
+
+  const nextSlide = () => {
+    setIsAutoPlaying(false);
+    setCurrentSlide((prev) => (prev >= maxSlides ? 0 : prev + 1));
+  };
+
+  const prevSlide = () => {
+    setIsAutoPlaying(false);
+    setCurrentSlide((prev) => (prev === 0 ? maxSlides : prev - 1));
+  };
+
+  const goToSlide = (index) => {
+    setIsAutoPlaying(false);
+    setCurrentSlide(index);
+  };
+
   const values = [
     {
       title: "Cultural sensitivity",
@@ -196,18 +152,186 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Member Section */}
-      <section className="py-12 md:py-16 bg-brand-background-primary">
-        <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-serif text-brand-text-primary mb-6 sm:mb-8">
-            Meet our team
-          </h1>
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {teamMembers.map((member) => (
-            <TeamMember key={member.id} member={member} />
-          ))}
-        </div>
+      {/* Team Introduction Section with Carousel */}
+      <section className="py-12 md:py-20 bg-brand-background-primary">
+        <FadeInSection delay={100}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center mb-12">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-brand-text-primary inline-block relative">
+                Meet our team
+                <span className="block h-1 w-2/3 bg-brand-sage/30 mx-auto mt-4 rounded-full"></span>
+              </h2>
+            </div>
+
+            {/* Carousel Container */}
+            <div className="relative max-w-7xl mx-auto">
+              {/* Desktop View - Show 3 cards */}
+              <div className="hidden lg:block">
+                <div className="overflow-hidden">
+                  <div
+                    className="flex transition-transform duration-500 ease-in-out"
+                    style={{ transform: `translateX(-${currentSlide * 33.333}%)` }}
+                  >
+                    {desktopMembers.map((member, index) => (
+                      <div key={`${member.id}-${index}`} className="w-1/3 flex-shrink-0 px-4">
+                        <div className="group">
+                          <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent z-10"></div>
+                            <img
+                              src={member.image}
+                              alt={member.name}
+                              className="w-full h-[450px] object-cover object-center"
+                            />
+                            <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+                              <h3 className="text-lg md:text-xl font-serif text-white mb-2">
+                                {member.name}
+                              </h3>
+                              <p className="text-white text-md">
+                                {member.title}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="mt-4 flex justify-center">
+                            <a
+                              href={member.url}
+                              className={`inline-block bg-brand-sage text-white font-bold 
+                              text-sm px-4 py-2 rounded-full hover:bg-brand-sageLight transition-all duration-200
+                              hover:transform hover:scale-105 active:scale-95`}
+                            >
+                              Learn More
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Tablet View - Show 2 cards */}
+              <div className="hidden md:block lg:hidden">
+                <div className="overflow-hidden">
+                  <div
+                    className="flex transition-transform duration-500 ease-in-out"
+                    style={{ transform: `translateX(-${currentSlide * 50}%)` }}
+                  >
+                    {teamMembers.map((member) => (
+                      <div key={member.id} className="w-1/2 flex-shrink-0 px-4">
+                        <div className="group">
+                          <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent z-10"></div>
+                            <img
+                              src={member.image}
+                              alt={member.name}
+                              className="w-full h-[450px] object-cover object-center"
+                            />
+                            <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+                              <h3 className="text-lg md:text-xl font-serif text-white mb-2">
+                                {member.name}
+                              </h3>
+                              <p className="text-white/90 text-sm">
+                                {member.title}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="mt-4 flex justify-center">
+                            <a
+                              href={member.url}
+                              className={`inline-block bg-brand-sage text-white font-bold 
+                              text-sm px-4 py-2 rounded-full hover:bg-brand-sageLight transition-all duration-200
+                              hover:transform hover:scale-105 active:scale-95`}
+                            >
+                              Learn More
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Mobile View - Show 1 card */}
+              <div className="block md:hidden">
+                <div className="overflow-hidden">
+                  <div
+                    className="flex transition-transform duration-500 ease-in-out"
+                    style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                  >
+                    {teamMembers.map((member) => (
+                      <div key={member.id} className="w-full flex-shrink-0 px-4">
+                        <div className="group max-w-sm mx-auto">
+                          <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent z-10"></div>
+                            <img
+                              src={member.image}
+                              alt={member.name}
+                              className="w-full h-[450px] object-cover object-center"
+                            />
+                            <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+                              <h3 className="text-lg md:text-xl font-serif text-white mb-2">
+                                {member.name}
+                              </h3>
+                              <p className="text-white/90 text-sm">
+                                {member.title}
+                              </p>
+                            </div>
+                          </div>
+                          <div className="mt-4 flex justify-center">
+                            <a
+                              href={member.url}
+                              className={`inline-block bg-brand-sage text-white font-bold 
+                              text-sm px-4 py-2 rounded-full hover:bg-brand-sageLight transition-all duration-200
+                              hover:transform hover:scale-105 active:scale-95`}
+                            >
+                              Learn More
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Navigation Arrows */}
+              <button
+                onClick={prevSlide}
+                className="absolute left-0 top-1/2 -translate-y-1/2 -ml-2 sm:-ml-4 lg:-ml-12 bg-white/90 hover:bg-white text-brand-sage p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
+                aria-label="Previous therapist"
+              >
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                onClick={nextSlide}
+                className="absolute right-0 top-1/2 -translate-y-1/2 -mr-2 sm:-mr-4 lg:-mr-12 bg-white/90 hover:bg-white text-brand-sage p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
+                aria-label="Next therapist"
+              >
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+
+              {/* Dot Indicators */}
+              <div className="flex justify-center gap-2 mt-8">
+                {Array.from({ length: maxSlides + 1 }).map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index
+                      ? 'bg-brand-sage w-8'
+                      : 'bg-brand-sage/30 hover:bg-brand-sage/50'
+                      }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
+            </div>
+
+          </div>
+        </FadeInSection>
       </section>
 
       {/* Mission Section */}

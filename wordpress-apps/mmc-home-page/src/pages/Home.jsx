@@ -19,33 +19,38 @@ const Home = () => {
       id: 'stella',
       name: 'Yajun (Stella) Zeng, LCSW',
       title: 'Clinical Director',
-      image: ZengImg
+      image: ZengImg,
+      url: 'https://between-therapy.com/stella-zeng/',
     },
     {
       id: 'vini',
       name: 'Vini Kalra, PsyD',
       title: 'Clinical Psychologist',
-      image: ViniImg
-    },
-    {
-      id: 'elaine',
-      name: 'Elaine Li, ASW',
-      title: 'Associate Therapist',
-      image: ElaineImg
+      image: ViniImg,
+      url: 'https://between-therapy.com/vini-kalra/',
     },
     {
       id: 'dan',
       name: 'Da (Dan) Song, AMFT, APCC',
       title: 'Associate Therapist',
-      image: DanImg
+      image: DanImg,
+      url: 'https://between-therapy.com/dan-song/',
     },
     {
       id: 'poya',
       name: 'Poya Lai, AMFT',
       title: 'Associate Therapist',
-      image: PoyaImg
+      image: PoyaImg,
+      url: 'https://between-therapy.com/poya-lai/',
     },
-   
+    {
+      id: 'elaine',
+      name: 'Elaine Li, ASW',
+      title: 'Associate Therapist',
+      image: ElaineImg,
+      url: 'https://between-therapy.com/elaine-li/',
+    },
+
   ];
 
   // This ensures the last slide always shows 3 cards
@@ -111,48 +116,48 @@ const Home = () => {
   ];
 
   // Our specialties for quick access
-const specialties = [
-  {
-    title: 'Trauma Therapy',
-    path: '/trauma-therapy',
-    description: 'Healing from trauma with evidence-based approaches for strength and recovery'
-  },
-  {
-    title: 'Therapy for Women',
-    path: '/womens-therapy',
-    description: 'Supporting women through unique challenges, life transitions, and personal growth'
-  },
-  {
-    title: 'Therapy for Asian Americans and BIPOC',
-    path: '/asia-bipoc-therapy',
-    description: 'Culturally sensitive therapy for navigating identity and systemic challenges'
-  },
-  {
-    title: 'Anxiety & Depression Therapy',
-    path: '/anxiety-depression-therapy',
-    description: 'Evidence-based techniques to manage both conditions, reducing stress and restoring calm and joy'
-  },
-  {
-    title: 'Individual Therapy',
-    path: '/individual-therapy',
-    description: 'Culturally responsive therapy to help you manage stress, anxiety, depression, and life transitions'
-  },
-  {
-    title: 'Couples & Relationship Therapy',
-    path: '/couples-relationship-therapy',
-    description: 'Improve communication, rebuild trust, and navigate challenges together using evidence-based approaches'
-  },
-  {
-    title: 'Therapy for Burnout and Stress',
-    path: '/stress-burnout',
-    description: 'Restoring balance and well-being in your personal and professional life'
-  },
-  {
-    title: 'Insomnia & Sleep Therapy (CBT-I)',
-    path: '/insomnia-sleep-therapy',
-    description: 'Evidence-based techniques to reset your sleep rhythm and develop healthy sleep habits naturally'
-  }
-];
+  const specialties = [
+    {
+      title: 'Trauma Therapy',
+      path: '/trauma-therapy',
+      description: 'Healing from trauma with evidence-based approaches for strength and recovery'
+    },
+    {
+      title: 'Therapy for Women',
+      path: '/womens-therapy',
+      description: 'Supporting women through unique challenges, life transitions, and personal growth'
+    },
+    {
+      title: 'Therapy for Asian Americans and BIPOC',
+      path: '/asia-bipoc-therapy',
+      description: 'Culturally sensitive therapy for navigating identity and systemic challenges'
+    },
+    {
+      title: 'Anxiety & Depression Therapy',
+      path: '/anxiety-depression-therapy',
+      description: 'Evidence-based techniques to manage both conditions, reducing stress and restoring calm and joy'
+    },
+    {
+      title: 'Individual Therapy',
+      path: '/individual-therapy',
+      description: 'Culturally responsive therapy to help you manage stress, anxiety, depression, and life transitions'
+    },
+    {
+      title: 'Couples & Relationship Therapy',
+      path: '/couples-relationship-therapy',
+      description: 'Improve communication, rebuild trust, and navigate challenges together using evidence-based approaches'
+    },
+    {
+      title: 'Therapy for Burnout and Stress',
+      path: '/stress-burnout',
+      description: 'Restoring balance and well-being in your personal and professional life'
+    },
+    {
+      title: 'Insomnia & Sleep Therapy (CBT-I)',
+      path: '/insomnia-sleep-therapy',
+      description: 'Evidence-based techniques to reset your sleep rhythm and develop healthy sleep habits naturally'
+    }
+  ];
 
   const features = [
     {
@@ -316,7 +321,7 @@ const specialties = [
               {/* Desktop View - Show 3 cards */}
               <div className="hidden lg:block">
                 <div className="overflow-hidden">
-                  <div 
+                  <div
                     className="flex transition-transform duration-500 ease-in-out"
                     style={{ transform: `translateX(-${currentSlide * 33.333}%)` }}
                   >
@@ -324,7 +329,7 @@ const specialties = [
                       <div key={`${member.id}-${index}`} className="w-1/3 flex-shrink-0 px-4">
                         <div className="group">
                           <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent z-10"></div>
                             <img
                               src={member.image}
                               alt={member.name}
@@ -334,13 +339,20 @@ const specialties = [
                               <h3 className="text-lg md:text-xl font-serif text-white mb-2">
                                 {member.name}
                               </h3>
-                              <p className="text-white/90 text-sm">
+                              <p className="text-white text-md">
                                 {member.title}
                               </p>
                             </div>
                           </div>
                           <div className="mt-4 flex justify-center">
-                            <BookNowCTA size="sm" therapistId={member.id} />
+                            <a
+                              href={member.url}
+                              className={`inline-block bg-brand-sage text-white font-bold 
+                              text-sm px-4 py-2 rounded-full hover:bg-brand-sageLight transition-all duration-200
+                              hover:transform hover:scale-105 active:scale-95`}
+                            >
+                              Learn More
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -352,7 +364,7 @@ const specialties = [
               {/* Tablet View - Show 2 cards */}
               <div className="hidden md:block lg:hidden">
                 <div className="overflow-hidden">
-                  <div 
+                  <div
                     className="flex transition-transform duration-500 ease-in-out"
                     style={{ transform: `translateX(-${currentSlide * 50}%)` }}
                   >
@@ -360,7 +372,7 @@ const specialties = [
                       <div key={member.id} className="w-1/2 flex-shrink-0 px-4">
                         <div className="group">
                           <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent z-10"></div>
                             <img
                               src={member.image}
                               alt={member.name}
@@ -376,7 +388,14 @@ const specialties = [
                             </div>
                           </div>
                           <div className="mt-4 flex justify-center">
-                            <BookNowCTA size="sm" therapistId={member.id} />
+                          <a
+                              href={member.url}
+                              className={`inline-block bg-brand-sage text-white font-bold 
+                              text-sm px-4 py-2 rounded-full hover:bg-brand-sageLight transition-all duration-200
+                              hover:transform hover:scale-105 active:scale-95`}
+                            >
+                              Learn More
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -388,7 +407,7 @@ const specialties = [
               {/* Mobile View - Show 1 card */}
               <div className="block md:hidden">
                 <div className="overflow-hidden">
-                  <div 
+                  <div
                     className="flex transition-transform duration-500 ease-in-out"
                     style={{ transform: `translateX(-${currentSlide * 100}%)` }}
                   >
@@ -396,7 +415,7 @@ const specialties = [
                       <div key={member.id} className="w-full flex-shrink-0 px-4">
                         <div className="group max-w-sm mx-auto">
                           <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent z-10"></div>
                             <img
                               src={member.image}
                               alt={member.name}
@@ -412,7 +431,14 @@ const specialties = [
                             </div>
                           </div>
                           <div className="mt-4 flex justify-center">
-                            <BookNowCTA size="sm" therapistId={member.id} />
+                          <a
+                              href={member.url}
+                              className={`inline-block bg-brand-sage text-white font-bold 
+                              text-sm px-4 py-2 rounded-full hover:bg-brand-sageLight transition-all duration-200
+                              hover:transform hover:scale-105 active:scale-95`}
+                            >
+                              Learn More
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -447,28 +473,16 @@ const specialties = [
                   <button
                     key={index}
                     onClick={() => goToSlide(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      currentSlide === index
-                        ? 'bg-brand-sage w-8'
-                        : 'bg-brand-sage/30 hover:bg-brand-sage/50'
-                    }`}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index
+                      ? 'bg-brand-sage w-8'
+                      : 'bg-brand-sage/30 hover:bg-brand-sage/50'
+                      }`}
                     aria-label={`Go to slide ${index + 1}`}
                   />
                 ))}
               </div>
             </div>
 
-            <div className="text-center mt-12">
-              <a
-                href="/about-us"
-                className="inline-flex items-center text-lg font-medium text-brand-sage hover:text-brand-coral transition-colors px-6 py-3 rounded-full hover:bg-brand-sage/10 border border-brand-sage/30 hover:border-brand-coral/30"
-              >
-                Read Bios
-                <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </a>
-            </div>
           </div>
         </FadeInSection>
       </section>

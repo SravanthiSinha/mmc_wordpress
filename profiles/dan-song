@@ -1,0 +1,135 @@
+<!-- wp:group {"metadata":{"categories":["team-member"],"patternName":"mindmatters/team-member-dan-song","name":"Team Member - Dan Song"},"align":"full","className":"is-style-section-1","style":{"spacing":{"padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"backgroundColor":"custom-primary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull is-style-section-1 has-custom-primary-background-color has-background" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"align":"wide","className":"team-member-wrapper","style":{"border":{"radius":"16px"},"shadow":"var:preset|shadow|natural"},"backgroundColor":"base","layout":{"type":"default"}} -->
+    <div class="wp-block-group alignwide team-member-wrapper has-base-background-color has-background" style="border-radius:16px;box-shadow:var(--wp--preset--shadow--natural)"><!-- wp:columns {"verticalAlignment":"top","className":"team-member-columns","style":{"spacing":{"blockGap":{"left":"0"},"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}}} -->
+    <div class="wp-block-columns are-vertically-aligned-top team-member-columns" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:column {"verticalAlignment":"top","width":"33%","className":"team-member-left-column","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+    <div class="wp-block-column is-vertically-aligned-top team-member-left-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;flex-basis:33%"><!-- wp:group {"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"}} -->
+    <div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:cover {"url":"https://between-therapy.com/wp-content/uploads/2026/01/dan-CjpsFVek-789x1024.jpg","id":2495,"dimRatio":0,"customOverlayColor":"#8a8181","isUserOverlayColor":false,"customGradient":"linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0.6) 100%)","contentPosition":"bottom left","isDark":false,"sizeSlug":"large","className":"team-member-image","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}},"border":{"radius":{"topLeft":"16px","topRight":"0px","bottomLeft":"0px","bottomRight":"16px"}},"layout":{"selfStretch":"fit","flexSize":null},"dimensions":{"aspectRatio":"2/3"}},"layout":{"type":"constrained"}} -->
+    <div class="wp-block-cover is-light has-custom-content-position is-position-bottom-left team-member-image" style="border-top-left-radius:16px;border-top-right-radius:0px;border-bottom-left-radius:0px;border-bottom-right-radius:16px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><img class="wp-block-cover__image-background wp-image-2495 size-large" alt="" src="https://between-therapy.com/wp-content/uploads/2026/01/dan-CjpsFVek-789x1024.jpg" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim has-background-gradient" style="background-color:#8a8181;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0.6) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"left","style":{"typography":{"fontWeight":"700","lineHeight":"1.3","fontStyle":"normal"},"elements":{"link":{"color":{"text":"var:preset|color|base"}}},"spacing":{"margin":{"bottom":"8px"}}},"textColor":"base","fontSize":"large","fontFamily":"quattrocento"} -->
+    <h2 class="wp-block-heading has-text-align-left has-base-color has-text-color has-link-color has-quattrocento-font-family has-large-font-size" style="margin-bottom:8px;font-style:normal;font-weight:700;line-height:1.3">Dan Song, AMFT, APCC</h2>
+    <!-- /wp:heading -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"fontSize":"1.125rem","fontStyle":"italic","fontWeight":"400","lineHeight":"1.4","textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(255,255,255,0.9)"}}}},"textColor":"base","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-base-color has-text-color has-link-color has-quattrocento-font-family" style="font-size:1.125rem;font-style:italic;font-weight:400;line-height:1.4">Associate Therapist | Between Therapy</p>
+    <!-- /wp:paragraph --></div></div>
+    <!-- /wp:cover -->
+    
+    <!-- wp:group {"className":"consultation-button-area","style":{"spacing":{"padding":{"left":"var:preset|spacing|40","right":"var:preset|spacing|40","top":"0.5rem","bottom":"0.5rem"},"blockGap":"8px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+    <div class="wp-block-group consultation-button-area" style="padding-top:0.5rem;padding-right:var(--wp--preset--spacing--40);padding-bottom:0.5rem;padding-left:var(--wp--preset--spacing--40)"><!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+    <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"custom-coral","width":100,"className":"book-now-cta","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"12px","bottom":"12px","left":"32px","right":"32px"}},"typography":{"fontWeight":"700","fontSize":"1rem","fontStyle":"normal"}}} -->
+    <div class="wp-block-button has-custom-width wp-block-button__width-100 book-now-cta"><a class="wp-block-button__link has-custom-coral-background-color has-background has-custom-font-size wp-element-button" href="https://betweentherapy.janeapp.com/#/staff_member/9" style="border-radius:50px;padding-top:12px;padding-right:32px;padding-bottom:12px;padding-left:32px;font-size:1rem;font-style:normal;font-weight:700" target="_blank" rel="noreferrer noopener">Book Now</a></div>
+    <!-- /wp:button --></div>
+    <!-- /wp:buttons -->
+    
+    <!-- wp:paragraph {"className":"has-custom-text-primary-color has-text-color has-link-color","style":{"typography":{"textAlign":"center"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.8)"}}}},"textColor":"custom-text-primary","fontSize":"medium"} -->
+    <p class="has-text-align-center has-custom-text-primary-color has-text-color has-link-color has-medium-font-size">Free 20 Minute Consultation</p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:column -->
+    
+    <!-- wp:column {"verticalAlignment":"top","width":"66%","className":"team-member-right-column","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+    <div class="wp-block-column is-vertically-aligned-top team-member-right-column" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;flex-basis:66%"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|60","padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"},"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"layout":{"type":"default"}} -->
+    <div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30);padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"left":"1.25rem","right":"1rem"}}},"layout":{"type":"default"}} -->
+    <div class="wp-block-group" style="padding-right:1rem;padding-left:1.25rem"><!-- wp:heading {"textAlign":"left","level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary"}}},"spacing":{"margin":{"bottom":"8px"},"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontSize":"x-large","fontFamily":"quattrocento"} -->
+    <h1 class="wp-block-heading has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-x-large-font-size" style="margin-bottom:8px;padding-left:var(--wp--preset--spacing--20)"><strong>Dan Song <span style="font-size: 1rem;">AMFT, APCC</span></strong></h1>
+    <!-- /wp:heading -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"textAlign":"left","fontStyle":"italic","fontWeight":"400"},"elements":{"link":{"color":{"text":"rgba(255,255,255,0.9)"}}},"spacing":{"padding":{"right":"0","left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-right:0;padding-left:var(--wp--preset--spacing--20);font-style:italic;font-weight:400">Associate Marriage and Family Therapist | Associate Professional Clinical Counselor | Between Therapy</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">Many people come to therapy feeling overwhelmed, uncertain, or quietly exhausted. You may wonder whether therapy will actually help, feel pressure to already have answers, or carry a sense that you "should be handling things better by now."</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">For those navigating cultural expectations, family responsibilities, caregiving roles, or the layered stress of immigration and adaptation, these feelings can feel especially heavy and isolating. Moving between languages, cultures, or roles—often while staying strong for others—can leave little space to pause, reflect, or be supported.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"blockGap":"var:preset|spacing|40"},"border":{"radius":"8px"}},"backgroundColor":"custom-secondary","fontSize":"medium","layout":{"type":"default"}} -->
+    <div class="wp-block-group has-custom-secondary-background-color has-background has-medium-font-size" style="border-radius:8px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontStyle":"normal"},"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary"}}},"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}},"textColor":"custom-text-primary","fontSize":"large","fontFamily":"quattrocento"} -->
+    <h3 class="wp-block-heading has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-large-font-size" style="margin-bottom:var(--wp--preset--spacing--40);font-style:normal;font-weight:700">Education &amp; Credentials</h3>
+    <!-- /wp:heading -->
+    
+    <!-- wp:list {"className":"credentials-list","style":{"typography":{"lineHeight":"1.7"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"0"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <ul style="padding-left:0;line-height:1.7" class="wp-block-list credentials-list has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family"><!-- wp:list-item -->
+    <li>Registered Associate Marriage and Family Therapist</li>
+    <!-- /wp:list-item -->
+    
+    <!-- wp:list-item -->
+    <li>Registered Associate Professional Clinical Counselor</li>
+    <!-- /wp:list-item -->
+    
+    <!-- wp:list-item -->
+    <li>Bachelor's degree from San Francisco State University</li>
+    <!-- /wp:list-item -->
+    
+    <!-- wp:list-item -->
+    <li>Master's degree in Counseling Psychology from Golden Gate University</li>
+    <!-- /wp:list-item -->
+    
+    <!-- wp:list-item -->
+    <li>Trained in Acceptance and Commitment Therapy (ACT), Cognitive Behavioral Therapy (CBT), Motivational Interviewing, and Solution-Focused Therapy</li>
+    <!-- /wp:list-item --></ul>
+    <!-- /wp:list --></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}},"border":{"radius":"8px"}},"backgroundColor":"custom-color-1","fontSize":"medium","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+    <div class="wp-block-group has-custom-color-1-background-color has-background has-medium-font-size" style="border-radius:8px;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--40)"><!-- wp:image {"id":2501,"width":"20px","height":"20px","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+    <figure class="wp-block-image size-full is-resized"><img src="https://between-therapy.com/wp-content/uploads/2026/01/languages.png" alt="" class="wp-image-2501" style="object-fit:cover;width:20px;height:20px"/></figure>
+    <!-- /wp:image -->
+    
+    <!-- wp:group {"style":{"spacing":{"blockGap":"4px"}},"layout":{"type":"default"}} -->
+    <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","fontStyle":"normal"},"elements":{"link":{"color":{"text":"var:preset|color|custom-sage"}}},"spacing":{"margin":{"bottom":"4px"}}},"textColor":"custom-sage","fontSize":"medium"} -->
+    <p class="has-custom-sage-color has-text-color has-link-color has-medium-font-size" style="margin-bottom:4px;font-style:normal;font-weight:600">Sessions Available In</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontStyle":"normal"},"elements":{"link":{"color":{"text":"var:preset|color|custom-text-primary"}}}},"textColor":"custom-text-primary","fontSize":"medium","fontFamily":"quattrocento"} -->
+    <p class="has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-medium-font-size" style="font-style:normal;font-weight:700">English, Cantonese &amp; Mandarin Chinese</p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"default"}} -->
+    <div class="wp-block-group"><!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">I take a holistic, individualized, and culturally responsive approach to therapy. I don't expect clients to arrive fully clear, emotionally articulate, or "ready." Instead, I meet you where you are and work collaboratively at a pace that feels steady, respectful, and realistic.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">My work draws from evidence-based approaches while staying grounded in your lived experience—your cultural background, values, responsibilities, and the real pressures shaping your life. Therapy with me is not about fixing you or pushing quick solutions, but about creating room to understand what you've been carrying and what you may need moving forward.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">When helpful, sessions may take place in English, Cantonese, or Mandarin. I am attentive to how language, culture, and immigration experiences can shape how emotions are expressed, understood, or held—especially for clients who are used to adapting, translating, or holding things together for others.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">As an immigrant myself, I bring a lived understanding of cross-cultural adjustment, identity negotiation, and the quiet pressures that often accompany building stability in a new environment. My clinical experience spans both school-based and community-based mental health settings, where I have supported high school students, college-age clients, and adults across the lifespan from diverse cultural and socioeconomic backgrounds, including AAPI communities.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">Prior to my clinical training, I worked in high-stakes, high-pressure business environments. This background allows me to bring a grounded understanding of work-related stress, leadership pressure, and performance expectations into the therapy space, while keeping the focus firmly on each client's emotional well-being and therapeutic goals.</p>
+    <!-- /wp:paragraph -->
+    
+    <!-- wp:quote {"style":{"border":{"left":{"color":"var:preset|color|custom-sage","width":"4px"}},"spacing":{"padding":{"left":"var:preset|spacing|40","top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","right":"0"},"margin":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}},"fontSize":"large"} -->
+    <blockquote class="wp-block-quote has-large-font-size" style="border-left-color:var(--wp--preset--color--custom-sage);border-left-width:4px;margin-top:var(--wp--preset--spacing--20);margin-bottom:var(--wp--preset--spacing--20);padding-top:var(--wp--preset--spacing--40);padding-right:0;padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)"><!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontSize":"medium","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-medium-font-size" style="padding-left:var(--wp--preset--spacing--20)"><em>My goal is to create a grounded, welcoming therapeutic space where you feel understood rather than judged. I place strong emphasis on the therapeutic relationship, believing that feeling safe and genuinely seen is what allows meaningful change to happen.</em></p>
+    <!-- /wp:paragraph --></blockquote>
+    <!-- /wp:quote -->
+    
+    <!-- wp:paragraph {"style":{"typography":{"textAlign":"left"},"elements":{"link":{"color":{"text":"rgba(0,0,0,0.9)"}}},"spacing":{"padding":{"left":"var:preset|spacing|20"}}},"textColor":"custom-text-primary","fontFamily":"quattrocento"} -->
+    <p class="has-text-align-left has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family" style="padding-left:var(--wp--preset--spacing--20)">Outside of my clinical work, I enjoy reading widely, from global affairs to fiction. Staying curious about different perspectives helps me remain thoughtful, grounded, and open-minded in both life and therapy. I also value spending time with family, staying physically active, and maintaining meaningful connections with friends. These practices remind me that balance and resilience are not abstract ideas, but lived experiences that matter in everyday life.</p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:column --></div>
+    <!-- /wp:columns --></div>
+    <!-- /wp:group -->
+    
+    <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"var:preset|spacing|50"}},"border":{"radius":"8px"}},"backgroundColor":"custom-color-1","layout":{"type":"default"}} -->
+    <div class="wp-block-group has-custom-color-1-background-color has-background" style="border-radius:8px;margin-top:var(--wp--preset--spacing--50);padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--50)"><!-- wp:paragraph {"className":"has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-sage"}}},"typography":{"fontWeight":"600","textAlign":"center","fontStyle":"normal"}},"textColor":"custom-text-primary","fontSize":"medium"} -->
+    <p class="has-text-align-center has-custom-text-primary-color has-text-color has-link-color has-quattrocento-font-family has-medium-font-size" style="font-style:normal;font-weight:600">We have a diverse team of therapists with different specialties. <a href="https://between-therapy.com/about-us/" data-type="link" data-id="https://between-therapy.com/about-us/">View our full team</a> to find who resonates with you.</p>
+    <!-- /wp:paragraph --></div>
+    <!-- /wp:group --></div>
+    <!-- /wp:group -->
