@@ -474,3 +474,8 @@ ul li.current-menu-item a {
   margin-bottom: 10px !important;
   outline: none !important;
 }
+
+.wp-block-image>a{
+border:none !important;
+outline: none !important;
+}
