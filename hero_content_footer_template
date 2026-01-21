@@ -1,5 +1,5 @@
-<!-- wp:cover {"url":"https://mindmatterscenter.wordpress.com/wp-content/uploads/2025/04/hero-background-3.jpg","dimRatio":50,"overlayColor":"black","focalPoint":{"x":0.5,"y":0.5},"minHeight":100,"minHeightUnit":"vh","contentPosition":"top center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"0","bottom":"0"}}}} -->
-<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-top-center" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:100vh"><img class="wp-block-cover__image-background" alt="" src="https://mindmatterscenter.wordpress.com/wp-content/uploads/2025/04/hero-background-3.jpg" style="object-position:50% 50%" data-object-fit="cover" data-object-position="50% 50%"/><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"0","padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<!-- wp:cover {"url":"https://between-therapy.com/wp-content/uploads/2026/01/hero-background.webp","alt":"website background","dimRatio":50,"overlayColor":"black","focalPoint":{"x":0.5,"y":0.5},"minHeight":100,"minHeightUnit":"vh","contentPosition":"top center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"0","right":"0","bottom":"0","left":"0"},"margin":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-top-center" style="margin-top:0;margin-bottom:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0;min-height:100vh"><img class="wp-block-cover__image-background" alt="website background" src="https://between-therapy.com/wp-content/uploads/2026/01/hero-background.webp" style="object-position:50% 50%" data-object-fit="cover" data-object-position="50% 50%"/><span aria-hidden="true" class="wp-block-cover__background has-black-background-color has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"0","padding":{"top":"var:preset|spacing|20","bottom":"var:preset|spacing|20","left":"var:preset|spacing|20","right":"var:preset|spacing|20"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
   <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
   <div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"center","width":"clamp(150px, 15%, 180px)","layout":{"type":"default"}} -->
   <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:clamp(150px, 15%, 180px)"><!-- wp:image {"id":2249,"sizeSlug":"full","linkDestination":"none","className":"is-resized","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
@@ -61,76 +61,76 @@
   <!-- /wp:group -->
   
   <!-- Floating Book Now Button for Mobile - Matching React Component -->
-    <style>
-      :root {
-      --brand-coral: var(--wp--preset--color--custom-coral, #FF7F50);
-      --brand-coralLight: #FF9470; /* Lighter version of coral for hover */
-      }
-      
-      @media (max-width: 1300px) {
-        .hide-on-mobile {
-          display: none !important;
-        }
-      }
-      
-      /* Show desktop elements on larger screens */
-      @media (min-width: 1300px) {
-        .hide-on-mobile {
-          display: flex !important;
-        }
-      }
-      
-      @media (max-width: 1300px) {
-        .floating-book-now-mobile {
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          padding: 16px; /* p-4 in Tailwind */
-          background-color: white;
-          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg in Tailwind */
-          z-index: 50;
-          display: block;
+      <style>
+        :root {
+        --brand-coral: var(--wp--preset--color--custom-coral, #FF7F50);
+        --brand-coralLight: #FF9470; /* Lighter version of coral for hover */
         }
         
-        .floating-book-now-mobile a {
-          display: flex;
-          width: 80vw;
-          margin: auto;
-          justify-content: center;
-          align-items: center;
-          background-color: var(--brand-coral);
-          color: white !important;
-          font-weight: 700;
-          text-decoration: none;
-          font-size: 16px; /* text-base in Tailwind */
-          padding: 12px 24px; /* px-6 py-3 in Tailwind */
-          border-radius: 9999px; /* rounded-full in Tailwind */
-          transition: all 0.2s; /* transition-all duration-200 in Tailwind */
+        @media (max-width: 1300px) {
+          .hide-on-mobile {
+            display: none !important;
+          }
         }
         
-        .floating-book-now-mobile a:hover {
-          background-color: var(--brand-coralLight);
-          transform: scale(1.05); /* hover:scale-105 in Tailwind */
-        }
-        
-        .floating-book-now-mobile a:active {
-          transform: scale(0.95); /* active:scale-95 in Tailwind */
-        }
-        
-        /* Add some bottom padding to the page content to prevent the button from covering content */
-        body {
-          padding-bottom: 80px;
-        }
-        }
-        
+        /* Show desktop elements on larger screens */
         @media (min-width: 1300px) {
-        .floating-book-now-mobile {
-          display: none; /* md:hidden in Tailwind */
+          .hide-on-mobile {
+            display: flex !important;
+          }
         }
-        }
-        </style>
         
-        <div class="floating-book-now-mobile">
-        <a href="/contact">Book Now</a>
-        </div>
+        @media (max-width: 1300px) {
+          .floating-book-now-mobile {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 16px; /* p-4 in Tailwind */
+            background-color: white;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg in Tailwind */
+            z-index: 50;
+            display: block;
+          }
+          
+          .floating-book-now-mobile a {
+            display: flex;
+            width: 80vw;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--brand-coral);
+            color: white !important;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 16px; /* text-base in Tailwind */
+            padding: 12px 24px; /* px-6 py-3 in Tailwind */
+            border-radius: 9999px; /* rounded-full in Tailwind */
+            transition: all 0.2s; /* transition-all duration-200 in Tailwind */
+          }
+          
+          .floating-book-now-mobile a:hover {
+            background-color: var(--brand-coralLight);
+            transform: scale(1.05); /* hover:scale-105 in Tailwind */
+          }
+          
+          .floating-book-now-mobile a:active {
+            transform: scale(0.95); /* active:scale-95 in Tailwind */
+          }
+          
+          /* Add some bottom padding to the page content to prevent the button from covering content */
+          body {
+            padding-bottom: 80px;
+          }
+          }
+          
+          @media (min-width: 1300px) {
+          .floating-book-now-mobile {
+            display: none; /* md:hidden in Tailwind */
+          }
+          }
+          </style>
+          
+          <div class="floating-book-now-mobile">
+          <a href="/contact">Book Now</a>
+          </div>
