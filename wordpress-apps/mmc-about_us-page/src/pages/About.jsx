@@ -1,5 +1,4 @@
-import React from 'react';
-import { FadeInSection } from '../components/shared/Animations';
+import { FadeInSection, ValueCard, AnimatedIcon } from '../components/shared/Animations';
 import ZengImg from '../assets/images/profile_pics/zeng.jpg';
 import ElaineImg from '../assets/images/profile_pics/elaine.jpg';
 import ViniImg from '../assets/images/profile_pics/vini.jpg';
@@ -10,9 +9,6 @@ import AsianClientImg from '../assets/images/asian-client.jpg';
 import BookNowCTA from '../components/shared/BookNowCTA';
 
 const About = () => {
-  const [currentSlide, setCurrentSlide] = React.useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = React.useState(true);
-
   const teamMembers = [
     {
       id: 'stella',
@@ -49,61 +45,7 @@ const About = () => {
       image: ElaineImg,
       url: 'https://between-therapy.com/elaine-li/',
     },
-
   ];
-
-  // This ensures the last slide always shows 3 cards
-  const desktopMembers = [...teamMembers, ...teamMembers.slice(0, 2)];
-
-  // Calculate max slides based on screen size
-  const getMaxSlides = () => {
-    if (typeof window !== 'undefined') {
-      if (window.innerWidth >= 1024) return 2; // Desktop: 3 slides (0, 1, 2) showing 3 cards each
-      if (window.innerWidth >= 768) return teamMembers.length - 1; // Tablet
-    }
-    return teamMembers.length - 1; // Mobile
-  };
-
-  const [maxSlides, setMaxSlides] = React.useState(getMaxSlides());
-
-  React.useEffect(() => {
-    const handleResize = () => {
-      setMaxSlides(getMaxSlides());
-      setCurrentSlide(0); // Reset to first slide on resize
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  // Auto-play functionality
-  React.useEffect(() => {
-    if (!isAutoPlaying) return;
-
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => {
-        if (prev >= maxSlides) return 0;
-        return prev + 1;
-      });
-    }, 5000); // Change slide every 5 seconds
-
-    return () => clearInterval(interval);
-  }, [isAutoPlaying, maxSlides]);
-
-  const nextSlide = () => {
-    setIsAutoPlaying(false);
-    setCurrentSlide((prev) => (prev >= maxSlides ? 0 : prev + 1));
-  };
-
-  const prevSlide = () => {
-    setIsAutoPlaying(false);
-    setCurrentSlide((prev) => (prev === 0 ? maxSlides : prev - 1));
-  };
-
-  const goToSlide = (index) => {
-    setIsAutoPlaying(false);
-    setCurrentSlide(index);
-  };
 
   const values = [
     {
@@ -152,186 +94,55 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Introduction Section with Carousel */}
+      {/* Team Introduction Section */}
       <section className="py-12 md:py-20 bg-brand-background-primary">
-        <FadeInSection delay={100}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <FadeInSection delay={0} direction="down">
             <div className="text-center mb-12">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-brand-text-primary inline-block relative">
                 Meet our team
                 <span className="block h-1 w-2/3 bg-brand-sage/30 mx-auto mt-4 rounded-full"></span>
               </h2>
             </div>
+          </FadeInSection>
 
-            {/* Carousel Container */}
-            <div className="relative max-w-7xl mx-auto">
-              {/* Desktop View - Show 3 cards */}
-              <div className="hidden lg:block">
-                <div className="overflow-hidden">
-                  <div
-                    className="flex transition-transform duration-500 ease-in-out"
-                    style={{ transform: `translateX(-${currentSlide * 33.333}%)` }}
-                  >
-                    {desktopMembers.map((member, index) => (
-                      <div key={`${member.id}-${index}`} className="w-1/3 flex-shrink-0 px-4">
-                        <div className="group">
-                          <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent z-10"></div>
-                            <img
-                              src={member.image}
-                              alt={member.name}
-                              className="w-full h-[450px] object-cover object-center"
-                            />
-                            <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-                              <h3 className="text-lg md:text-xl font-serif text-white mb-2">
-                                {member.name}
-                              </h3>
-                              <p className="text-white text-md">
-                                {member.title}
-                              </p>
-                            </div>
-                          </div>
-                          <div className="mt-4 flex justify-center">
-                            <a
-                              href={member.url}
-                              className={`inline-block bg-brand-sage text-white font-bold 
-                              text-sm px-4 py-2 rounded-full hover:bg-brand-sageLight transition-all duration-200
-                              hover:transform hover:scale-105 active:scale-95`}
-                            >
-                              Learn More
-                            </a>
-                          </div>
-                        </div>
+          {/* Team Grid - Show all profiles */}
+          <div className="flex flex-wrap justify-center items-center gap-8">
+            {teamMembers.map((member, index) => (
+              <FadeInSection key={member.id} delay={index * 150} direction="up" className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] max-w-md">
+                <div className="group h-full flex flex-col">
+                  <div className="relative rounded-xl overflow-hidden shadow-xl flex-grow">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent z-10"></div>
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-[450px] object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 flex flex-col justify-end p-6 z-20">
+                      <div className="mb-4">
+                        <h3 className="text-lg md:text-xl font-serif text-white mb-2 transition-colors duration-300">
+                          {member.name}
+                        </h3>
+                        <p className="text-white text-md transition-colors duration-300">
+                          {member.title}
+                        </p>
                       </div>
-                    ))}
+                      <div className="flex justify-center">
+                        <a
+                          href={member.url}
+                          className="inline-block bg-brand-sage text-white font-bold text-sm px-6 py-3 rounded-full hover:bg-brand-sageLight transition-all duration-200 hover:transform hover:scale-105 active:scale-95 shadow-md hover:shadow-lg"
+                        >
+                          Learn More
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              {/* Tablet View - Show 2 cards */}
-              <div className="hidden md:block lg:hidden">
-                <div className="overflow-hidden">
-                  <div
-                    className="flex transition-transform duration-500 ease-in-out"
-                    style={{ transform: `translateX(-${currentSlide * 50}%)` }}
-                  >
-                    {teamMembers.map((member) => (
-                      <div key={member.id} className="w-1/2 flex-shrink-0 px-4">
-                        <div className="group">
-                          <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent z-10"></div>
-                            <img
-                              src={member.image}
-                              alt={member.name}
-                              className="w-full h-[450px] object-cover object-center"
-                            />
-                            <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-                              <h3 className="text-lg md:text-xl font-serif text-white mb-2">
-                                {member.name}
-                              </h3>
-                              <p className="text-white/90 text-sm">
-                                {member.title}
-                              </p>
-                            </div>
-                          </div>
-                          <div className="mt-4 flex justify-center">
-                            <a
-                              href={member.url}
-                              className={`inline-block bg-brand-sage text-white font-bold 
-                              text-sm px-4 py-2 rounded-full hover:bg-brand-sageLight transition-all duration-200
-                              hover:transform hover:scale-105 active:scale-95`}
-                            >
-                              Learn More
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Mobile View - Show 1 card */}
-              <div className="block md:hidden">
-                <div className="overflow-hidden">
-                  <div
-                    className="flex transition-transform duration-500 ease-in-out"
-                    style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-                  >
-                    {teamMembers.map((member) => (
-                      <div key={member.id} className="w-full flex-shrink-0 px-4">
-                        <div className="group max-w-sm mx-auto">
-                          <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent z-10"></div>
-                            <img
-                              src={member.image}
-                              alt={member.name}
-                              className="w-full h-[450px] object-cover object-center"
-                            />
-                            <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-                              <h3 className="text-lg md:text-xl font-serif text-white mb-2">
-                                {member.name}
-                              </h3>
-                              <p className="text-white/90 text-sm">
-                                {member.title}
-                              </p>
-                            </div>
-                          </div>
-                          <div className="mt-4 flex justify-center">
-                            <a
-                              href={member.url}
-                              className={`inline-block bg-brand-sage text-white font-bold 
-                              text-sm px-4 py-2 rounded-full hover:bg-brand-sageLight transition-all duration-200
-                              hover:transform hover:scale-105 active:scale-95`}
-                            >
-                              Learn More
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Navigation Arrows */}
-              <button
-                onClick={prevSlide}
-                className="absolute left-0 top-1/2 -translate-y-1/2 -ml-2 sm:-ml-4 lg:-ml-12 bg-white/90 hover:bg-white text-brand-sage p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
-                aria-label="Previous therapist"
-              >
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <button
-                onClick={nextSlide}
-                className="absolute right-0 top-1/2 -translate-y-1/2 -mr-2 sm:-mr-4 lg:-mr-12 bg-white/90 hover:bg-white text-brand-sage p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
-                aria-label="Next therapist"
-              >
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-
-              {/* Dot Indicators */}
-              <div className="flex justify-center gap-2 mt-8">
-                {Array.from({ length: maxSlides + 1 }).map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => goToSlide(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index
-                      ? 'bg-brand-sage w-8'
-                      : 'bg-brand-sage/30 hover:bg-brand-sage/50'
-                      }`}
-                    aria-label={`Go to slide ${index + 1}`}
-                  />
-                ))}
-              </div>
-            </div>
-
+              </FadeInSection>
+            ))}
           </div>
-        </FadeInSection>
+
+        </div>
       </section>
 
       {/* Mission Section */}
@@ -355,12 +166,12 @@ const About = () => {
                   <BookNowCTA />
                 </div>
               </div>
-
-              <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg mx-auto lg:mx-0 w-full max-w-2xl">
+              
+              <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg mx-auto lg:mx-0 w-full max-w-2xl group">
                 <img
                   src={AboutUsImg}
                   alt="Between Therapy peaceful therapy space"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
@@ -373,13 +184,13 @@ const About = () => {
       {/* Specialization Section */}
       <section className="py-8 sm:py-10 bg-brand-background-primary">
         <div className="max-w-7xl mx-auto px-4">
-          <FadeInSection>
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
-              <div className="relative h-[250px] sm:h-[300px] rounded-xl overflow-hidden shadow-lg mx-auto lg:mx-0 w-full max-w-xl order-2 lg:order-1">
+        <FadeInSection>
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+              <div className="relative h-[250px] sm:h-[300px] rounded-xl overflow-hidden shadow-lg mx-auto lg:mx-0 w-full max-w-xl order-2 lg:order-1 group">
                 <img
                   src={AsianClientImg}
                   alt="Asian client in therapy"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
               </div>
@@ -396,8 +207,8 @@ const About = () => {
                 <div className="flex justify-center lg:justify-end">
                   <BookNowCTA />
                 </div>
-              </div>
-            </div>
+              </div>          
+          </div>
           </FadeInSection>
         </div>
       </section>
@@ -431,22 +242,13 @@ const About = () => {
           </FadeInSection>
           <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
             {values.map((value, index) => (
-              <div
+              <ValueCard
                 key={index}
-                className="flex-1 basis-[calc(100%-1.5rem)] sm:basis-[calc(50%-1.5rem)] md:basis-[calc(33.333%-1.5rem)] 
-                                  min-w-[280px] max-w-[400px] bg-white p-6 rounded-xl shadow-lg border border-brand-gray-warm
-                                  text-center hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="flex justify-center mb-4">
-                  {value.icon}
-                </div>
-                <h3 className="text-lg sm:text-xl font-semibold text-brand-text-primary mb-2">
-                  {value.title}
-                </h3>
-                <p className="text-base text-brand-text-primary">
-                  {value.description}
-                </p>
-              </div>
+                icon={<AnimatedIcon>{value.icon}</AnimatedIcon>}
+                title={value.title}
+                description={value.description}
+                index={index}
+              />
             ))}
           </div>
         </div>
