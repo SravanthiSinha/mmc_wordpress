@@ -9,6 +9,16 @@ import ElaineImg from '../assets/images/profile_pics/elaine.jpg';
 import ViniImg from '../assets/images/profile_pics/vini.jpg';
 import DanImg from '../assets/images/profile_pics/dan.jpg';
 import PoyaImg from '../assets/images/profile_pics/poya.jpg';
+import AnthemImg from '../assets/images/insurances/anthem.png';
+import AetnaImg from '../assets/images/insurances/aetna.png';
+import BlueCrossShieldImg from '../assets/images/insurances/blue-cross-shield.png';
+import CarelonImg from '../assets/images/insurances/carelon.png';
+import CignaImg from '../assets/images/insurances/cigna.jpg';
+import LyraImg from '../assets/images/insurances/lyra.jpeg';
+import MediCalImg from '../assets/images/insurances/medi-cal.jpg';
+import MedicareImg from '../assets/images/insurances/Medicare.png';
+import OptumImg from '../assets/images/insurances/optum.png';
+
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = React.useState(0);
@@ -388,7 +398,7 @@ const Home = () => {
                             </div>
                           </div>
                           <div className="mt-4 flex justify-center">
-                          <a
+                            <a
                               href={member.url}
                               className={`inline-block bg-brand-sage text-white font-bold 
                               text-sm px-4 py-2 rounded-full hover:bg-brand-sageLight transition-all duration-200
@@ -431,7 +441,7 @@ const Home = () => {
                             </div>
                           </div>
                           <div className="mt-4 flex justify-center">
-                          <a
+                            <a
                               href={member.url}
                               className={`inline-block bg-brand-sage text-white font-bold 
                               text-sm px-4 py-2 rounded-full hover:bg-brand-sageLight transition-all duration-200
@@ -627,7 +637,7 @@ const Home = () => {
       </section>
 
       {/* Additional Resources Section */}
-      <section className="py-12 md:py-20 bg-brand-background-primary">
+      <section className="py-12 md:py-20 bg-brand-background-secondary">
         <FadeInSection delay={300}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
@@ -726,6 +736,106 @@ const Home = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </a>
+            </div>
+          </div>
+        </FadeInSection>
+      </section>
+
+      {/* Insurance & Payment Section */}
+      <section className="py-12 md:py-20 bg-brand-background-primary">
+        <FadeInSection>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 lg:p-16">
+
+              {/* Section Header */}
+              <div className="text-center mb-12 md:mb-16">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif text-brand-text-primary mb-4 md:mb-6">
+                  Trusted by Leading Insurers
+                </h2>
+                <div className="max-w-3xl mx-auto">
+                  <p className="text-base md:text-lg text-brand-text-primary/80">
+                    We accept most major insurance plans to make quality mental health care accessible.
+                  </p>
+                </div>
+              </div>
+
+              {/* Insurance Logos Grid */}
+              <div className="max-w-6xl mx-auto space-y-10">
+                {/* First Row - 5 Logos */}
+                <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 lg:gap-10">
+                  <div className="flex justify-center items-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-2">
+                    <img
+                      src={AetnaImg}
+                      alt="Aetna"
+                      className="max-w-full max-h-full w-auto h-auto object-contain transition-opacity duration-300"
+                    />
+                  </div>
+
+                  <div className="flex justify-center items-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-2">
+                    <img
+                      src={AnthemImg}
+                      alt="Anthem"
+                      className="max-w-full max-h-full w-auto h-auto object-contain transition-opacity duration-300"
+                    />
+                  </div>
+
+                  <div className="flex justify-center items-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-2">
+                    <img
+                      src={BlueCrossShieldImg}
+                      alt="Blue Cross Blue Shield"
+                      className="max-w-full max-h-full w-auto h-auto object-contain transition-opacity duration-300"
+                    />
+                  </div>
+
+                  <div className="flex justify-center items-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-2">
+                    <img
+                      src={CarelonImg}
+                      alt="Carelon"
+                      className="max-w-full max-h-full w-auto h-auto object-contain transition-opacity duration-300"
+                    />
+                  </div>
+
+                  <div className="flex justify-center items-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-2">
+                    <img
+                      src={CignaImg}
+                      alt="Cigna"
+                      className="max-w-full max-h-full w-auto h-auto object-contain transition-opacity duration-300"
+                    />
+                  </div>
+
+                  <div className="flex justify-center items-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-2">
+                    <img
+                      src={LyraImg}
+                      alt="Lyra Health"
+                      className="max-w-full max-h-full w-auto h-auto object-contain transition-opacity duration-300"
+                    />
+                  </div>
+
+                  <div className="flex justify-center items-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-2">
+                    <img
+                      src={MediCalImg}
+                      alt="Medi-Cal"
+                      className="max-w-full max-h-full w-auto h-auto object-contain transition-opacity duration-300"
+                    />
+                  </div>
+
+                  <div className="flex justify-center items-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-2">
+                    <img
+                      src={MedicareImg}
+                      alt="Medicare"
+                      className="max-w-full max-h-full w-auto h-auto object-contain transition-opacity duration-300"
+                    />
+                  </div>
+
+                  <div className="flex justify-center items-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-2">
+                    <img
+                      src={OptumImg}
+                      alt="Optum"
+                      className="max-w-full max-h-full w-auto h-auto object-contain transition-opacity duration-300"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </FadeInSection>
