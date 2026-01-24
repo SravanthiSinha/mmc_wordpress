@@ -479,3 +479,14 @@ ul li.current-menu-item a {
 border:none !important;
 outline: none !important;
 }
+
+/* Hide reCAPTCHA badge on all pages */
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+
+/*show on contact page only */
+body.page-id-883 .grecaptcha-badge {
+    visibility: visible !important;
+}
