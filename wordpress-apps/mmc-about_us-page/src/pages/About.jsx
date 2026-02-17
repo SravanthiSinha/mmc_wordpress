@@ -1,6 +1,5 @@
 import { FadeInSection, ValueCard, AnimatedIcon } from '../components/shared/Animations';
 import ZengImg from '../assets/images/profile_pics/zeng.jpg';
-import ElaineImg from '../assets/images/profile_pics/elaine.jpg';
 import ViniImg from '../assets/images/profile_pics/vini.jpg';
 import DanImg from '../assets/images/profile_pics/dan.jpg';
 import PoyaImg from '../assets/images/profile_pics/poya.jpg';
@@ -37,13 +36,6 @@ const About = () => {
       title: 'Associate Therapist',
       image: PoyaImg,
       url: 'https://between-therapy.com/poya-lai/',
-    },
-    {
-      id: 'elaine',
-      name: 'Elaine Li, ASW',
-      title: 'Associate Therapist',
-      image: ElaineImg,
-      url: 'https://between-therapy.com/elaine-li/',
     },
   ];
 

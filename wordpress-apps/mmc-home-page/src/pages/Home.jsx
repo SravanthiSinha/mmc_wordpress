@@ -5,7 +5,6 @@ import IFSTherapyImg from '../assets/images/ifs-therapy.svg';
 import { FadeInSection, HoverCard } from '../components/shared/Animations';
 import BookNowCTA from '../components/shared/BookNowCTA';
 import ZengImg from '../assets/images/profile_pics/zeng.jpg';
-import ElaineImg from '../assets/images/profile_pics/elaine.jpg';
 import ViniImg from '../assets/images/profile_pics/vini.jpg';
 import DanImg from '../assets/images/profile_pics/dan.jpg';
 import PoyaImg from '../assets/images/profile_pics/poya.jpg';
@@ -53,23 +52,15 @@ const Home = () => {
       image: PoyaImg,
       url: 'https://between-therapy.com/poya-lai/',
     },
-    {
-      id: 'elaine',
-      name: 'Elaine Li, ASW',
-      title: 'Associate Therapist',
-      image: ElaineImg,
-      url: 'https://between-therapy.com/elaine-li/',
-    },
-
   ];
 
   // This ensures the last slide always shows 3 cards
-  const desktopMembers = [...teamMembers, ...teamMembers.slice(0, 2)];
+  const desktopMembers = [...teamMembers, ...teamMembers.slice(0, teamMembers.length - 3)];
 
   // Calculate max slides based on screen size
   const getMaxSlides = () => {
     if (typeof window !== 'undefined') {
-      if (window.innerWidth >= 1024) return 2; // Desktop: 3 slides (0, 1, 2) showing 3 cards each
+      if (window.innerWidth >= 1024) return teamMembers.length - 3; // Desktop: show 3 cards, slide by 1
       if (window.innerWidth >= 768) return teamMembers.length - 1; // Tablet
     }
     return teamMembers.length - 1; // Mobile
