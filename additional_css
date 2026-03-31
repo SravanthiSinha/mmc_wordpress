@@ -1,4 +1,4 @@
-@media (max-width: 1300px) {
+@media (max-width: 1360px) {
   .hide-on-mobile {
     display: none !important;
   }
@@ -56,7 +56,7 @@ ul li.current-menu-item a {
 /* Mobile-only styles for WordPress Block Navigation 
  Apply these styles only on mobile devices */
 
-@media (max-width: 1300px) {
+@media (max-width: 1360px) {
 
   /* Make the mobile menu container scrollable and properly sized */
   .wp-block-navigation__responsive-container.is-menu-open {
@@ -156,7 +156,7 @@ ul li.current-menu-item a {
 }
 
 /* Change mobile menu breakpoint to 1350px */
-@media (max-width: 1300px) {
+@media (max-width: 1360px) {
 
   /* Show mobile menu elements */
   .wp-block-navigation__responsive-container-open:not(.always-shown) {
@@ -178,7 +178,7 @@ ul li.current-menu-item a {
 }
 
 /* Mobile-specific improvements for contact section */
-@media (max-width: 1300px) {
+@media (max-width: 1360px) {
 
   /* Contact info section mobile styling */
   .contact-info-card {
@@ -413,7 +413,7 @@ ul li.current-menu-item a {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1360px) {
   .wpcf7 input[type="text"],
   .wpcf7 input[type="email"],
   .wpcf7 input[type="tel"],
@@ -456,7 +456,7 @@ ul li.current-menu-item a {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1360px) {
   body:has(.wp-block-navigation__responsive-container.is-menu-open) .floating-book-now-mobile.floating-book-now-mobile {
     display: none !important;
     visibility: hidden !important;

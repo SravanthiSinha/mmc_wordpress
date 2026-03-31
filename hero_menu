@@ -28,6 +28,8 @@
 <!-- wp:navigation-link {"label":"Join our team","type":"page","id":482,"url":"https://between-therapy.com/join-our-team/","kind":"post-type","fontSize":"medium"} /-->
 <!-- /wp:navigation-submenu -->
 
+<!-- wp:navigation-link {"label":"Blog","type":"page","id":2785,"url":"https://between-therapy.com/blog/","kind":"post-type","metadata":{"bindings":{"url":{"source":"core/post-data","args":{"field":"link"}}}},"fontSize":"large"} /-->
+
 <!-- wp:navigation-link {"label":"FAQ","type":"page","id":388,"url":"https://between-therapy.com/faq/","kind":"post-type","fontSize":"large"} /-->
 
 <!-- wp:navigation-link {"label":"Resources","type":"page","id":406,"url":"https://between-therapy.com/resources/","kind":"post-type","fontSize":"large"} /-->

@@ -1,7 +1,6 @@
 import { FadeInSection, ValueCard, AnimatedIcon } from '../components/shared/Animations';
 import ZengImg from '../assets/images/profile_pics/zeng.jpg';
 import ViniImg from '../assets/images/profile_pics/vini.jpg';
-import DanImg from '../assets/images/profile_pics/dan.jpg';
 import PoyaImg from '../assets/images/profile_pics/poya.jpg';
 import AboutUsImg from '../assets/images/aboutus.jpg';
 import AsianClientImg from '../assets/images/asian-client.jpg';
@@ -22,13 +21,6 @@ const About = () => {
       title: 'Clinical Psychologist',
       image: ViniImg,
       url: 'https://between-therapy.com/vini-kalra/',
-    },
-    {
-      id: 'dan',
-      name: 'Da (Dan) Song, AMFT, APCC',
-      title: 'Associate Therapist',
-      image: DanImg,
-      url: 'https://between-therapy.com/dan-song/',
     },
     {
       id: 'poya',

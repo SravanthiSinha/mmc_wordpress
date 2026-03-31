@@ -67,20 +67,20 @@
         --brand-coralLight: #FF9470; /* Lighter version of coral for hover */
         }
         
-        @media (max-width: 1300px) {
+        @media (max-width: 1360px) {
           .hide-on-mobile {
             display: none !important;
           }
         }
         
         /* Show desktop elements on larger screens */
-        @media (min-width: 1300px) {
+        @media (min-width:1360px) {
           .hide-on-mobile {
             display: flex !important;
           }
         }
         
-        @media (max-width: 1300px) {
+        @media (max-width: 1360px) {
           .floating-book-now-mobile {
             position: fixed;
             bottom: 0;
@@ -124,7 +124,7 @@
           }
           }
           
-          @media (min-width: 1300px) {
+          @media (min-width:1360px) {
           .floating-book-now-mobile {
             display: none; /* md:hidden in Tailwind */
           }

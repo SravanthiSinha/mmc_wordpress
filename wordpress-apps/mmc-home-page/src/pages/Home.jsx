@@ -6,7 +6,6 @@ import { FadeInSection, HoverCard } from '../components/shared/Animations';
 import BookNowCTA from '../components/shared/BookNowCTA';
 import ZengImg from '../assets/images/profile_pics/zeng.jpg';
 import ViniImg from '../assets/images/profile_pics/vini.jpg';
-import DanImg from '../assets/images/profile_pics/dan.jpg';
 import PoyaImg from '../assets/images/profile_pics/poya.jpg';
 import AnthemImg from '../assets/images/insurances/anthem.png';
 import AetnaImg from '../assets/images/insurances/aetna.png';
@@ -39,13 +38,6 @@ const Home = () => {
       url: 'https://between-therapy.com/vini-kalra/',
     },
     {
-      id: 'dan',
-      name: 'Da (Dan) Song, AMFT, APCC',
-      title: 'Associate Therapist',
-      image: DanImg,
-      url: 'https://between-therapy.com/dan-song/',
-    },
-    {
       id: 'poya',
       name: 'Poya Lai, AMFT',
       title: 'Associate Therapist',
@@ -54,16 +46,12 @@ const Home = () => {
     },
   ];
 
-  // This ensures the last slide always shows 3 cards
-  const desktopMembers = [...teamMembers, ...teamMembers.slice(0, teamMembers.length - 3)];
-
   // Calculate max slides based on screen size
   const getMaxSlides = () => {
     if (typeof window !== 'undefined') {
-      if (window.innerWidth >= 1024) return teamMembers.length - 3; // Desktop: show 3 cards, slide by 1
-      if (window.innerWidth >= 768) return teamMembers.length - 1; // Tablet
+      if (window.innerWidth >= 768) return teamMembers.length - 2; // Desktop/Tablet: show 2 cards
     }
-    return teamMembers.length - 1; // Mobile
+    return teamMembers.length - 1; // Mobile: show 1 card
   };
 
   const [maxSlides, setMaxSlides] = React.useState(getMaxSlides());
@@ -306,7 +294,7 @@ const Home = () => {
       {/* Team Introduction Section with Carousel */}
       <section className="py-12 md:py-20 bg-brand-background-primary">
         <FadeInSection delay={100}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-brand-text-primary inline-block relative">
                 Our Clinical Team
@@ -319,51 +307,8 @@ const Home = () => {
 
             {/* Carousel Container */}
             <div className="relative max-w-7xl mx-auto">
-              {/* Desktop View - Show 3 cards */}
-              <div className="hidden lg:block">
-                <div className="overflow-hidden">
-                  <div
-                    className="flex transition-transform duration-500 ease-in-out"
-                    style={{ transform: `translateX(-${currentSlide * 33.333}%)` }}
-                  >
-                    {desktopMembers.map((member, index) => (
-                      <div key={`${member.id}-${index}`} className="w-1/3 flex-shrink-0 px-4">
-                        <div className="group">
-                          <div className="relative rounded-xl overflow-hidden shadow-xl transform transition-transform duration-500">
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent z-10"></div>
-                            <img
-                              src={member.image}
-                              alt={member.name}
-                              className="w-full h-[450px] object-cover object-center"
-                            />
-                            <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-                              <h3 className="text-lg md:text-xl font-serif text-white mb-2">
-                                {member.name}
-                              </h3>
-                              <p className="text-white text-md">
-                                {member.title}
-                              </p>
-                            </div>
-                          </div>
-                          <div className="mt-4 flex justify-center">
-                            <a
-                              href={member.url}
-                              className={`inline-block bg-brand-sage text-white font-bold 
-                              text-sm px-4 py-2 rounded-full hover:bg-brand-sageLight transition-all duration-200
-                              hover:transform hover:scale-105 active:scale-95`}
-                            >
-                              Learn More
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Tablet View - Show 2 cards */}
-              <div className="hidden md:block lg:hidden">
+              {/* Desktop & Tablet View - Show 2 cards */}
+              <div className="hidden md:block">
                 <div className="overflow-hidden">
                   <div
                     className="flex transition-transform duration-500 ease-in-out"

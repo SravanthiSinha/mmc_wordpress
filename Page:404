@@ -1,7 +1,7 @@
 <!-- wp:group {"className":"has-custom-secondary-background-color has-background","style":{"spacing":{"padding":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20","top":"var:preset|spacing|20","bottom":"var:preset|spacing|20"}}}} -->
 <div class="wp-block-group has-custom-secondary-background-color has-background" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)"><!-- wp:columns {"verticalAlignment":"center","isStackedOnMobile":false} -->
-  <div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"center","width":"clamp(150px, 15%, 180px)","layout":{"type":"default"}} -->
-  <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:clamp(150px, 15%, 180px)"><!-- wp:image {"lightbox":{"enabled":false},"id":2325,"sizeSlug":"full","linkDestination":"custom","align":"center","className":"is-resized","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
+  <div class="wp-block-columns are-vertically-aligned-center is-not-stacked-on-mobile"><!-- wp:column {"verticalAlignment":"center","width":"clamp(140px, 15%, 160px)","layout":{"type":"default"}} -->
+  <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:clamp(140px, 15%, 160px)"><!-- wp:image {"lightbox":{"enabled":false},"id":2325,"sizeSlug":"full","linkDestination":"custom","align":"center","className":"is-resized","style":{"layout":{"selfStretch":"fit","flexSize":null}}} -->
   <figure class="wp-block-image aligncenter size-full is-resized"><a href="/"><img src="https://between-therapy.com/wp-content/uploads/2025/04/logo-no-bg-dark-text-2.png" alt="" class="wp-image-2325"/></a></figure>
   <!-- /wp:image --></div>
   <!-- /wp:column -->
@@ -74,20 +74,20 @@
         }
         
         /* Hide desktop Book Now button on mobile */
-        @media (max-width: 1300px) {
+        @media (max-width: 1360px) {
           .hide-on-mobile {
             display: none !important;
           }
         }
         
         /* Show desktop elements on larger screens */
-        @media (min-width: 1300px) {
+        @media (min-width:1360px) {
           .hide-on-mobile {
             display: flex !important;
           }
         }
         
-        @media (max-width: 1300px) {
+        @media (max-width: 1360px) {
         .floating-book-now-mobile {
           position: fixed;
           bottom: 0;
@@ -131,7 +131,7 @@
         }
         }
         
-        @media (min-width: 1300px) {
+        @media (min-width:1360px) {
         .floating-book-now-mobile {
           display: none; /* md:hidden in Tailwind */
         }
