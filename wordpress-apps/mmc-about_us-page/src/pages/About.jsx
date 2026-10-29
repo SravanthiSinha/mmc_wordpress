@@ -150,7 +150,7 @@ const About = () => {
                   <BookNowCTA />
                 </div>
               </div>
-              
+
               <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg mx-auto lg:mx-0 w-full max-w-2xl group">
                 <img
                   src={AboutUsImg}
@@ -168,8 +168,8 @@ const About = () => {
       {/* Specialization Section */}
       <section className="py-8 sm:py-10 bg-brand-background-primary">
         <div className="max-w-7xl mx-auto px-4">
-        <FadeInSection>
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+          <FadeInSection>
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div className="relative h-[250px] sm:h-[300px] rounded-xl overflow-hidden shadow-lg mx-auto lg:mx-0 w-full max-w-xl order-2 lg:order-1 group">
                 <img
                   src={AsianClientImg}
@@ -191,14 +191,14 @@ const About = () => {
                 <div className="flex justify-center lg:justify-end">
                   <BookNowCTA />
                 </div>
-              </div>          
-          </div>
+              </div>
+            </div>
           </FadeInSection>
         </div>
       </section>
 
       {/* Approach Section */}
-      <section className="py-6 sm:py-8 bg-brand-background-secodary">
+      <section className="py-6 sm:py-8 bg-brand-background-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <FadeInSection className="text-center mb-8">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-serif text-brand-text-primary">
@@ -235,6 +235,40 @@ const About = () => {
               />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Press Section */}
+      <section className="py-10 sm:py-12 bg-brand-background-primary">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <FadeInSection direction="up">
+            <div className="text-center">
+              <p className="text-base text-brand-text-primary/70 mb-4">
+                Featured in
+              </p>
+              <a
+                href="https://voyagela.com/interview/inspiring-conversations-with-yajun-stella-zeng-of-between-therapy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-brand-background-secondary rounded-xl shadow-md hover:shadow-lg transition-all duration-300 p-6 sm:p-8 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-sage focus-visible:ring-offset-2"
+              >
+                <h3 className="text-xl sm:text-2xl font-serif text-brand-text-primary mb-3">
+                  Voyage LA Magazine
+                </h3>
+                <p className="text-base sm:text-lg text-brand-text-primary/80 leading-relaxed mb-4">
+                  Our Clinical Director, Stella Zeng, shares the story behind
+                  Between Therapy and why culturally responsive care is at the heart of our practice.
+                </p>
+                <span className="inline-flex items-center text-brand-sage font-bold group-hover:underline">
+                  Read the interview
+                  <span className="sr-only"> (opens in a new tab)</span>
+                  <svg className="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </FadeInSection>
         </div>
       </section>
 
