@@ -35,7 +35,7 @@ const CTASection = () => {
                             <p>
                                 Call us at{' '}
                                 <a
-                                    href="tel:+14153790835"
+                                    href="tel:+14158511769"
                                     className="text-brand-coral hover:text-brand-sage transition-colors duration-300"
                                     aria-label="Call our office"
                                 >

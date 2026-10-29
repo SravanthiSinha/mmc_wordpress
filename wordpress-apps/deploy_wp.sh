@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Script to remove dist folder if exists and run build:wp
-# Usage: ./remove_dist.sh <folder_name>
+
 
 # Check if folder name is provided as argument
 if [ $# -eq 0 ]; then
@@ -36,6 +36,13 @@ echo "Build completed"
 # Create zip file of the plugin folder
 PLUGIN_PATH="/Applications/XAMPP/xamppfiles/htdocs/mmc/wp-content/plugins/$FOLDER_NAME"
 ZIP_PATH="/Applications/XAMPP/xamppfiles/htdocs/mmc/wp-content/plugins/$FOLDER_NAME.zip"
+
+# Copy includes folder and main plugin .php file into the plugin folder so they end up in the zip
+if [ "$(pwd)" != "$PLUGIN_PATH" ]; then
+    echo "Copying includes folder and plugin .php file..."
+    [ -d "includes" ] && cp -R "includes" "$PLUGIN_PATH/"
+    cp *.php "$PLUGIN_PATH/" 2>/dev/null
+fi
 
 echo "Creating zip file..."
 

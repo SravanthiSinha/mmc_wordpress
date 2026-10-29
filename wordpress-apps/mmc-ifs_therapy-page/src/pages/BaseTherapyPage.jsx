@@ -247,7 +247,7 @@ const BaseTherapyPage = ({
                   </h3>
                   <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center items-center text-brand-text-primary">
                     <a
-                      href="tel:+14153790835"
+                      href="tel:+14158511769"
                       className="flex items-center gap-2 hover:text-brand-coral transition-colors duration-300 font-medium"
                     >
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
