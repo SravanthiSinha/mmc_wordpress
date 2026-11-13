@@ -1,6 +1,5 @@
 import { FadeInSection, ValueCard, AnimatedIcon } from '../components/shared/Animations';
 import ZengImg from '../assets/images/profile_pics/zeng.jpg';
-import ViniImg from '../assets/images/profile_pics/vini.jpg';
 import PoyaImg from '../assets/images/profile_pics/poya.jpg';
 import AboutUsImg from '../assets/images/aboutus.jpg';
 import AsianClientImg from '../assets/images/asian-client.jpg';
@@ -14,13 +13,6 @@ const About = () => {
       title: 'Clinical Director',
       image: ZengImg,
       url: 'https://between-therapy.com/stella-zeng/',
-    },
-    {
-      id: 'vini',
-      name: 'Vini Kalra, PsyD',
-      title: 'Clinical Psychologist',
-      image: ViniImg,
-      url: 'https://between-therapy.com/vini-kalra/',
     },
     {
       id: 'poya',

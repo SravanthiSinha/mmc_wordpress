@@ -5,7 +5,6 @@ import IFSTherapyImg from '../assets/images/ifs-therapy.svg';
 import { FadeInSection, HoverCard } from '../components/shared/Animations';
 import BookNowCTA from '../components/shared/BookNowCTA';
 import ZengImg from '../assets/images/profile_pics/zeng.jpg';
-import ViniImg from '../assets/images/profile_pics/vini.jpg';
 import PoyaImg from '../assets/images/profile_pics/poya.jpg';
 import AnthemImg from '../assets/images/insurances/anthem.png';
 import AetnaImg from '../assets/images/insurances/aetna.png';
@@ -31,13 +30,6 @@ const Home = () => {
       url: 'https://between-therapy.com/stella-zeng/',
     },
     {
-      id: 'vini',
-      name: 'Vini Kalra, PsyD',
-      title: 'Clinical Psychologist',
-      image: ViniImg,
-      url: 'https://between-therapy.com/vini-kalra/',
-    },
-    {
       id: 'poya',
       name: 'Poya Lai, AMFT',
       title: 'Associate Therapist',
@@ -48,10 +40,9 @@ const Home = () => {
 
   // Calculate max slides based on screen size
   const getMaxSlides = () => {
-    if (typeof window !== 'undefined') {
-      if (window.innerWidth >= 768) return teamMembers.length - 2; // Desktop/Tablet: show 2 cards
-    }
-    return teamMembers.length - 1; // Mobile: show 1 card
+    const visibleCards =
+      typeof window !== 'undefined' && window.innerWidth >= 768 ? 2 : 1;
+    return Math.max(0, teamMembers.length - visibleCards);
   };
 
   const [maxSlides, setMaxSlides] = React.useState(getMaxSlides());
@@ -68,13 +59,10 @@ const Home = () => {
 
   // Auto-play functionality
   React.useEffect(() => {
-    if (!isAutoPlaying) return;
+    if (!isAutoPlaying || maxSlides === 0) return;
 
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => {
-        if (prev >= maxSlides) return 0;
-        return prev + 1;
-      });
+      setCurrentSlide((prev) => (prev >= maxSlides ? 0 : prev + 1));
     }, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
@@ -393,40 +381,44 @@ const Home = () => {
                 </div>
               </div>
 
-              {/* Navigation Arrows */}
-              <button
-                onClick={prevSlide}
-                className="absolute left-0 top-1/2 -translate-y-1/2 -ml-2 sm:-ml-4 lg:-ml-12 bg-white/90 hover:bg-white text-brand-sage p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
-                aria-label="Previous therapist"
-              >
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-              <button
-                onClick={nextSlide}
-                className="absolute right-0 top-1/2 -translate-y-1/2 -mr-2 sm:-mr-4 lg:-mr-12 bg-white/90 hover:bg-white text-brand-sage p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
-                aria-label="Next therapist"
-              >
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-
-              {/* Dot Indicators */}
-              <div className="flex justify-center gap-2 mt-8">
-                {Array.from({ length: maxSlides + 1 }).map((_, index) => (
+              {maxSlides > 0 && (
+                <>
+                  {/* Navigation Arrows */}
                   <button
-                    key={index}
-                    onClick={() => goToSlide(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index
-                      ? 'bg-brand-sage w-8'
-                      : 'bg-brand-sage/30 hover:bg-brand-sage/50'
-                      }`}
-                    aria-label={`Go to slide ${index + 1}`}
-                  />
-                ))}
-              </div>
+                    onClick={prevSlide}
+                    className="absolute left-0 top-1/2 -translate-y-1/2 -ml-2 sm:-ml-4 lg:-ml-12 bg-white/90 hover:bg-white text-brand-sage p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
+                    aria-label="Previous therapist"
+                  >
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                    </svg>
+                  </button>
+                  <button
+                    onClick={nextSlide}
+                    className="absolute right-0 top-1/2 -translate-y-1/2 -mr-2 sm:-mr-4 lg:-mr-12 bg-white/90 hover:bg-white text-brand-sage p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
+                    aria-label="Next therapist"
+                  >
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </button>
+
+                  {/* Dot Indicators */}
+                  <div className="flex justify-center gap-2 mt-8">
+                    {Array.from({ length: maxSlides + 1 }).map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => goToSlide(index)}
+                        className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index
+                          ? 'bg-brand-sage w-8'
+                          : 'bg-brand-sage/30 hover:bg-brand-sage/50'
+                          }`}
+                        aria-label={`Go to slide ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
 
           </div>
@@ -697,7 +689,6 @@ const Home = () => {
 
               {/* Insurance Logos Grid */}
               <div className="max-w-6xl mx-auto space-y-10">
-                {/* First Row - 5 Logos */}
                 <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 lg:gap-10">
                   <div className="flex justify-center items-center w-28 h-16 md:w-32 md:h-20 lg:w-36 lg:h-24 p-2">
                     <img
